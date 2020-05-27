@@ -1,4 +1,5 @@
 <script>
+  import Image from "svelte-image";
   export let post;
   const { title, thumb, content } = post;
 </script>
@@ -15,6 +16,6 @@
 
 <div class="cssgrid">
   <h3>{post.title}</h3>
-  <img src="{post.thumb}" alt="Poster for {post.title}" />
+  <Image src="{post.thumb}" alt="Poster for {post.title}" />
   <p>{@html post.content}</p>
 </div>

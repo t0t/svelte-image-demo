@@ -31,7 +31,7 @@ export default {
       publicDir: "./public/",
       inlineBelow: 10000, // inline all images in img tags below 10kb
       quality: 70, // jpeg/webp quality level
-      placeholder: "trace", // or "blur",
+      placeholder: "blur", // or "blur",
       optimizeAll: true, // optimize all images discovered in img tags
 	}) },
       // we'll extract any component CSS out into
