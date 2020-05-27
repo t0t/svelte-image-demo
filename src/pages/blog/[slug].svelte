@@ -15,4 +15,4 @@
     {/if}
 {/each}
 
-<a href={$url(`${slug}/delete`)}>Delete</a>
+<!-- <a href={$url(`${slug}/delete`)}>Delete</a> -->
