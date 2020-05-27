@@ -25,8 +25,8 @@
     }
     
     a:hover {
-      color: $grey;
-      background-color: $primary;
+      /* color: $light_grey; */
+      background-color: $grey;
     }
   }
 
@@ -41,7 +41,7 @@
 
   .CardThumb {
     grid-area: CardThumb;
-    background-color: $light_grey;
+    /* background-color: $light_grey; */
   }
 
   .CardMain {
@@ -89,7 +89,7 @@
           <h3>{post.title}</h3>
         </div>
         <div class="CardContent">
-          <p>{@html post.content}</p>
+          <p>{@html post.excerpt}</p>
         </div>
         <div class="CardFooter"></div>
       </div>

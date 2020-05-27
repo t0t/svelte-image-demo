@@ -30,9 +30,9 @@
         }
         &ImgContainer {
             width: 100%;
-            height: 200px;
+            height: 50vh;
             overflow: hidden;
-            background-color: red;
+            /* background-color: red; */
         }
     }
 </style>
@@ -55,4 +55,4 @@
     {/each}
 </section>
 
-<a href={$url(`${slug}/delete`)}>Delete</a>
+<!-- <a href={$url(`${slug}/delete`)}>Delete</a> -->
