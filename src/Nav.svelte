@@ -8,25 +8,25 @@
     ["./products", "products"],
   ];
 </script>
+
 <style lang="scss">
   @import "styles/main.scss";
   .selected {
-    color: red;
+    color: $light_grey;
+    background-color: $primary;
   }
   .cssgrid {
     list-style: none;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(100px, auto);
+    grid-template-rows: minmax(1, auto);
     /* grid-auto-rows: 100px; */
-    gap: 16px;
+    gap: $h2;
     justify-items: stretch;
     align-items: center;
   }
-  .cssgrid * {
-    border: 1px solid rgb(128, 0, 30);
-  }
+
   .MainNav {
       padding-left: 0;
   }
@@ -37,6 +37,7 @@
       padding: 16px;
   }
 </style>
+
 <ul class="cssgrid MainNav">
   {#each links as [path, name]}
   <li>

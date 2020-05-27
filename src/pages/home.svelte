@@ -1,18 +1,7 @@
 <script>
-  	import Image from "svelte-image";
+  import Image from "svelte-image";
+  import PageTitle from "../components/PageTitle.svelte";
 </script>
-
-<h1>Esta es la HOME</h1>
-
-<Image src="/img/detalle1.jpg" alt="n" />
-
-<div class="cssgrid">
-  <div>lorem</div>
-  <div>lorem</div>
-  <div>lorem</div>
-  <div>lorem</div>
-  <div>lorem</div>
-</div>
 
 <style lang="scss">
   @import "../styles/main.scss";
@@ -25,10 +14,34 @@
     gap: 1em;
     padding: $h1;
   }
-  .cssgrid > div {
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 </style>
+
+<svelte:head>
+  <title>Home TODH</title>
+</svelte:head>
+
+<PageTitle>
+  <h1 slot="pagetitle">Wellcome</h1>
+  <h2 slot="subtitle">Holistic Laboratory</h2>
+</PageTitle>
+
+<div class="cssgrid">
+  <div>
+    <Image src="/img/img1.jpg" alt="n" />
+  </div>
+  <div>
+    <Image src="/img/img2.jpg" alt="n" />
+  </div>
+  <div>
+    <Image src="/img/img3.jpg" alt="n" />
+  </div>
+  <div>
+    <Image src="/img/img4.jpg" alt="n" />
+  </div>
+  <div>
+    <Image src="/img/img5.jpg" alt="n" />
+  </div>
+  <div>
+    <Image src="/img/img6.jpg" alt="n" />
+  </div>
+</div>

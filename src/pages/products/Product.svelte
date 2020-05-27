@@ -42,4 +42,5 @@
   <h3 class="CardTitle">{product.title}</h3>
   <p class="CardCaption">{@html product.content}</p>
   <slot name="button"></slot>
+  <slot></slot>
 </div>

@@ -20,4 +20,5 @@
   <p>{@html post.content}</p>
   <Image src="{post.thumb}" alt="Poster for {post.title}" />
   <slot name="buttonpost"></slot>
+  <slot></slot>
 </div>
