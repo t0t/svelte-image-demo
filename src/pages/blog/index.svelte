@@ -1,7 +1,7 @@
 <script>
+  import Image from "svelte-image";
   import PageTitle from "../../components/PageTitle.svelte";
   import data from "./blog.json";
-  import Post from "./Post.svelte";
   const posts = data.posts;
 
   import {
@@ -13,13 +13,58 @@
 <style lang="scss">
   @import "../../styles/main.scss";
 
-  .cssgrid {
-    padding: $h1;
+  .CardGroup {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 3fr);
     grid-auto-rows: auto;
-    gap: $h1;
+
+    /* gap: $h3; */
+    a {
+      background-color: $light_grey;
+      color: $primary;
+    }
+    
+    a:hover {
+      color: $grey;
+      background-color: $primary;
+    }
+  }
+
+  .CardItem {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+    grid-template-rows: 0.3fr;
+    gap: $h3;
+    grid-template-areas: "CardThumb CardMain";
+    border: 1px solid #ccc;
+  }
+
+  .CardThumb {
+    grid-area: CardThumb;
+    background-color: $light_grey;
+  }
+
+  .CardMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr auto .1fr;
+    /* gap: $h3 $h3; */
+    grid-template-areas: "CardTitle CardTitle CardTitle""CardContent CardContent CardContent""CardFooter CardFooter CardFooter";
+    grid-area: CardMain;
+    margin-top: 0;
+    padding-right: $h3;
+  }
+
+  .CardTitle {
+    grid-area: CardTitle;
+  }
+
+  .CardContent {
+    grid-area: CardContent;
+  }
+
+  .CardFooter {
+    grid-area: CardFooter;
   }
 </style>
 
@@ -32,14 +77,26 @@
   <h2 slot="subtitle">My crazy thoughts</h2>
 </PageTitle>
 
-<section class="cssgrid">
+<div class="CardGroup">
   {#each posts as post}
-  <Post {post}>
-    <button slot="buttonpost">
-      <span class:selected="{$isActive(post.slug)}">
-        <a href="blog/{$url(post.slug)}">{post.title}</a>
-      </span>
-    </button>
-  </Post>
+  <a href="blog/{$url(post.slug)}">
+    <article class="CardItem">
+      <div class="CardThumb">
+        <Image src="{post.thumb}" alt="Poster for {post.title}" />
+      </div>
+      <div class="CardMain">
+        <div class="CardTitle">
+          <h3>{post.title}</h3>
+        </div>
+        <div class="CardContent">
+          <p>{@html post.content}</p>
+        </div>
+        <div class="CardFooter"></div>
+      </div>
+    </article>
+  </a>
   {/each}
-</section>
+</div>
+
+  
+  

@@ -4,6 +4,7 @@
 
 <style lang="scss">
   @import "../styles/main.scss";
+
   .PageTitleContainer {
     display: flex;
     flex-wrap: nowrap;
@@ -20,17 +21,15 @@
       @include padding-bottom(2);
     }
   }
+
   .PageTitle {
-    @include media(s1) {
-    }
+    @include media(s1) {}
   }
 </style>
 
 <svelte:window bind:scrollY={y} />
 
-<header
-  class="PageTitleContainer"
-  style=" opacity: {1 - Math.max(0, y / 40)}; ">
+<header class="PageTitleContainer" style=" opacity: {1 - Math.max(0, y / 40)}; ">
   <hgroup class="text-center">
     <slot name="pagetitle"></slot>
     <slot name="subtitle"></slot>

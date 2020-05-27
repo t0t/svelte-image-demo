@@ -30,10 +30,10 @@ article {
 a {
   // color: $secondary;
   text-decoration: none;
-  transition: all .4s linear;
+  transition: all .2s linear;
   
   &:focus {
-    outline: color blue 5px;
+    outline: color $secondary 5px;
   }
 
 }
