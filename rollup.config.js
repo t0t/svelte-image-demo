@@ -5,7 +5,8 @@ import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
 import image from "svelte-image";
 import { routify } from "@sveltech/routify";
-// import autoPreprocess from 'svelte-preprocess';
+// import {sveltePreprocess} from './svelte.config.js';
+import autoPreprocess from "svelte-preprocess";
 
 import json from "@rollup/plugin-json";
 
@@ -27,18 +28,21 @@ export default {
     svelte({
       // enable run-time checks when not in production
       dev: !production,
-      preprocess: { ...image({
-      publicDir: "./public/",
-      inlineBelow: 10000, // inline all images in img tags below 10kb
-      quality: 70, // jpeg/webp quality level
-      placeholder: "blur", // or "blur",
-      optimizeAll: true, // optimize all images discovered in img tags
-	}) },
+      preprocess: {
+        ...image({
+          publicDir: "./public/",
+          inlineBelow: 10000, // inline all images in img tags below 10kb
+          quality: 70, // jpeg/webp quality level
+          placeholder: "blur", // or "blur",
+          optimizeAll: true, // optimize all images discovered in img tags
+        }),
+      },
       // we'll extract any component CSS out into
       // a separate file - better for performance
       css: (css) => {
         css.write("public/build/bundle.css");
       },
+      preprocess: autoPreprocess()
     }),
 
     // If you have external dependencies installed from

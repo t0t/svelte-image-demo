@@ -23,7 +23,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 10em;
     gap: 1em;
-    padding: 1em;
+    padding: $h1;
   }
   .cssgrid > div {
     border: 1px solid red;

@@ -20,5 +20,3 @@
   <p>{@html product.content}</p>
   <Image src="{product.thumb}" alt="product {product.title}" />
 </div>
-
-<h1>TODH</h1>
