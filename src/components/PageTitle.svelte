@@ -12,8 +12,13 @@
     flex-direction: column;
     width: 100%;
     background-color: $light_grey;
-    @include padding-top(4);
-    @include padding-bottom(3);
+    @include padding-top(1);
+    @include padding-bottom(1);
+
+    @include media(s1) {
+      @include padding-top(3);
+      @include padding-bottom(2);
+    }
   }
   .PageTitle {
     @include media(s1) {

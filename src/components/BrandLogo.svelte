@@ -2,6 +2,7 @@
     @import "../styles/main.scss";
 
     .SiteBrand {
+        padding: $h0;
         &:hover {
             cursor: pointer;
         }
@@ -13,7 +14,7 @@
 </style>
 
 <div class="SiteBrand">
-    <a href="." alt="Main page">
+    <a href="." alt="Main Nav">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 43">
             <title>Brand Logo</title>
             <g fill-rule="evenodd" stroke-linejoin="bevel" stroke-linecap="square" fill="#111111">

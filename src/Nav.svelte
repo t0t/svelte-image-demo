@@ -11,34 +11,35 @@
 
 <style lang="scss">
   @import "styles/main.scss";
-  .selected {
-    color: $light_grey;
-    background-color: $primary;
-  }
-  .cssgrid {
-    list-style: none;
-    /* border: 1px solid blue; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(1, auto);
-    /* grid-auto-rows: 100px; */
-    gap: $h2;
-    justify-items: stretch;
-    align-items: center;
+  
+  .MainNav {
+    display: flex;
+    justify-content: space-around;
+    
+    @include media(s2) {
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: repeat(4, 1fr);
+      gap: $h2;
+      padding: 0 $h2;
+    }
   }
 
-  .MainNav {
-      padding-left: 0;
-  }
-  .MainNav li {
-      display: flex;
-  }
   .MainNav li a {
-      padding: 16px;
+      color: $primary;
+      padding-top: $h0;
+      padding-right: $h1;
+      padding-bottom: $h0;
+      padding-left: $h1;
+      &.selected {
+        color: $white;
+        background-color: $primary;
+      }
   }
 </style>
 
-<ul class="cssgrid MainNav">
+<ul class="MainNav">
   {#each links as [path, name]}
   <li>
     <a href="{$url(path)}" class:selected="{$isActive(path)}">{name}</a>
