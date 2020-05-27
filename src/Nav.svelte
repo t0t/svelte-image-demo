@@ -1,0 +1,46 @@
+<script>
+  import { url, isActive } from "@sveltech/routify";
+
+  const links = [
+    ["./home", "home"],
+    ["./about", "about"],
+    ["./blog", "blog"],
+    ["./products", "products"],
+  ];
+</script>
+<style lang="scss">
+  @import "styles/main.scss";
+  .selected {
+    color: red;
+  }
+  .cssgrid {
+    list-style: none;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    /* grid-auto-rows: 100px; */
+    gap: 16px;
+    justify-items: stretch;
+    align-items: center;
+  }
+  .cssgrid * {
+    border: 1px solid rgb(128, 0, 30);
+  }
+  .MainNav {
+      padding-left: 0;
+  }
+  .MainNav li {
+      display: flex;
+  }
+  .MainNav li a {
+      padding: 16px;
+  }
+</style>
+<ul class="cssgrid MainNav">
+  {#each links as [path, name]}
+  <li>
+    <a href="{$url(path)}" class:selected="{$isActive(path)}">{name}</a>
+  </li>
+  {/each}
+</ul>
