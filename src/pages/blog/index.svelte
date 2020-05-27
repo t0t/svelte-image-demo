@@ -8,12 +8,13 @@
 <style lang="scss">
   @import "../../styles/main.scss";
   .cssgrid {
-    padding: 16px;
+    padding: $h1;
     border: 1px solid green;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* grid-auto-rows: auto; */
-    gap: 16px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 3fr);
+    grid-auto-rows: auto;
+    gap: $h1;
   }
 </style>
 
