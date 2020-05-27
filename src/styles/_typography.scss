@@ -14,30 +14,29 @@
 //   }
 // @import url('https://fonts.googleapis.com/css2?family=Girassol&display=swap');
 
-$primary_font: Avenir, Helvetica, Arial, sans-serif;
+$primary_font: Avenir,
+Helvetica,
+Arial,
+sans-serif;
 $secondary_font: $primary_font;
 $tertiary_font: $secondary_font;
 
-h1 {
-  font-family: $primary;
+body > * {
+  font-family: $primary_font;
 }
 
-h2 {
-  font-family: $tertiary_font;
-}
-
-p {
-  text-align: left;
-}
 em {
   font-style: italic;
 }
+
 .text-center {
   text-align: center;
 }
-.text-left {
+
+p, .text-left {
   text-align: left;
 }
+
 .text-right {
   text-align: right;
 }
@@ -45,8 +44,10 @@ em {
 small {
   font-style: italic;
 }
+
 nav {
   letter-spacing: 1px;
+
   a {
     text-decoration: none;
   }
