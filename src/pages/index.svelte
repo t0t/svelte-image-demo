@@ -109,7 +109,7 @@
 </PageTitle>
 
 <div class="Cover">
-  <div style="background-image: url(img/img1.jpg);"></div>
+  <div style="background-image: url(img/img0.jpg);"></div>
   <div style="background-image: url(img/img2.jpg);"></div>
   <div style="background-image: url(img/img3.jpg);"></div>
   <div style="background-image: url(img/img4.jpg);"></div>
