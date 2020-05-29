@@ -15,10 +15,17 @@
 
   .CardGroup {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
+    @include media(s2) {
+      grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
+    }
+    @include media(s3) {
+      grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
+    }
+    /* grid-auto-rows: auto; */
 
-    /* gap: $h3; */
+    padding: 1px;
+    gap: 1px;
     a {
       background-color: $light_grey;
       color: $primary;

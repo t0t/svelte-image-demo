@@ -2,7 +2,9 @@
     @import "../styles/main.scss";
 
     .SiteBrand {
-        padding: $h0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         &:hover {
             cursor: pointer;
         }

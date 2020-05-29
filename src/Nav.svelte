@@ -1,5 +1,8 @@
 <script>
-  import { url, isActive } from "@sveltech/routify";
+  import {
+    url,
+    isActive
+  } from "@sveltech/routify";
 
   const links = [
     ["./home", "home"],
@@ -11,31 +14,27 @@
 
 <style lang="scss">
   @import "styles/main.scss";
-  
+
   .MainNav {
-    display: flex;
-    justify-content: space-around;
-    
-    @include media(s2) {
-      display: grid;
-      justify-items: center;
-      align-items: center;
-      grid-template-columns: repeat(4, 1fr);
-      gap: $h2;
-      padding: 0 $h2;
-    }
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+    padding-right: $h3;
+    /* gap: $h0; */
   }
 
   .MainNav li a {
-      color: $primary;
-      padding-top: $h0;
-      padding-right: $h1;
-      padding-bottom: $h0;
-      padding-left: $h1;
-      &.selected {
-        color: $white;
-        background-color: $primary;
-      }
+    /* border: 1px solid black; */
+    width: 100%;
+    padding-top: $h0;
+    padding-right: $h1;
+    padding-bottom: $h0;
+    padding-left: $h1;
+    color: $primary;
+
+    &.selected {
+      color: $white;
+      background-color: $primary;
+    }
   }
 </style>
 

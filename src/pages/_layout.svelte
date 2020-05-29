@@ -9,13 +9,10 @@
 
     .SiteNavBar {
         background-color: $light_grey;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: $h4 1fr;
         align-items: center;
 
-        @include media(s0) {
-            flex-direction: column;
-        }
         @include media(s1) {
             position: fixed;
             top: 0;

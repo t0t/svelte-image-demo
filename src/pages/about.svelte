@@ -7,7 +7,10 @@
   @import "../styles/main.scss";
   .cssgrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax($h6, 1fr));
+    @include media(s3) {
+      grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
+    }
     /* grid-auto-rows: auto; */
     gap: 1em;
     padding: $h1;
@@ -26,6 +29,7 @@
 <div class="cssgrid">
     <div>
       <Image src="/img/img1.jpg" alt="n" />
+      <h5>title</h5>
     </div>
     <div>
       <Image src="/img/img2.jpg" alt="n" />
