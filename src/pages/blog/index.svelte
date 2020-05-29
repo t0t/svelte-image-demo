@@ -1,5 +1,5 @@
 <script>
-  import Image from "svelte-image";
+  // import Image from "svelte-image";
   import PageTitle from "../../components/PageTitle.svelte";
   import data from "./blog.json";
   const posts = data.posts;
@@ -14,65 +14,56 @@
   @import "../../styles/main.scss";
 
   .CardGroup {
+    padding: $h1;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    gap: $h1;
+
     @include media(s2) {
-      grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
     }
     @include media(s3) {
-      grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
     }
-    /* grid-auto-rows: auto; */
 
-    padding: 1px;
-    gap: 1px;
     a {
       background-color: $light_grey;
       color: $primary;
+
+      &:nth-child(1) {      }
+
+      &:nth-child(2) {
+      }
+
+      &:nth-child(4) {}
     }
-    
+
     a:hover {
-      /* color: $light_grey; */
-      background-color: $grey;
+      background-color: $white;
     }
   }
 
   .CardItem {
     display: grid;
-    grid-template-columns: .5fr 1fr;
-    grid-template-rows: 0.3fr;
-    gap: $h3;
-    grid-template-areas: "CardThumb CardMain";
-    border: 1px solid #ccc;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 0;
   }
 
   .CardThumb {
-    grid-area: CardThumb;
-    /* background-color: $light_grey; */
+    padding-left: $h2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
   }
 
   .CardMain {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr auto .1fr;
-    /* gap: $h3 $h3; */
-    grid-template-areas: "CardTitle CardTitle CardTitle""CardContent CardContent CardContent""CardFooter CardFooter CardFooter";
-    grid-area: CardMain;
-    margin-top: 0;
-    padding-right: $h3;
+    padding-top: $h1;
+    padding-left: $h1;
+    padding-right: $h1;
   }
 
-  .CardTitle {
-    grid-area: CardTitle;
-  }
-
-  .CardContent {
-    grid-area: CardContent;
-  }
-
-  .CardFooter {
-    grid-area: CardFooter;
-  }
 </style>
 
 <svelte:head>
@@ -88,8 +79,8 @@
   {#each posts as post}
   <a href="blog/{$url(post.slug)}">
     <article class="CardItem">
-      <div class="CardThumb">
-        <Image src="{post.thumb}" alt="Poster for {post.title}" />
+      <div class="CardThumb" style="background-image:url('{post.imagen}');">
+        <!-- <img src="{post.thumb}" alt="Poster for {post.title}" /> -->
       </div>
       <div class="CardMain">
         <div class="CardTitle">

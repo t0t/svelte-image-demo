@@ -8,11 +8,11 @@
     @import "../styles/main.scss";
 
     .SiteNavBar {
-        background-color: $light_grey;
+        /* background-color: $light_grey; */
         display: grid;
         grid-template-columns: $h4 1fr;
         align-items: center;
-
+        /* justify-content: space-between; */
         @include media(s1) {
             position: fixed;
             top: 0;

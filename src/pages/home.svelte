@@ -8,30 +8,28 @@
 
   .Cover {
       display: grid;
-      /* padding: $h-1; */
       gap: 1px;
-      /* grid-template-columns: minmax(50px, 20%) repeat(3, 1fr); */
       grid-template-columns: repeat(auto-fill, minmax(10rem,1fr));
       grid-template-rows: repeat(4, 1fr);
-      /* grid-auto-columns: $h3; */
       grid-auto-rows: 1fr;
-      
+      @include media(s2) {
+        min-height: 100vh;
+      }      
       > div {
         padding: $h3;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         background-color: $light_grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         &:nth-child(1) {
           background-color: yellow;
           background-position: bottom;
           @include media(s2) {
             /* grid-column: span 1; */
-          }
-          @include media(s3) {
-            grid-column: span 12;
-            grid-row: span 2;
           }
         }
         &:nth-child(2) {
@@ -51,10 +49,7 @@
           @include media(s2) {
             /* grid-column: span 2; */
           }
-          @include media(s3) {
-            grid-column: span 4;
-            grid-row: span 2;
-          }
+ 
         }
         &:nth-child(4) {
           @include media(s2) {
@@ -113,20 +108,20 @@
 </PageTitle>
 
 <div class="Cover">
+  <div>X</div>
+  <div></div>
+  <div></div>
+  <div>Holistic</div>
   <div></div>
   <div></div>
   <div></div>
+  <div>Art</div>
+  <div></div>
+  <div>Design</div>
   <div></div>
   <div></div>
   <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+  <div>TODH</div>
   <div></div>
   <div></div>
 </div>

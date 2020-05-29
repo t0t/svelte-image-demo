@@ -2,18 +2,18 @@
   "posts": [
     {
       "id": 0,
-      "excerpt": "Te propongo una incursión más profunda, darle una vuelta de tuerca más a esta idea de 'molde original con el que se fabrican' las cosas. Vayamos más al fondo de ésto. ¿puede existir un molde más original que la Creación?",
+      "excerpt": "Te propongo una incursión más profunda, darle una vuelta de tuerca más a esta idea de 'molde original con el que se fabrican' las cosas. ¿Puede existir un molde más original que la Creación?",
       "title": "Prototipado Holístico",
       "thumb": "img/grafico-2.svg",
-      "slug": "post1",
+      "slug": "post0",
       "imagen": "img/grafico-4.svg",
-      "description": "Arena negra del desierto y latex. 100cm ø 2019",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius cumque neque quos amet, incidunt quo, ipsam vero nostrum maiores temporibus molestiae quae? Officiis eos commodi cumque obcaecati, iure similique temporibus.",
       "content": "<h3>¿Qué es un prototipo?</h3> <p>Según la Wikipedia es un <strong>primer ejemplar que se fabrica de una figura</strong>, un invento u otra cosa, y que sirve de modelo para fabricar otras iguales. Es el molde original con el que se fabrica. También es una Persona o cosa que reúne en grado máximo las características principales de cierto tipo de cosas y puede representarlas.</p><p> Estupenda definición ¿no?, te propongo una incursión más profunda, darle una vuelta de tuerca más a esta idea de 'molde original con el que se fabrican' las cosas. Vayamos más al fondo de ésto. ¿puede existir un molde más original que la Creación?"
     },
     {
       "id": 1,
-      "slug": "post2",
-      "excerpt": "post 2",
+      "slug": "post1",
+      "excerpt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas!",
       "title": "Title post 2",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas! Laboriosam obcaecati tenetur quae animi? Nemo labore exercitationem totam cupiditate temporibus eaque accusamus sequi. Ullam, laborum. Deleniti.",
       "imagen": "img/grafico-4.svg",
@@ -22,30 +22,30 @@
     },
     {
       "id": 2,
-      "excerpt": "prototipado-holistico",
-      "title": "Prototipado Holístico",
+      "excerpt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      "title": "Post 3",
       "thumb": "img/grafico-1.svg",
-      "slug": "post3",
+      "slug": "post2",
       "imagen": "img/grafico-1.svg",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas! Laboriosam obcaecati tenetur quae animi? Nemo labore exercitationem totam cupiditate temporibus eaque accusamus sequi. Ullam, laborum. Deleniti.",
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas! Laboriosam obcaecati tenetur quae animi? Nemo labore exercitationem totam cupiditate temporibus eaque accusamus sequi. Ullam, laborum. Deleniti."
     },
     {
       "id": 3,
-      "excerpt": "Cuarto post excerpt wejc weroicje ",
+      "excerpt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas! Laboriosam obcaecati tenetur quae animi?",
       "title": "Cuarto post",
       "thumb": "img/th-img1.jpg",
-      "slug": "post4",
+      "slug": "post3",
       "imagen": "img/img1.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas! Laboriosam obcaecati tenetur quae animi? Nemo labore exercitationem totam cupiditate temporibus eaque accusamus sequi. Ullam, laborum. Deleniti.",
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas! Laboriosam obcaecati tenetur quae animi? Nemo labore exercitationem totam cupiditate temporibus eaque accusamus sequi. Ullam, laborum. Deleniti."
     },
     {
       "id": 4,
-      "excerpt": "Cuarto post excerpt wejc weroicje ",
+      "excerpt": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas!",
       "title": "Cuarto post",
       "thumb": "img/th-img12.jpg",
-      "slug": "post5",
+      "slug": "post4",
       "imagen": "img/img12.jpg",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas! Laboriosam obcaecati tenetur quae animi? Nemo labore exercitationem totam cupiditate temporibus eaque accusamus sequi. Ullam, laborum. Deleniti.",
       "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis exercitationem rem aliquam voluptas! Laboriosam obcaecati tenetur quae animi? Nemo labore exercitationem totam cupiditate temporibus eaque accusamus sequi. Ullam, laborum. Deleniti."

@@ -16,15 +16,17 @@
   @import "styles/main.scss";
 
   .MainNav {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
-    padding-right: $h3;
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: flex-end;
+text-align: right;
+    /* padding-right: $h3; */
     /* gap: $h0; */
   }
 
   .MainNav li a {
     /* border: 1px solid black; */
-    width: 100%;
+    /* width: 100%; */
     padding-top: $h0;
     padding-right: $h1;
     padding-bottom: $h0;

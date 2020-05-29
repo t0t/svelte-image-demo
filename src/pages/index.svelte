@@ -7,7 +7,7 @@
     .Cover {
       display: grid;
       padding: $h1;
-      /* gap: $h1 $h1; */
+      gap: $h1 $h1;
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 2fr 1fr 1fr 1fr;
       grid-auto-rows: 1fr;
