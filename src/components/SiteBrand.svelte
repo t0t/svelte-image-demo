@@ -2,16 +2,27 @@
     @import "../styles/main.scss";
 
     .SiteBrand {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        text-align: center;
+        position: relative;
+        padding-top: $h0;
         &:hover {
             cursor: pointer;
         }
     }
+
     svg {
         min-width: $h3;
         max-width: $h3;
+
+        @include media(s2){
+            position: fixed;
+            min-width: $h4;
+            max-width: $h4;
+        };
+        left: $h1;
     }
 </style>
 

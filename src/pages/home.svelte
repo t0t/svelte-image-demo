@@ -13,7 +13,7 @@
       grid-template-rows: repeat(4, 1fr);
       grid-auto-rows: 1fr;
       @include media(s2) {
-        min-height: 100vh;
+        /* min-height: 100vh; */
       }      
       > div {
         padding: $h3;
@@ -86,11 +86,8 @@
         }
         &:nth-child(7) {
 
-          @include media(s2) {
-  
-          }
+          @include media(s2) {}
           @include media(s3) {
-  
             grid-row: span 1;
           }
         }

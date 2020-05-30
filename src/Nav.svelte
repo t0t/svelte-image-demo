@@ -16,21 +16,23 @@
   @import "styles/main.scss";
 
   .MainNav {
-    display: flex;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: flex-end;
-text-align: right;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    background-color: $light_grey;
     /* padding-right: $h3; */
     /* gap: $h0; */
   }
 
+  .MainNav li {
+    /* border: 1px dashed gray; */
+  }
   .MainNav li a {
-    /* border: 1px solid black; */
-    /* width: 100%; */
     padding-top: $h0;
-    padding-right: $h1;
+    padding-right: $h0;
     padding-bottom: $h0;
-    padding-left: $h1;
+    padding-left: $h0;
     color: $primary;
 
     &.selected {

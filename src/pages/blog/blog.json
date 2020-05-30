@@ -2,7 +2,7 @@
   "posts": [
     {
       "id": 0,
-      "excerpt": "Te propongo una incursión más profunda, darle una vuelta de tuerca más a esta idea de 'molde original con el que se fabrican' las cosas. ¿Puede existir un molde más original que la Creación?",
+      "excerpt": "Te propongo una <em>incursión más profunda</em>, darle una vuelta de tuerca más a esta idea de 'molde original con el que se fabrican' las cosas. ¿Puede existir un molde más original que la Creación?",
       "title": "Prototipado Holístico",
       "thumb": "img/grafico-2.svg",
       "slug": "post0",

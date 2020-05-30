@@ -1,5 +1,5 @@
 <script>
-    import Image from "svelte-image";
+    // import Image from "svelte-image";
     import { url } from "@sveltech/routify";
     export let slug;
     import data from "./blog.json";
@@ -30,7 +30,7 @@
         }
         &ImgContainer {
             width: 100%;
-            height: 50vh;
+            /* height: 50vh; */
             overflow: hidden;
             /* background-color: red; */
         }
@@ -44,8 +44,11 @@
                 <h1 class="PostHeader">
                     {post.title}
                 </h1>
+                <h3>
+                    {@html post.excerpt}
+                </h3>
                 <div class="PostImgContainer">
-                    <Image src="/{post.imagen}" alt="{post.title}"/>
+                    <img src="/{post.imagen}" alt="{post.title}"/>
                 </div>
                 <p class="PostContent">
                     {@html post.content}

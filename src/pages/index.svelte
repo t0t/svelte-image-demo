@@ -11,9 +11,9 @@
       grid-template-columns: repeat(12, 1fr);
       grid-template-rows: 2fr 1fr 1fr 1fr;
       grid-auto-rows: 1fr;
-
+      
       > div {
-        padding: $h4;
+        text-align: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -101,16 +101,25 @@
 </svelte:head>
 
 <PageTitle>
-  <h1 slot="pagetitle">TODH</h1>
-  <h2 slot="subtitle">Artworks, Cosmovision & Fast prototyping</h2>
+  <h1 slot="pagetitle">TODH Lab. - Prototype v.1</h1>
+  <h2 slot="subtitle">Svelte, CSS Grid</h2>
 </PageTitle>
 
 <div class="Cover">
   <div style="background-image: url(img/img0.jpg);"></div>
   <div style="background-image: url(img/img2.jpg);"></div>
   <div style="background-image: url(img/img3.jpg);"></div>
+  <div>
+      <h2>Todo es lo mismo en esencia</h2>
+  </div>
   <div style="background-image: url(img/img4.jpg);"></div>
   <div style="background-image: url(img/img5.jpg);"></div>
+  <div>
+      <p>Maquetación artesanal de prototipos</p>
+  </div>
   <div style="background-image: url(img/img6.jpg);"></div>
+  <div>
+      <p>Items interactúan y se organizan creando estructuras y sistemas que interactúan entre ellos</p>
+  </div>
   <div style="background-image: url(img/grafico-2.svg);"></div>
 </div>

@@ -5,9 +5,14 @@
 
 <style lang="scss">
   @import "../styles/main.scss";
-  .cssgrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax($h6, 1fr));
+  .grid {
+    @include media(s1) {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax($h6, 1fr));
+    }
+    @include media(s2) {
+      grid-template-columns: repeat(auto-fill, minmax($h7, 1fr));
+    }
     @include media(s3) {
       grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
     }
@@ -22,11 +27,11 @@
 </svelte:head>
 
 <PageTitle>
-    <h1 slot="pagetitle">About</h1>
-    <h2 slot="subtitle">Holistic Laboratory</h2>
+    <h1 slot="pagetitle">Sergio Forés</h1>
+    <h2 slot="subtitle">Artworks, Cosmovision & Fast prototyping</h2>
 </PageTitle>
 
-<div class="cssgrid">
+<div class="grid">
     <div>
       <Image src="/img/img1.jpg" alt="n" />
       <h5>title</h5>

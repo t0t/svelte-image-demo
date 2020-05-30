@@ -6,12 +6,12 @@
   @import "../styles/main.scss";
 
   .PageTitleContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    /* justify-content: stretch; */
     align-items: center;
     flex-direction: column;
-    width: 100%;
     background-color: $light_grey;
     @include padding-top(1);
     @include padding-bottom(1);

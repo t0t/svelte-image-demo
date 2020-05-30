@@ -55,7 +55,7 @@
     padding-left: $h2;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 200px;
+    /* min-height: 200px; */
   }
 
   .CardMain {
