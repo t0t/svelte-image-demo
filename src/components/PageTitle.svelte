@@ -13,6 +13,7 @@
     align-items: center;
     flex-direction: column;
     background-color: $light_grey;
+
     @include padding-top(1);
     @include padding-bottom(1);
 
@@ -21,9 +22,10 @@
       @include padding-bottom(2);
     }
   }
-
   .PageTitle {
-    @include media(s1) {}
+    h2 {
+      color: $tertiary;
+    }
   }
 </style>
 

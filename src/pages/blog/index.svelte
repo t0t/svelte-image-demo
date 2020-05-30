@@ -15,25 +15,37 @@
 
   .CardGroup {
     padding: $h1;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-auto-rows: 1fr;
     gap: $h1;
-
+    
     @include media(s2) {
-      grid-template-columns: repeat(auto-fill, minmax(20rem,1fr));
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-rows: 1fr;
+      /* grid-template-columns: repeat(auto-fill, minmax(20rem,1fr)); */
     }
-    @include media(s3) {
+    /* @include media(s3) {
       grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
-    }
+    } */
 
     a {
       background-color: $light_grey;
       color: $primary;
+      img {
+      width: 100%;
+      height: calc(100% - #{$h4});
+      object-fit: cover; /*Alternativa a usar background-image*/
+      }
 
-      &:nth-child(1) {      }
+      &:nth-child(1) {
+        @include media(s2) {
+          /* grid-column: span 2; */
+        }
+      }
 
       &:nth-child(2) {
+        @include media(s2) {
+          /* grid-column: span 2; */
+        }
       }
 
       &:nth-child(4) {}
@@ -49,13 +61,19 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     padding-top: 0;
+    height: 100%;
   }
 
   .CardThumb {
     padding-left: $h2;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     /* min-height: 200px; */
+    img {
+      width: 100%;
+      height: calc(100% - #{$h4});
+      object-fit: cover; /*Alternativa a usar background-image*/
+    }
   }
 
   .CardMain {

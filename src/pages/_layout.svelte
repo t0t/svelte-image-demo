@@ -26,12 +26,9 @@
         }
     }
 
-    main {
-        
-        /* display: grid; */
-        /* grid-auto-flow: row; */
-        /* grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); */
-    }
+    /* header h2 {
+        color: red;
+    } */
 </style>
 
 

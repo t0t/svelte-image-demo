@@ -27,8 +27,9 @@
     .Post {
         padding: $h3;
         /* display: grid; 
-        grid-template-columns: repeat(2, 1fr);  */
-        /* grid-auto-rows: 100px;  */
+        grid-template-columns: repeat(4, 1fr); 
+        grid-auto-rows: $h7;  */
+        background-color: $tertiary;
 
         &Article {
             h3 {
@@ -36,20 +37,31 @@
             }
         }
         &Content {
-            display: grid;
-            /* grid-auto-flow: column; */
+            h3 {
+                text-align: inherit;
+                margin-bottom: $h3;
+            }
+            img {
+                margin-bottom: $h2;
+            }
             @include media(s2) {
-                grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
-                border: 1px solid $light_grey;
+                /* display: flex; */
+                /* flex-wrasp: wrap; */
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: $h5;
+                max-width: 65%;
+                /* justify-content: space-arround; */
+                border: 1px solid $alpha_grey;
                 padding: $h3;
             }
             @include media(s3) {
-                grid-template-columns: minmax($h6, $h8) 1fr;
+                /* grid-template-columns: minmax($h6, $h8) 1fr; */
                 /* grid-template-columns: repeat(auto-fill, minmax($h9, 1fr)); */
                 /* justify-items: center; */
             }
             @include media(s4) {
-                grid-template-columns: repeat(auto-fill, minmax($h10, 1fr));
+                /* grid-template-columns: repeat(auto-fill, minmax($h10, 1fr)); */
             }
             gap: $h3;
         }
@@ -79,7 +91,7 @@
                     <img src="/{post.imagen}" alt="{post.title}"/>
                 </div>
                 <div class="PostContent">
-                    <h4>{@html post.content.h1}</h4>
+                    <h3>{@html post.content.h1}</h3>
                     <p>{@html post.content.p}</p>
                     <blockquote>{@html post.content.blockquote}</blockquote>
                     <p>{@html post.content.p2}</p>
@@ -87,12 +99,12 @@
                     <p>{@html post.content.p4}</p>
                     <p>{@html post.content.p5}</p>
                     <p>{@html post.content.p6}</p>
-                    {@html post.content.img1}
+                    <img src="{post.content.img1}" alt="Imagen">
                     <p>{@html post.content.p7}</p>
                     <p>{@html post.content.p8}</p>
                     <p>{@html post.content.p9}</p>
                     <p>{@html post.content.p10}</p>
-                    {@html post.content.img2}
+                    <img src="{post.content.img2}" alt="Imagen">
                     <p>{@html post.content.p11}</p>
                     <p>{@html post.content.p12}</p>
                     <p>{@html post.content.p13}</p>
