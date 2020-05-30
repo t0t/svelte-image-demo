@@ -12,7 +12,7 @@
     /* justify-content: stretch; */
     align-items: center;
     flex-direction: column;
-    background-color: $light_grey;
+    background-color: $quaternary;
 
     @include padding-top(1);
     @include padding-bottom(1);

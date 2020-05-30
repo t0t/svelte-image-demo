@@ -24,11 +24,11 @@
   .Cards {
     background-color: $tertiary;
     @include media(s2) {
-      padding: $h4;
+      padding: $h6;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       grid-auto-rows: 400px;
-      grid-gap: $h4;
+      grid-gap: $h6;
     }
     &Item {
       /* overflow: hidden; */
@@ -38,9 +38,10 @@
         align-items: center;
         a {
           width: 100%;
-          color: $primary;
+          color: $alpha_black;
           &:hover {
-            color: $secondary;
+            color: $quaternary;
+            background-color: $alpha_black;
           }
         }
         

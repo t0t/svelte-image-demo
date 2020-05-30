@@ -6,7 +6,7 @@
   @import "../styles/main.scss";
 
   .Footer {
-    background-color: $light_grey;
+    /* background-color: $light_grey; */
     padding: $h2;
     /* width: 100%; */
     display: flex;
@@ -91,7 +91,7 @@
     <div class="Excerpt">
       <p class="BioExcerpt">
         <strong>Sergio Forés</strong>
-        es artista plástico y diseñador front-end de mente abstracta. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero también plasmar ideas holísticas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
+        es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero también plasmar ideas holísticas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
       </p>
     </div>
     <ul class="Links">
