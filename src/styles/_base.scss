@@ -5,7 +5,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: $primary;
+  // background-color: $primary;
 
   &.overflowHidden {
     overflow: hidden;
@@ -22,7 +22,7 @@ img {
   height: auto;
 }
 article {
-  @include padding-top(2);
+  // @include padding-top(2);
 }
 *:focus {
   background-color: $light_grey;

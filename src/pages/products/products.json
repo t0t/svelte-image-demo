@@ -8,7 +8,30 @@
       "thumb": "img/th-img11.jpg",
       "imagen": "img/img11.jpg",
       "description": "Arena y latex. 100cm ø 2019",
-      "content": "<strong>Strong text</strong> derv erv erv <br>eve <em>Lo más importante en la vida es que lo más  sea lo más importante</em> werv e verv <a href='/' alt='alternatve text'>importante</a> verwv  werv werv <italic>vewr</italic>"
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 1,
@@ -18,7 +41,30 @@
       "description": "3D Print",
       "imagen": "img/img12.jpg",
       "thumb": "img/th-img12.jpg",
-      "content": "xxx"
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"/img/detalle1.jpg",
+          "img2":"/img/img12.jpg",
+          "p":"",
+          "blockquote":"",
+          
+          "p2":"",
+          
+          "p3":"",
+          
+          "p4":"",
+          
+          "p5":"",
+          "p6":"",
+          "p7":"",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 2,
@@ -28,7 +74,30 @@
       "thumb": "img/th-img6.jpg",
       "imagen": "img/img6.jpg",
       "description": "Resin, gesso, sand. 2020",
-      "content": "xxx"
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 3,
@@ -38,7 +107,30 @@
       "thumb": "img/th-img2.jpg",
       "imagen": "img/img2.jpg",
       "description": "3D Print. 2020",
-      "content": "xxx"
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 4,
@@ -48,7 +140,30 @@
       "thumb": "img/th-img4.jpg",
       "imagen": "img/img4.jpg",
       "description": "3D Print. 2020",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 5,
@@ -58,7 +173,30 @@
       "thumb": "img/th-img19.jpg",
       "imagen": "img/img19.jpg",
       "description": "100cm ø 2019",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 6,
@@ -68,7 +206,30 @@
       "thumb": "img/th-img10.jpg",
       "imagen": "img/img10.jpg",
       "description": "100cm ø 2019",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"",
+          "blockquote":"",
+          
+          "p2":"",
+          
+          "p3":"",
+          
+          "p4":"",
+          
+          "p5":"",
+          "p6":"",
+          "p7":"",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 7,
@@ -78,7 +239,30 @@
       "thumb": "img/th-img8.jpg",
       "imagen": "img/img8.jpg",
       "description": "100cm ø 2019",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 8,
@@ -88,7 +272,30 @@
       "thumb": "img/th-img16.jpg",
       "imagen": "img/img16.jpg",
       "description": "50cm ø 2019",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 9,
@@ -98,7 +305,30 @@
       "thumb": "img/th-img15.jpg",
       "imagen": "img/img15.jpg",
       "description": "100cm ø 2019",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 10,
@@ -108,7 +338,30 @@
       "thumb": "img/th-img18.jpg",
       "imagen": "img/img18.jpg",
       "description": "100cm ø 2019",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 11,
@@ -118,7 +371,30 @@
       "thumb": "img/th-img17.jpg",
       "imagen": "img/img17.jpg",
       "description": "100cm ø 2019",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     },
     {
       "id": 12,
@@ -128,7 +404,30 @@
       "thumb": "img/th-img9.jpg",
       "imagen": "img/img9.jpg",
       "description": "100cm ø 2019",
-      "content": "xxx."
+      "content": 
+        {
+          "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
+          "img1":"<img src='/img/detalle1.jpg'>",
+          "img2":"<img src='/img/grafico-4.svg'>",
+          "p":"<p>xxxcccccccc</p>",
+          "blockquote":"<blockquote>Todo según el número</blockquote>",
+          
+          "p2":"hhhhhhhhhh",
+          
+          "p3":"<small>xxxxxxxxxx</small>",
+          
+          "p4":"",
+          
+          "p5":"<small>xxx</small>",
+          "p6":"yyyyyyyyy",
+          "p7":"jjjjjjjjjjjj",
+          "p8":"",
+          "p9":"",
+          "p10":"",
+          "p11":"",
+          "p12":"",
+          "p13":""
+        }
     }
   ]
 }

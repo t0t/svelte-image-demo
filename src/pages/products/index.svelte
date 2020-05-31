@@ -23,12 +23,25 @@
   }
   .Cards {
     background-color: $tertiary;
-    @include media(s2) {
-      padding: $h6;
+    padding: $h0;
+    grid-gap: $h0;
+    @include media(s1) {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-auto-rows: 400px;
-      grid-gap: $h6;
+      padding: $h1;
+      grid-gap: $h1;
+    }
+    @include media(s2) {
+      padding: $h3;
+      grid-template-columns: repeat(auto-fit, minmax($h7, 1fr));
+      grid-auto-rows: 15em;
+      grid-gap: $h3;
+      /* background-color: white; */
+    }
+    @include media(s3) {
+      padding: $h5;
+      grid-template-columns: repeat(auto-fit, minmax($h7, 1fr));
+      grid-auto-rows: 20em;
+      grid-gap: $h5;
     }
     &Item {
       /* overflow: hidden; */
@@ -47,7 +60,9 @@
         
       }
       &:nth-child(1) {
-        grid-column: span 2;
+        grid-row: span 1;
+      }
+      &:nth-child(2) {
         grid-row: span 2;
       }
 
@@ -59,19 +74,19 @@
         /* grid-column: 1;
         grid-row: span 2; */
       }
-      &:nth-child(7) {
+      &:nth-child(6) {
         /* background-color: blue; */
-        grid-column: 1/span 2;
         grid-row: span 2;
       }
       &:nth-child(7) {
         /* background-color: green; */
-        grid-column: span 2;
         grid-row: span 2;
       }
       &:nth-child(10) {
-        /* background-color: yellow; */
         grid-row: span 2;
+      }
+      &:nth-child(13) {
+        grid-column: span 2;
       }
     }
 
