@@ -19,7 +19,6 @@
 
     .Product {
         padding: $h2;
-        /* border: 1px solid white; */
 
         @include media(s2) {
             display: grid;
@@ -38,32 +37,38 @@
         }
         
         &Article {
-            grid-column: span 2;
+            /* grid-column: span 2; */
             @include media(s2) {
                 /* background-color: green; */
-                grid-column: inherit;
+                /* grid-column: inherit; */
             }
         }
         
         &Content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: .5fr;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr;
             grid-auto-flow: row;
+            grid-auto-rows: 1fr;
+            /* align-items: center; */
+            /* justify-items: center; */
             gap: $h2;
             /* background-color: red; */
             /* height: 500px; */
             h3 {
-                grid-column: span 2;
-                /* width: 100%; */
+                /* grid-column: span 2; */
+                width: 100%;
             }
             p {
-                grid-column: span 2;
+                /* grid-column: span 2; */
+                margin-bottom: 0;
             }
             img {
-                grid-column: span 2;
+                /* grid-column: span 2; */
+                min-width: $h5;
+                /* width: 50%; */
                 @include media(s2) {
-                    grid-column: inherit;
+                    /* grid-column: inherit; */
                 }
             }
         }
@@ -125,7 +130,6 @@
                 <h3>{@html product.content.h1}</h3>
                 <p>{@html product.content.p}</p>
                 <img src="{product.content.img1}" alt="Detalle de {product.title}">
-                <img src="{product.content.img2}" alt="Detalle de {product.title}">
             </main>
         {/if}
     {/each}

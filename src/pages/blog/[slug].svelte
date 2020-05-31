@@ -14,9 +14,14 @@
     @import "../../styles/main.scss";
 
     .Post {
-        padding: $h3;
+        padding: $h2;
         background-color: $tertiary;
-
+        padding-top: $h5;
+        
+        @include media(s2) {
+            padding: $h3;
+            padding-top: $h5;
+        }
         &Article h3 {
             text-align: center;
         }
@@ -65,7 +70,7 @@
                     {@html post.subtitle}
                 </h3>
                 <div class="PostImgContainer">
-                    <img src="{post.imagen}" alt="{post.title}"/>
+                    <img src="/{post.imagen}" alt="{post.title}"/>
                 </div>
                 <div class="PostContent">
                     <h3>{@html post.content.h1}</h3>
@@ -76,12 +81,12 @@
                     <p>{@html post.content.p4}</p>
                     <p>{@html post.content.p5}</p>
                     <p>{@html post.content.p6}</p>
-                    <img src="{post.content.img1}" alt="Imagen">
+                    <img src="/{post.content.img1}" alt="Imagen">
                     <p>{@html post.content.p7}</p>
                     <p>{@html post.content.p8}</p>
                     <p>{@html post.content.p9}</p>
                     <p>{@html post.content.p10}</p>
-                    <img src="{post.content.img2}" alt="Imagen">
+                    <img src="/{post.content.img2}" alt="Imagen">
                     <p>{@html post.content.p11}</p>
                     <p>{@html post.content.p12}</p>
                     <p>{@html post.content.p13}</p>

@@ -25,7 +25,7 @@ article {
   // @include padding-top(2);
 }
 *:focus {
-  background-color: $light_grey;
+  // background-color: $light_grey;
 	  outline: none;
 }
 a {
@@ -103,6 +103,7 @@ h2 {
   @include media(s5) {
     @include type-setting(4);
   }
+  color: white; // revisar colocacion
 }
 
 h3 {
@@ -239,9 +240,9 @@ button:focus {
 }
 
 
-header hgroup h2 {
-  color: $tertiary;
-}
+// header hgroup h2 {
+//   color:red;
+// }
 // ****************************************
 // LAYOUT | MARGINS... SPACES
 // ****************************************

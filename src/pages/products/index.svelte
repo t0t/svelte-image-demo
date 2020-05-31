@@ -115,8 +115,8 @@
 </svelte:head>
 
 <PageTitle>
-  <h1 slot="pagetitle">I make things</h1>
-  <h2 slot="subtitle">Sample artwork gallery</h2>
+  <h1 slot="pagetitle">Coagulando la energía</h1>
+  <h2 slot="subtitle">Sergio Forés</h2>
 </PageTitle>
 
 <section class="Cards">

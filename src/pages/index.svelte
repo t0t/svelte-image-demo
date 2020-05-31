@@ -13,7 +13,7 @@
         padding-left: $h6;
         padding-right: $h6;
         padding-bottom: $h5;
-        color: $quaternary;
+        color: $white;
       }
       
       > div {
@@ -69,7 +69,7 @@
 <div class="Cover">
   <div style="background-image: url(img/grafico-2.svg);"></div>
   <div>
-      <h2>Items interactúan y se organizan creando estructuras y sistemas que interactúan entre ellos</h2>
+      <h2>Items se organizan creando estructuras y sistemas que interactúan entre ellos</h2>
   </div>
   <div style="background-image: url(img/img0.jpg);"></div>
   <div style="background-image: url(img/img2.jpg);"></div>

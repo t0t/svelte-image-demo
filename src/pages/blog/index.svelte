@@ -14,8 +14,8 @@
   @import "../../styles/main.scss";
 
   .CardGroup {
-    padding: $h1;
-    gap: $h1;
+    padding: $h4;
+    gap: $h4;
     
     @include media(s2) {
       display: grid;
@@ -28,8 +28,8 @@
     } */
 
     a {
-      background-color: $light_grey;
-      color: $primary;
+      /* background-color: $light_grey; */
+      color: inherit;
       img {
       width: 100%;
       height: calc(100% - #{$h4});

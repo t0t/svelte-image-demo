@@ -12,8 +12,8 @@
       "content": 
         {
           "h1":"¿Qué es a lo que nos referimos cuando hablamos de prototipos?",
-          "img1":"<img src='/img/detalle1.jpg'>",
-          "img2":"<img src='/img/grafico-4.svg'>",
+          "img1":"img/detalle1.jpg",
+          "img2":"img/grafico-4.svg",
           "p":"<p class='p'>Según la Wikipedia es un primer ejemplar que se fabrica de una figura, un invento u otra cosa, y que sirve de modelo para fabricar otras iguales. Es el molde original con el que se fabrica. También es una Persona o cosa que reúne en grado máximo las características principales de cierto tipo de cosas y puede representarlas.<br>Estupenda definición ¿no?. Pensando en esto, llegué a preguntarme; ¿puede existir un molde más original que la Creación? ¿Puede ser que el ser humano y las cosas que hace procedan de un molde prototípico anterior?</p>",
           "blockquote":"<blockquote>Todo según el número</blockquote>",
           
@@ -46,8 +46,8 @@
       "content": 
         {
           "h1":"Bajo un paradigma funcional sistémico y vivo",
-          "img1":"/img/detalle1.jpg",
-          "img2":"/img/grafico-4.svg",
+          "img1":"img/detalle1.jpg",
+          "img2":"img/grafico-4.svg",
           "p":"Un prototipo, por lo tanto, no es sólo una herramienta transitoria para algo que ha de venir en el futuro, sino que es ya de algún modo ese 'algo' latente que andamos buscando (en potencia y en esencia) y tiene necesariamente que entenderse como un ser vivo, con unos códigos, una estructura, unos ciclos conectados con una red más grande y, a todas luces inteligente. Un vasto sistema ordenado, más que una herramienta 'que sirve para' es un instrumento que 'suena como' o que 'sabe a...' y, que por su naturaleza tiende a llegar a estratos mucho más profundos y sutiles, fundiéndose con aquello que pretende representar hasta el punto de que no podemos apenas advertir la diferencia.",
           "blockquote":"<blockquote>Lo más importante en la vida es que lo más importante sea lo más importante</blockquote>",
           

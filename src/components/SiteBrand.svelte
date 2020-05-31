@@ -2,81 +2,60 @@
     @import "../styles/main.scss";
 
     .SiteBrand {
-        /* display: flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-        text-align: center;
         position: relative;
-        padding-top: $h0;
+        padding-top: $h2;
+        transition: fill .4s ease;
+
         &:hover {
             cursor: pointer;
+            circle:nth-child(1) {
+                fill: $white;
+            }
+            circle:nth-child(2) {
+                fill: $black;
+            }
         }
     }
 
     svg {
-        min-width: $h3;
-        max-width: $h3;
+        width: $h5;
+        /* min-width: $h3;
+        max-width: $h3; */
 
-        @include media(s2){
+        @include media(s2) {
             position: fixed;
-            min-width: $h4;
-            max-width: $h4;
-        };
-        left: $h1;
+            /* width: $h8; */
+            left: $h2;
+            top: 1.92rem;
+        }
     }
 </style>
 
 <div class="SiteBrand">
     <a href="." alt="Main Nav">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 43">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 39">
             <title>Brand Logo</title>
-            <g fill-rule="evenodd" stroke-linejoin="bevel" stroke-linecap="square" fill="#111111">
-                <g transform="translate(-651.077 -208.847)">
-                    <path fill="none" d="M702.063 251.839h-27.868V228.51h27.868z" />
-                    <path d="M676.756 230.74l-11.404 19.75-11.403-19.75h22.807z" fill="none" fill-rule="nonzero"
-                        stroke="#111111" stroke-width=".10003200000000001" />
-                    <path fill="none" d="M679.308 251.839H651.44V228.51h27.868z" />
-                    <path fill="none" d="M651.077 208.847h28.644v24.004h-28.644z" />
-                    <path d="M691.919 230.584l3.763-6.519 3.764 6.519h-7.527z" fill="none" fill-rule="nonzero"
-                        stroke="#111111" stroke-width=".0998613" />
-                    <path d="M688.222 224.004l3.763-6.519 3.764 6.519h-7.527z" fill="none" fill-rule="nonzero"
-                        stroke="#111111" stroke-width=".0998613" />
-                    <path d="M684.486 217.449l3.763-6.519 3.764 6.519h-7.527z" fill="none" fill-rule="nonzero"
-                        stroke="#111111" stroke-width=".0998613" />
-                    <path d="M684.379 230.584l3.763-6.519 3.764 6.519h-7.527z" fill="none" fill-rule="nonzero"
-                        stroke="#111111" stroke-width=".0998613" />
-                    <path d="M680.682 224.004l3.763-6.519 3.764 6.519h-7.527z" fill="none" fill-rule="nonzero"
-                        stroke="#111111" stroke-width=".0998613" />
-                    <path d="M676.916 230.584l3.763-6.519 3.764 6.519h-7.527z" fill="none" fill-rule="nonzero"
-                        stroke="#111111" stroke-width=".0998613" />
-                    <path fill="none" d="M674.214 209.311h27.868v23.329h-27.868z" />
-                    <g transform="translate(23.173 .265)">
-                        <circle cx="168.317" cy="18.147" r="6.044"
-                            transform="rotate(17.672 -456.202 2208.766) scale(.10295)" />
-                        <g transform="translate(0 .04)">
-                            <circle cx="168.317" cy="18.147" r="6.044"
-                                transform="rotate(17.672 -433.317 2217.607) scale(.10295)" />
-                            <circle cx="168.317" cy="18.147" r="6.044"
-                                transform="rotate(17.672 -437.064 2193.503) scale(.10295)" />
-                        </g>
-                        <g transform="translate(0 .204)">
-                            <circle cx="168.317" cy="18.147" r="6.044"
-                                transform="rotate(17.672 -410.078 2226.074) scale(.10295)" />
-                            <circle cx="168.317" cy="18.147" r="6.044"
-                                transform="rotate(17.672 -413.758 2202.401) scale(.10295)" />
-                            <circle cx="168.317" cy="18.147" r="6.044"
-                                transform="rotate(17.672 -417.504 2178.304) scale(.10295)" />
-                        </g>
-                        <circle cx="168.317" cy="18.147" r="6.044"
-                            transform="rotate(17.672 -399.087 2163.552) scale(.10295)" />
-                        <circle cx="168.317" cy="18.147" r="6.044"
-                            transform="rotate(17.672 -395.455 2186.916) scale(.10295)" />
-                        <circle cx="168.317" cy="18.147" r="6.044"
-                            transform="rotate(17.672 -391.643 2211.435) scale(.10295)" />
-                        <circle cx="168.317" cy="18.147" r="6.044"
-                            transform="rotate(17.672 -387.99 2234.938) scale(.10295)" />
+            <g fill-rule="evenodd" stroke-linejoin="round" stroke-linecap="round">
+                <g transform="matrix(.15985 0 0 .13168 -9003.181 -171.008)">
+                    <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" stroke="#111111" stroke-width="43.84"
+                        stroke-dasharray="43.84,131.52,0,0" transform="matrix(.10706 0 0 .12986 54821.7 1042.87)">
+                    </circle>
+                    <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" stroke="#111111" stroke-width="26.3"
+                        transform="matrix(.10706 0 0 .12986 54939.2 1042.87)"></circle>
+                    <g transform="matrix(0 .19668 -.0967 0 59616.9 -2481.81)">
+                        <path d="M19961 30959.1v2495.3" fill="none"></path>
+                        <path
+                            d="M19941.7 30959.1v64.7h38.6v-64.7h-38.6zm0 582.2v64.7h38.6v-64.7h-38.6zm0 582.3v64.7h38.6v-64.7h-38.6zm0 582.3v64.7h38.6v-64.7h-38.6zm0 582.3v64.7h38.6v-64.7h-38.6z">
+                        </path>
                     </g>
-                    <path d="M653.784 230.737l11.612-20.137 11.612 20.137h-23.224z" fill-rule="nonzero" />
+                    <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0057 0 0 .00692 56473.4 1422.7)">
+                    </circle>
+                    <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0057 0 0 .00692 56355.8 1422.7)">
+                    </circle>
+                    <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0057 0 0 .00692 56415.1 1299.4)">
+                    </circle>
+                    <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0057 0 0 .00692 56414.8 1545.34)">
+                    </circle>
                 </g>
             </g>
         </svg>

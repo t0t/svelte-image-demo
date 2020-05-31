@@ -11,8 +11,7 @@
       "content": 
         {
           "h1":"El viento colocó la arena",
-          "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
+          "img1":"/img/detalle2.jpg",
           "p":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
         }
     },
@@ -28,7 +27,6 @@
         {
           "h1":"Ondas de arena",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
         }
     },
@@ -44,7 +42,6 @@
         {
           "h1":"El cuadro es sensible a la luz que le viene de fuera",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"La raíz profunda de la Creación es el orden y sentirlo nos reconecta dando forma a la conexión de todo cuanto existe."
         }
     },
@@ -60,7 +57,6 @@
         {
           "h1":"Ondas de arena",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
         }
     },
@@ -76,7 +72,6 @@
         {
           "h1":"Dividiendo la totalidad del círculo en partes",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Ésta es una línea secundaria de exploración que podría considerarse como más purista en el sentido formal."
         }
     },
@@ -92,7 +87,6 @@
         {
           "h1":"La autenticidad salvaje de no saber",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Pura intuición inconsciente. Un dejarse llevar por el no saber descubriendo que el transfondo de las cosas cumple su función."
         }
     },
@@ -108,7 +102,6 @@
         {
           "h1":"La autenticidad salvaje de no saber",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Pura intuición inconsciente. Un dejarse llevar por el no saber descubriendo que el transfondo de las cosas cumple su función."
         }
     },
@@ -124,7 +117,6 @@
         {
           "h1":"Sutilizando la materia",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Arena aún húmeda arrastrada por la gravedad. Aire de mis pulmones creando una burbuja de látex. El misterio ocurriendo."
         }
     },
@@ -140,7 +132,6 @@
         {
           "h1":"Paisaje circular",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
         }
     },
@@ -155,8 +146,7 @@
       "content": 
         {
           "h1":"Superficie y profundidad de campo.",
-          "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
+          "img1":"/img/detalle2.jpg",
           "p":"Polvo de cobre, mica nacarada y arena moviéndose libremente por la superficie aún húmeda del cosmos."
         }
     },
@@ -172,7 +162,6 @@
         {
           "h1":"Ondas de arena",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
         }
     },
@@ -188,7 +177,6 @@
         {
           "h1":"Ondas de arena",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
         }
     },
@@ -204,7 +192,6 @@
         {
           "h1":"Arena dibujada con viento",
           "img1":"/img/detalle1.jpg",
-          "img2":"/img/detalle2.jpg",
           "p":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsa doloribus in provident placeat dolore!"
         }
     }

@@ -10,13 +10,18 @@
     .SiteNavBar {
         /* background-color: $light_grey; */
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax($h6, 1fr));
+        /* grid-template-rows: 1fr; */
         grid-auto-flow: row;
-        align-items: center;
+        /* align-items: center; */
+        height: $h4;
+        border-bottom-width: 1px;
+        border-bottom-style: dashed;
+        border-bottom-color: $alpha_grey;
+        background-color: $tertiary;
         /* justify-content: space-between; */
         @include media(s1) {
-            align-items: center;
+            /* align-items: center; */
             grid-auto-flow: column;
             position: fixed;
             top: 0;
@@ -25,10 +30,6 @@
             z-index: 10;
         }
     }
-
-    /* header h2 {
-        color: red;
-    } */
 </style>
 
 

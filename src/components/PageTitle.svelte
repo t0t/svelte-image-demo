@@ -1,5 +1,5 @@
 <script>
-  let y = 0;
+  // let y = 0;
 </script>
 
 <style lang="scss">
@@ -12,26 +12,27 @@
     /* justify-content: stretch; */
     align-items: center;
     flex-direction: column;
-    background-color: $quaternary;
-
+    border-bottom-width: 1px;
+        border-bottom-style: dashed;
+        border-bottom-color: $alpha_grey;
+        background-color: $tertiary;
+    /* background-color: $alpha_grey; */
+    
     @include padding-top(1);
-    @include padding-bottom(1);
-
+    @include padding-bottom(0);
+    
     @include media(s1) {
-      @include padding-top(3);
+      margin-top: $h4;
+      /* @include padding-top(2); */
       @include padding-bottom(2);
     }
   }
-  .PageTitle {
-    h2 {
-      color: $tertiary;
-    }
-  }
+
 </style>
 
-<svelte:window bind:scrollY={y} />
+<!-- <svelte:window bind:scrollY={y} /> -->
 
-<header class="PageTitleContainer" style=" opacity: {1 - Math.max(0, y / 40)}; ">
+<header class="PageTitleContainer">
   <hgroup class="text-center">
     <slot name="pagetitle"></slot>
     <slot name="subtitle"></slot>

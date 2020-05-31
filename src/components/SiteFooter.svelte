@@ -40,7 +40,9 @@
       justify-self: end;
     }
   }
-
+  .BioExcerpt {
+    max-width: $h9;
+  }
   .Bio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -89,10 +91,10 @@
   </div>
   <div class="Bio">
     <div class="Excerpt">
-      <p class="BioExcerpt">
+      <small class="BioExcerpt">
         <strong>Sergio Forés</strong>
         es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero también plasmar ideas holísticas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
-      </p>
+      </small>
     </div>
     <ul class="Links">
       <li>

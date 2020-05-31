@@ -5,7 +5,7 @@
   } from "@sveltech/routify";
 
   const links = [
-    ["./home", "home"],
+    ["./home", "lab."],
     ["./about", "TODH"],
     ["./blog", "Blog"],
     ["./products", "Artwork"],
@@ -19,23 +19,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
-    /* grid-template-rows: 1fr; */
     grid-auto-rows: 1fr;
-    justify-content: space-between;
-    background-color: $light_grey;
-    /* padding-right: $h3; */
-    /* gap: $h0; */
+    /* align-items: stretch; */
   }
 
   .MainNav li {
-    /* border: 1px dashed gray; */
+    font-weight: bold;
   }
   .MainNav li a {
-    padding-top: $h0;
-    padding-right: $h0;
-    padding-bottom: $h0;
-    padding-left: $h0;
-    color: $primary;
+    height: 100%;
+    /* width: $h5; */
+    display: flex;
+    align-items: center;
+    /* border: 1px solid $light_grey; */
+    justify-content: center;
+    /* background-color: $alpha_grey; */
+    color: $black;
+    &:hover {
+      color: $white;
+    }
 
     &.selected {
       color: $white;
