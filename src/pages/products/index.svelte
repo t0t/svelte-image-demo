@@ -7,7 +7,6 @@
 
   import {
     url,
-    isActive
   } from "@sveltech/routify";
 </script>
 
@@ -19,6 +18,7 @@
       width: 100%;
       height: calc(100% - #{$h4});
       object-fit: cover; /*Alternativa a usar background-image*/
+      mix-blend-mode: overlay;
     }
   }
   .Cards {
@@ -123,9 +123,9 @@
   {#each products as product}
     <div class="CardsItem">
       <figure class="CardImage">
-        <img src="{product.imagen}" alt="product {product.title}" />
+        <img src="/{product.imagen}" alt="product {product.title}" />
         <figcaption class="CardsItemCaption">
-          <a href="products/{$url(product.slug)}">
+          <a href="/products/{$url(product.slug)}">
             <h4 class="CardTitle"> {product.title} </h4>
             {@html product.description}
           </a>

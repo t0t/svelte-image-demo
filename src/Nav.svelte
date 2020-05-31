@@ -17,8 +17,10 @@
 
   .MainNav {
     display: grid;
-    grid-auto-flow: column;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    /* grid-template-rows: 1fr; */
+    grid-auto-rows: 1fr;
     justify-content: space-between;
     background-color: $light_grey;
     /* padding-right: $h3; */
@@ -37,7 +39,7 @@
 
     &.selected {
       color: $white;
-      background-color: $primary;
+      background-color: $black;
     }
   }
 </style>

@@ -65,7 +65,7 @@
                     {@html post.subtitle}
                 </h3>
                 <div class="PostImgContainer">
-                    <img src="/{post.imagen}" alt="{post.title}"/>
+                    <img src="{post.imagen}" alt="{post.title}"/>
                 </div>
                 <div class="PostContent">
                     <h3>{@html post.content.h1}</h3>

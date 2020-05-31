@@ -85,7 +85,7 @@
 
 <div class="Footer">
   <div class="Avatar">
-    <img src="img/avatar.jpg" alt="Sergio Forés avatar" class="BioAvatar" />
+    <img src="/img/avatar.jpg" alt="Sergio Forés avatar" class="BioAvatar" />
   </div>
   <div class="Bio">
     <div class="Excerpt">
