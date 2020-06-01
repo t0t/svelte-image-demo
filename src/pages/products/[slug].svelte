@@ -101,7 +101,10 @@
                 width: $h3;
                 border-radius: 50%;
                 height: $h3;
-                mix-blend-mode: overlay;
+                mix-blend-mode: luminosity;
+                &:hover {
+                    mix-blend-mode: inherit;
+                }
             }
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax($h3, 1fr));

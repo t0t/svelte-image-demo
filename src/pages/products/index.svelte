@@ -41,10 +41,10 @@
       /* background-color: white; */
     }
     @include media(s3) {
-      padding: $h5;
+      padding: $h4;
       grid-template-columns: repeat(auto-fit, minmax($h7, 1fr));
       grid-auto-rows: 20em;
-      grid-gap: $h5;
+      grid-gap: $h4;
     }
     &Item {
       /* overflow: hidden; */

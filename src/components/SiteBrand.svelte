@@ -2,38 +2,41 @@
     @import "../styles/main.scss";
 
     .SiteBrand {
-        transition: fill .4s ease;
-        /* padding-right: $h0; */
         padding-left: $h0;
-
         display: grid;
         align-items: center;
-
         &:hover {
+            /* transition: all 1s linear; */
             cursor: pointer;
             circle:nth-child(1) {
+                fill: $black;
+            }
+            circle:nth-child(2) {
                 fill: $white;
             }
         }
 
         @include media(s2) {
-            padding-top: $h2;
+            padding-left: $h2;
         }
     }
-
+    
     a {
         display: grid;
     }
-
+    
     svg {
+        width: $h3;
         circle:nth-child(2) {
             fill: $white;
         }
-
         @include media(s2) {
-            position: fixed;
-            left: $h2;
-            top: 1.92rem;
+            circle:nth-child(1) {
+                fill: $white;
+            }
+            circle:nth-child(2) {
+                fill: $black;
+            }
         }
     }
 </style>

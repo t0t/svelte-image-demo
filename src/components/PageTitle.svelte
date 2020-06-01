@@ -10,13 +10,12 @@
     display: grid;
     grid-auto-flow: row;
     color: $black_light;
-    /* justify-content: stretch; */
     align-items: center;
     flex-direction: column;
-    border-bottom-width: 1px;
+    /* border-bottom-width: 1px;
     border-bottom-style: dashed;
-    border-bottom-color: $alpha_grey;
-    background-color: $color_1;
+    border-bottom-color: $alpha_grey; */
+    background-color: $color_3;
     /* background-color: $alpha_grey; */
 
     @include padding-top(1);

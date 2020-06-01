@@ -93,7 +93,7 @@
     <div class="Excerpt">
       <small class="BioExcerpt">
         <strong>Sergio Forés</strong>
-        es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero también plasmar ideas holísticas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
+        es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero también plasmar ideas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
       </small>
     </div>
     <ul class="Links">

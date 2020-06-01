@@ -36,23 +36,8 @@
 </PageTitle>
 
 <div class="grid">
-  <div>
-    <Image src="/img/img1.jpg" alt="n" />
-    <h5>title</h5>
-  </div>
-  <div>
-    <Image src="/img/img2.jpg" alt="n" />
-  </div>
-  <div>
-    <Image src="/img/img3.jpg" alt="n" />
-  </div>
-  <div>
-    <Image src="/img/img4.jpg" alt="n" />
-  </div>
-  <div>
-    <Image src="/img/img5.jpg" alt="n" />
-  </div>
-  <div>
-    <Image src="/img/img6.jpg" alt="n" />
-  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
 </div>

@@ -96,11 +96,11 @@
 </style>
 
 <svelte:head>
-  <title>Home TODH</title>
+  <title>TODH | Playground</title>
 </svelte:head>
 
 <PageTitle>
-  <h1 slot="pagetitle">Wellcome</h1>
+  <h1 slot="pagetitle">Playground</h1>
   <h2 slot="subtitle">Holistic Laboratory</h2>
 </PageTitle>
 

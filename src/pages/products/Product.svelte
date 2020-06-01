@@ -7,7 +7,7 @@
 <style lang="scss">
   @import "../../styles/main.scss";
   .Card {
-    border: 1px solid $alpha_grey;
+    /* border: 1px solid $alpha_grey; */
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: .8fr .2fr .3fr .2fr;

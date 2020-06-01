@@ -43,7 +43,7 @@
                 margin-right: auto;
                 margin-top: $h5;
                 max-width: 65%;
-                border: 1px solid $alpha_grey;
+                /* border: 1px solid $alpha_grey; */
                 padding: $h3;
             }
         }

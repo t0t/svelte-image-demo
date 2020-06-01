@@ -8,7 +8,7 @@
 @import "../../styles/main.scss";
   .cssgrid {
     padding: $h1;
-    border: 1px dashed pink;
+    /* border: 1px dashed pink; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: $h1;
