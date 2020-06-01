@@ -7,14 +7,17 @@
   @import "../styles/main.scss";
 
   .grid {
-    padding-top: $h1;
-    padding-right: $h4;
-    padding-bottom: $h1;
-    padding-left: $h4;
+    display: grid;
+    
+    @include media(s2){
+      padding-top: $h1;
+      padding-right: $h4;
+      padding-bottom: $h1;
+      padding-left: $h4;
+    }
 
     div {
       padding: $h2;
-      display: grid;
       text-align: center;
       justify-items: center;
       align-items: center;
@@ -29,8 +32,8 @@
       }
 
       &:nth-child(1) {
-        grid-column: -1 / 1;
-        grid-row: span 2;
+        grid-column: span 2;
+        /* grid-row: span 2; */
       }
       &:nth-child(7) {
         color: $white;

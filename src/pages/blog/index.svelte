@@ -14,11 +14,12 @@
   @import "../../styles/main.scss";
 
   .CardGroup {
-    padding: $h4;
-    gap: $h4;
+    padding-left: $h0;
+    padding-right: $h0;
     
     @include media(s2) {
       display: grid;
+      gap: $h4;
       grid-template-columns: repeat(2, 1fr);
       grid-auto-rows: 1fr;
       /* grid-template-columns: repeat(auto-fill, minmax(20rem,1fr)); */
@@ -66,9 +67,9 @@
 
   .CardThumb {
     padding-left: $h2;
-    /* background-repeat: no-repeat;
-    background-size: cover; */
-    /* min-height: 200px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
     img {
       width: 100%;
       height: calc(100% - #{$h4});
