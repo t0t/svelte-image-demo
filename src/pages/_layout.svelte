@@ -18,7 +18,7 @@
         border-bottom-width: 1px;
         border-bottom-style: dashed;
         border-bottom-color: $alpha_grey;
-        background-color: $tertiary;
+        background-color: $color_2;
         /* justify-content: space-between; */
         @include media(s1) {
             /* align-items: center; */

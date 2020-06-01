@@ -18,11 +18,14 @@
       width: 100%;
       height: calc(100% - #{$h4});
       object-fit: cover; /*Alternativa a usar background-image*/
-      mix-blend-mode: overlay;
+      mix-blend-mode: luminosity;
+      &:hover {
+        mix-blend-mode: luminosity;
+      }
     }
   }
   .Cards {
-    background-color: $tertiary;
+    /* background-color: $tertiary; */
     padding: $h0;
     grid-gap: $h0;
     @include media(s1) {

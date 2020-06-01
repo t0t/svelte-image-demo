@@ -15,7 +15,7 @@
 
     .Post {
         padding: $h2;
-        background-color: $tertiary;
+        /* background-color: $tertiary; */
         padding-top: $h5;
         
         @include media(s2) {

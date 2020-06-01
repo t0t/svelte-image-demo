@@ -9,25 +9,25 @@
     width: 100%;
     display: grid;
     grid-auto-flow: row;
+    color: $black_light;
     /* justify-content: stretch; */
     align-items: center;
     flex-direction: column;
     border-bottom-width: 1px;
-        border-bottom-style: dashed;
-        border-bottom-color: $alpha_grey;
-        background-color: $tertiary;
+    border-bottom-style: dashed;
+    border-bottom-color: $alpha_grey;
+    background-color: $color_1;
     /* background-color: $alpha_grey; */
-    
+
     @include padding-top(1);
     @include padding-bottom(0);
-    
+
     @include media(s1) {
       margin-top: $h4;
       /* @include padding-top(2); */
       @include padding-bottom(2);
     }
   }
-
 </style>
 
 <!-- <svelte:window bind:scrollY={y} /> -->

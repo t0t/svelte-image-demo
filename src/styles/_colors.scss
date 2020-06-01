@@ -1,7 +1,7 @@
 // Colors
 $white: white;
-$black: #000;
-$black_light: #2d2d2d;
+$black_light: #202020;
+$black: $black_light;
 
 $light_grey: #f3f3f3;
 $grey: #878787;
@@ -11,6 +11,10 @@ $primary: darkslategrey;
 $secondary: #fe8e88;
 $tertiary: #82786f;
 $quaternary: darksalmon;
+
+$color_1: #fde0be;
+$color_2: #ffd8d7;
+$color_3: #e9e4e0;
 
 $alpha_black: rgba($black, 0.9);
 $alpha_grey: rgba($black, 0.2);

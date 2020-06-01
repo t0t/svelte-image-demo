@@ -5,7 +5,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  // background-color: $primary;
+  background-color: $primary;
 
   &.overflowHidden {
     overflow: hidden;
@@ -103,7 +103,7 @@ h2 {
   @include media(s5) {
     @include type-setting(4);
   }
-  color: white; // revisar colocacion
+  color: $quaternary; // revisar colocacion
 }
 
 h3 {
