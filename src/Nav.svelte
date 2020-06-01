@@ -17,7 +17,8 @@
 
   .MainNav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: $h4;
     grid-auto-flow: row;
     grid-auto-rows: 1fr;
     /* align-items: stretch; */
@@ -28,20 +29,17 @@
   }
   .MainNav li a {
     height: 100%;
-    /* width: $h5; */
     display: flex;
+    /* padding: 0 $h0; */
     align-items: center;
-    /* border: 1px solid $light_grey; */
     justify-content: center;
-    /* background-color: $alpha_grey; */
-    color: $black;
+    color: $grey;
     &:hover {
       color: $white;
     }
 
     &.selected {
-      color: $white;
-      background-color: $black;
+      color: $black;
     }
   }
 </style>

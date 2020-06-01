@@ -2,29 +2,34 @@
     @import "../styles/main.scss";
 
     .SiteBrand {
-        position: relative;
-        padding-top: $h2;
         transition: fill .4s ease;
+        padding: 10px;
+        display: grid;
+        align-items: center;
 
         &:hover {
             cursor: pointer;
             circle:nth-child(1) {
                 fill: $white;
             }
-            circle:nth-child(2) {
-                fill: $black;
-            }
+        }
+
+        @include media(s2) {
+            padding-top: $h2;
         }
     }
 
+    a {
+        display: grid;
+    }
+
     svg {
-        width: $h5;
-        /* min-width: $h3;
-        max-width: $h3; */
+        circle:nth-child(2) {
+            fill: $white;
+        }
 
         @include media(s2) {
             position: fixed;
-            /* width: $h8; */
             left: $h2;
             top: 1.92rem;
         }
@@ -32,7 +37,7 @@
 </style>
 
 <div class="SiteBrand">
-    <a href="." alt="Main Nav">
+    <a href="./" alt="Main navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 39">
             <title>Brand Logo</title>
             <g fill-rule="evenodd" stroke-linejoin="round" stroke-linecap="round">

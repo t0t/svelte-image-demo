@@ -19,8 +19,10 @@
 
     .Product {
         padding: $h2;
-
+        margin-top: $h4;
+        
         @include media(s2) {
+            margin-top: inherit;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax($h7, 1fr));
             gap: $h3;
@@ -107,9 +109,6 @@
             gap: $h2;
             max-width: $h10;
         }
-    }
-    .selected {
-        padding: 20px;
     }
 </style>
 

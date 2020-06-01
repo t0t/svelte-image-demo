@@ -8,20 +8,16 @@
     @import "../styles/main.scss";
 
     .SiteNavBar {
-        /* background-color: $light_grey; */
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax($h6, 1fr));
-        /* grid-template-rows: 1fr; */
+        grid-template-columns: repeat(auto-fill, 1fr $h5);
         grid-auto-flow: row;
-        /* align-items: center; */
         height: $h4;
         border-bottom-width: 1px;
         border-bottom-style: dashed;
         border-bottom-color: $alpha_grey;
         background-color: $color_2;
-        /* justify-content: space-between; */
+
         @include media(s1) {
-            /* align-items: center; */
             grid-auto-flow: column;
             position: fixed;
             top: 0;
@@ -31,7 +27,6 @@
         }
     }
 </style>
-
 
 <main>
     <header class="SiteNavBar">
