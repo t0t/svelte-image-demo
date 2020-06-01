@@ -5,7 +5,7 @@
   } from "@sveltech/routify";
 
   const links = [
-    ["./home", "lab."],
+    ["./home", "LAB."],
     ["./about", "TODH"],
     ["./blog", "Blog"],
     ["./products", "Artwork"],
@@ -21,7 +21,9 @@
     grid-template-rows: $h4;
     grid-auto-flow: row;
     grid-auto-rows: 1fr;
-    /* align-items: stretch; */
+    padding-right: $h0;
+    @include media(s2) {
+    }
   }
 
   .MainNav li {

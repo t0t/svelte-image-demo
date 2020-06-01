@@ -3,7 +3,9 @@
 
     .SiteBrand {
         transition: fill .4s ease;
-        padding: 10px;
+        /* padding-right: $h0; */
+        padding-left: $h0;
+
         display: grid;
         align-items: center;
 
