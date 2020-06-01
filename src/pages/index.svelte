@@ -13,7 +13,7 @@
         padding-left: $h6;
         padding-right: $h6;
         padding-bottom: $h5;
-        color: $white;
+        /* color: $white; */
       }
       
       > div {
@@ -69,18 +69,18 @@
 <div class="Cover">
   <div style="background-image: url(img/grafico-2.svg);"></div>
   <div>
-      <h2>Items se organizan creando estructuras y sistemas que interactúan entre ellos</h2>
+      <h3>Items se organizan creando estructuras y sistemas que interactúan entre ellos</h3>
   </div>
   <div style="background-image: url(img/img0.jpg);"></div>
   <div style="background-image: url(img/img2.jpg);"></div>
   <div style="background-image: url(img/img3.jpg);"></div>
   <div>
-      <h2>Todo es lo mismo en esencia</h2>
+      <h3>Todo es lo mismo en esencia</h3>
   </div>
   <div style="background-image: url(img/img4.jpg);"></div>
   <div style="background-image: url(img/img5.jpg);"></div>
   <div>
-      <h2>Maquetación artesanal de prototipos</h2>
+      <h3>Maquetación artesanal de prototipos</h3>
   </div>
   <div style="background-image: url(img/img6.jpg);"></div>
 </div>
