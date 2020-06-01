@@ -8,12 +8,9 @@
 
   .Cover {
       display: grid;
-      gap: 1px;
-      grid-template-columns: repeat(auto-fill, minmax(10rem,1fr));
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
       grid-auto-rows: 1fr;
       @include media(s2) {
-        /* min-height: 100vh; */
       }      
       > div {
         padding: $h3;
@@ -25,67 +22,43 @@
         justify-content: center;
         align-items: center;
 
+        figure {
+          width: 100%;
+        }
+
         &:nth-child(1) {
-          background-color: yellow;
-          background-position: bottom;
+          grid-column: -1/1;
           @include media(s2) {
-            /* grid-column: span 1; */
           }
         }
         &:nth-child(2) {
-          /* grid-column: span 6; */
           @include media(s2) {
-          background-color: lightsalmon;
-            /* grid-column: span 2; */
+          background-color: $tertiary;
           }
-          @include media(s3) {
-          /* grid-column: span 4; */
-            /* grid-row: span 2; */
-          }
-        }
-        &:nth-child(3) {
-          background-color: turquoise;
-          /* grid-column: span 12; */
-          @include media(s2) {
-            /* grid-column: span 2; */
-          }
- 
         }
         &:nth-child(4) {
           @include media(s2) {
-            background-color: red;
+            background-color: $alpha_grey;
             grid-column: span ;
           }
           @include media(s3) {
-            grid-column: span 4;
             grid-row: span 2;
           }
         }
         &:nth-child(5) {
-          border-color: blue;
-
-          @include media(s2) {
-  
-            /* grid-row: span 2; */
-          }
+          border-color: $black_light;
           @include media(s3) {
   
             grid-row: span 1;
           }
         }
         &:nth-child(6) {
-          background-color: cornflowerblue;
-
-          @include media(s2) {
-  
-          }
+          background-color: $grey;
           @include media(s3) {
-  
             grid-row: span 1;
           }
         }
         &:nth-child(7) {
-
           @include media(s2) {}
           @include media(s3) {
             grid-row: span 1;
@@ -105,7 +78,12 @@
 </PageTitle>
 
 <div class="Cover">
-  <div>X</div>
+  <div>
+    <figure>
+      <img src="img/grafico-7.svg" alt="">
+      <figcaption>wFWQFQw</figcaption>
+    </figure>  
+  </div>
   <div></div>
   <div></div>
   <div>Holistic</div>

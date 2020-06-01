@@ -63,7 +63,7 @@
 
 <PageTitle>
   <h1 slot="pagetitle">TODH Lab. - Prototype v.1</h1>
-  <h2 slot="subtitle">Svelte, CSS Grid</h2>
+  <h2 slot="subtitle">Proceso, diseño front, arte y locuras varias...</h2>
 </PageTitle>
 
 <div class="Cover">

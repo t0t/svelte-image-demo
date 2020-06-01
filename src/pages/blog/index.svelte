@@ -16,73 +16,52 @@
   .CardGroup {
     padding-left: $h0;
     padding-right: $h0;
-    
-    @include media(s2) {
+
+    @include media(s1) {
       display: grid;
-      gap: $h4;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: 1fr;
-      /* grid-template-columns: repeat(auto-fill, minmax(20rem,1fr)); */
+      padding-left: $h2;
+      padding-right: $h2;
+      padding-bottom: $h3;
+      gap: $h3;
     }
-    /* @include media(s3) {
-      grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
-    } */
 
-    a {
-      /* background-color: $light_grey; */
+    @include media(s2) {
+      grid-template-columns: repeat(autofill, minmax(400px, 1fr));
+      padding-left: $h4;
+      padding-right: $h4;
+      padding-bottom: $h4;
+      gap: 0 $h3;
+      /* grid-auto-rows: 1fr; */
+    }
+
+    @include media(s3) {
+      grid-template-columns: repeat(auto-fill, minmax($h8, 1fr));
+    }
+
+    .CardItem {
       color: inherit;
+      display: block;
+      height: 100%;
+
+      a:hover {
+        background-color: $white;
+      }
+
       img {
-      width: 100%;
-      height: calc(100% - #{$h4});
-      object-fit: cover; /*Alternativa a usar background-image*/
+        width: 100%;
+        height: 100%;
+        /* height: calc(100% - #{$h4}); */
+        object-fit: cover;
       }
-
-      &:nth-child(1) {
-        @include media(s2) {
-          /* grid-column: span 2; */
-        }
-      }
-
-      &:nth-child(2) {
-        @include media(s2) {
-          /* grid-column: span 2; */
-        }
-      }
-
-      &:nth-child(4) {}
-    }
-
-    a:hover {
-      background-color: $white;
     }
   }
 
-  .CardItem {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-top: 0;
-    height: 100%;
+  img {
+    width: 100%;
+    height: calc(100% - #{$h4});
+    object-fit: cover;
+    /*Alternativa a usar background-image*/
   }
-
-  .CardThumb {
-    padding-left: $h2;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 200px;
-    img {
-      width: 100%;
-      height: calc(100% - #{$h4});
-      object-fit: cover; /*Alternativa a usar background-image*/
-    }
-  }
-
-  .CardMain {
-    padding-top: $h1;
-    padding-left: $h1;
-    padding-right: $h1;
-  }
-
 </style>
 
 <svelte:head>
@@ -96,21 +75,14 @@
 
 <div class="CardGroup">
   {#each posts as post}
-  <a href="blog/{$url(post.slug)}">
-    <article class="CardItem">
-      <div class="CardThumb" style="background-image:url('{post.imagen}');">
-        <!-- <img src="{post.thumb}" alt="Poster for {post.title}" /> -->
-      </div>
-      <div class="CardMain">
-        <div class="CardTitle">
-          <h3>{post.title}</h3>
-        </div>
-        <div class="CardContent">
-          <p>{@html post.excerpt}</p>
-        </div>
-        <div class="CardFooter"></div>
-      </div>
-    </article>
+  <a class="CardItem" href="blog/{$url(post.slug)}">
+    <figure>
+      <img src="{post.imagen}" alt="Poster for {post.title}" />
+      <figcaption>
+        <h3>{post.title}</h3>
+        <p>{@html post.excerpt}</p>
+      </figcaption>
+    </figure>
   </a>
   {/each}
 </div>

@@ -28,22 +28,11 @@
             gap: $h3;
             padding: $h4;
             grid-auto-flow: row;
-            /* grid-auto-rows: 300px; */
         }
         
         @include media(s3) {
-            /* background-color: red; */
-            padding: $h6;
             grid-template-columns: repeat(auto-fit, minmax($h8, 1fr));
-            gap: $h6 $h4;
-        }
-        
-        &Article {
-            /* grid-column: span 2; */
-            @include media(s2) {
-                /* background-color: green; */
-                /* grid-column: inherit; */
-            }
+            gap: $h4;
         }
         
         &Content {
@@ -52,25 +41,17 @@
             grid-template-rows: auto auto 1fr;
             grid-auto-flow: row;
             grid-auto-rows: 1fr;
-            /* align-items: center; */
-            /* justify-items: center; */
             gap: $h2;
-            /* background-color: red; */
-            /* height: 500px; */
+
             h3 {
-                /* grid-column: span 2; */
                 width: 100%;
             }
             p {
-                /* grid-column: span 2; */
                 margin-bottom: 0;
             }
             img {
-                /* grid-column: span 2; */
                 min-width: $h5;
-                /* width: 50%; */
                 @include media(s2) {
-                    /* grid-column: inherit; */
                 }
             }
         }
@@ -116,7 +97,6 @@
 </style>
 
 <section class="Product">
-    
     {#each products as product}
         {#if (product.slug === slug)}
             <article class="ProductArticle">
