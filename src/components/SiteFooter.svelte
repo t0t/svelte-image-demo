@@ -6,9 +6,9 @@
   @import "../styles/main.scss";
 
   .Footer {
-    /* background-color: $light_grey; */
+    background-color: silver;
     padding: $h2;
-    /* width: 100%; */
+    margin-top: $h3;
     display: flex;
     flex-direction: column;
     @include media(s1) {

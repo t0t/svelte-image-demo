@@ -11,11 +11,11 @@ $light_grey: $color_3;
 $grey: #878787;
 $dark_grey: #242424;
 
-$primary: darkslategrey;
+$primary: $black_light;
 $secondary: #fe8e88;
 $tertiary: #82786f;
 $quaternary: darksalmon;
-
+$site_background: $color_3;
 
 $alpha_black: rgba($black, 0.9);
 $alpha_grey: rgba($black, 0.2);

@@ -1,6 +1,7 @@
 <script>
   import Image from "svelte-image";
   import PageTitle from "../components/PageTitle.svelte";
+  
 </script>
 
 <style lang="scss">

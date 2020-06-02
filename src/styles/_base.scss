@@ -39,7 +39,7 @@ a {
 
 }
 
-p {
+p, button {
   @include margin-bottom(1);
   @include media(s0) {
     @include type-setting(0);
