@@ -7,17 +7,31 @@
   @import "../styles/main.scss";
 
   .Cover {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
     padding: $h0;
-    grid-auto-rows: auto;
-    grid-auto-flow: row dense;
-    gap: $h1;
-    /* justify-items: center; */
+    /* justify-items: space-around; */
     align-items: center;
-
+    grid-template-columns: 1fr;
+    
+    @include media(s1) {
+      display: grid;
+      grid-auto-rows: auto;
+      grid-auto-flow: row dense;
+      gap: $h1;
+      grid-template-columns: repeat(auto-fill, minmax($h5,1fr));
+      /* background-color: $secondary; */
+    }
+    @include media(s2) {
+      grid-template-columns: repeat(4, 1fr);
+    }
     @include media(s3) {
       padding: $h3;
+    }
+
+    &:nth-child(1):nth-child(2) {
+      grid-column: span 2;
+      background-color: #fff;
     }
 
     svg {
@@ -57,53 +71,6 @@
           /*Alternativa a usar background-image*/
         }
       }
-
-      &:nth-child(1) {
-
-        /* grid-column: span 4; */
-        @include media(s2) {}
-      }
-
-      &:nth-child(2) {
-        @include media(s2) {
-          /* background-color: $tertiary; */
-        }
-      }
-
-      &:nth-child(4) {
-        @include media(s2) {
-          /* background-color: $alpha_grey; */
-          /* grid-column: span ; */
-        }
-
-        @include media(s3) {
-          /* grid-row: span 2; */
-        }
-      }
-
-      &:nth-child(5) {
-
-        /* border-color: $black_light; */
-        @include media(s3) {
-          /* grid-row: span 1; */
-        }
-      }
-
-      &:nth-child(6) {
-
-        /* background-color: $grey; */
-        @include media(s3) {
-          /* grid-row: span 1; */
-        }
-      }
-
-      &:nth-child(7) {
-        @include media(s2) {}
-
-        @include media(s3) {
-          /* grid-row: span 1; */
-        }
-      }
     }
   }
 </style>
@@ -113,15 +80,15 @@
 </svelte:head>
 
 <PageTitle>
-  <h1 slot="pagetitle">TODH Playground</h1>
-  <h2 slot="subtitle">Holistic Laboratory</h2>
+  <h1 slot="pagetitle">El proceso de la Creación</h1>
+  <h2 slot="subtitle">Matriz/modelo/prototipo base de cualquier cosa.</h2>
 </PageTitle>
 
 <div class="Cover">
 
   <div>
-    <strong>La Unidad</strong> <br>
-    Mar de Nun. Potencial que se actualiza.
+    <strong>Espacio</strong> <br>
+    cosmogénesis: El mar de Nun. Campo de posibilidades. Incognoscible. Potencial que se actualiza...
   </div>
   <div class="half-column">
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 168 168">
@@ -129,16 +96,17 @@
     </svg>
   </div>
   <div>
-    <h3>1 + 2 +3 + 4 = 10 = 1 + 0 = 1</h3>
+    <h3>0</h3>
   </div>
 
   <div>
+    <h3>1</h3>
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 168 168">
-      <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
+      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke" transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
     </svg>
-    1
   </div>
   <div>
+    <h3>2</h3>
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
       clip-rule="evenodd" viewBox="0 0 169 169">
       <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.03822 0 0 .03822 -452.1 -33.67)" />
@@ -146,9 +114,9 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
-    2
   </div>
   <div>
+    <h3>3</h3>
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
       clip-rule="evenodd" viewBox="0 0 169 169">
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke" stroke-width="26.17"
@@ -160,9 +128,9 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke" stroke-width="13.08"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
-    3
   </div>
   <div>
+    <h3>4</h3>
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 169 169">
       <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -225.8 25.37)" />
       <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -141.88 25.37)" />
@@ -177,13 +145,17 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
-    4
   </div>
 
   <div class="full-column">
-    <h3>4 etapas/dimensiones constituyen toda Unidad</h3>
+    <h3>La Unidad y sus etapas/dimensiones/partes...</h3>
   </div>
 
+  <div>mónada</div>
+  <div>díada</div>
+  <div>tríada</div>
+  <div>tétrada</div>
+  
   <div>punto</div>
   <div>línea</div>
   <div>superficie</div>
@@ -218,6 +190,11 @@
   <div>empatizar</div>
   <div>testear</div>
   <div>prototipar</div>
+  
+  <div>nigredo</div>
+  <div>albedo</div>
+  <div>citrinitas</div>
+  <div>rubedo</div>
 
   <div>...</div>
   <div>...</div>
@@ -246,7 +223,7 @@
     </svg>
   </div>
   <div>
-    <h3>1 + 2 +3 + 4 = 10 = 1 + 0 = 1</h3>
+    <h3>0 <br>+ 1 + 2 +3 + 4 = 10 = 1 + 0 = 1</h3>
   </div>
 
 </div>
