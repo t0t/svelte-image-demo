@@ -7,7 +7,7 @@
     Tab
   } from '../components/tabs.js';
   import PageTitle from "../components/PageTitle.svelte";
-  import Prism from "../components/PrismJS.svelte";
+  // import Prism from "../components/PrismJS.svelte";
 
   let code_sample = `
   @include media(s1) {
@@ -80,7 +80,8 @@
       /* padding: $h3; */
       /* width: 100%; */
       /* border: 1px solid $alpha_black; */
-      p {
+      p,
+      article {
         max-width: $h9;
         margin: 0;
         padding: 0 $h2;
@@ -287,7 +288,7 @@
     </svg>
   </div>
   <div>
-    <h3>0 <br>+ 1 + 2 +3 + 4 = 10 = 1 + 0 = 1</h3>
+    <h3>0 <br>+ 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1</h3>
   </div>
 
   <div class="full-row black-banner">
@@ -305,34 +306,104 @@
         d="M162.706 213.998c9.734-12.855 12.401-29.605 7.236-45.032-5.197-15.438-17.621-27.712-33.459-33.004" />
     </svg>
     <p>
-      <em>"La raíz profunda de la Creación es el orden y sentirlo nos reconecta dando forma a la conexión de todo cuanto existe."</em>
+      <em>"La raíz profunda de la Creación es el orden y sentirlo nos reconecta dando forma a la conexión de todo cuanto
+        existe."</em>
       <small>TODH</small>
     </p>
   </div>
 
   <div class="PageContent">
-    <h3>Una incursión Mística</h3>
-    <p>No es mi intención "reinventar la rueda", no hace falta. Vivimos en un mundo saturado de información. No pretendo con este proyecto ningún descubrimiento. Todo a sido dicho ya. La duda que me queda es si lo habremos comprendido o no. </p>
+    <h3>Una lógica de la observación</h3>
+    <p>La base de lo que es TODH, para mí queda sobradamente explicada contemplando la Tetractys, la vesica Piscis o el
+      número-idea Pitagórico. Es un contemplar dejándose penetrar por lo que se observa. Un rendirse ante la evidencia.
+      Es mirar hasta que ves, nada más. Es una escucha atenta. Todo lo que hay es agua, fuego, tierra, aire y un quinto
+      elemento... No són sólo elementos naturales, son principios abstractos, hechos de una sustancia que se encuentra
+      en nuestras ideas, nuestras formas de ser, hay fuego en las ideas, agua en las emociones, tierra en los hechos, y
+      aire en nuestros discursos. <strong>Antes es la espiral que el caracol. El caracol es la expresión de un principiio anterior.</strong> Conforme vas cayendo en lo que la esencia de las cosas es, te van importando cada vez menos las formas y más las relaciones. Mi ánimo es el de transmtir esta vivencia profunda y no tanto perseguir una base teórica
+      intelectual. Mucho se ha escrito ya por gente de talla muy superior a la mía, de modo que me parecería absurdo
+      tratar de llenar más páginas al respecto.</p>
+
+    <p>Recalcar la naturaleza sintética de este proyecto que apunta siempre al origen, a lo original, a lo obvio. Un
+      viaje que es de regreso a la Unidad. Una incursión. El símbolo tiene ese poder, condensa un vasto campo de
+      significados y los disuelve quedándose con lo esencial.</p>
+    <p>Me gusta comparar TODH con el juego del Tetris cuyo objetivo es desintegrar los objetos que van cayendo. El
+      jugador no añade más cosas al escenario, simplemente reconoce unas formas que aparecen sobre un fondo y comprende
+      cual es su orden. Nada más. Los objetos aparecen y desaparecen por sí mismos, tú no los creas, sólo los ves y
+      reconoces cual es su sitio. No inventas nada, no añades nada. TODH es simplemente orden "elemental".
+    </p>
+
+    <h3>Documentación</h3>
+    <p>
+      <strong>La mente abstracta</strong><br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio aperiam ratione!
+      <a href="https://www.lifeder.com/pensamiento-abstracto/" target="_blank">Pensamiento abstracto</a>
+    </p>
+    <p><strong>La analogía, la metáfora</strong><br>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, corporis non, qui porro consequatur dolorem quibusdam doloremque odit, quaerat at ratione a magnam adipisci explicabo facere eveniet eligendi. Officia, tempora.</p>
+    <p><strong>El símbolo universal</strong> <br>
+      "es el único en el que la relación entre el símbolo y lo que representa no
+      es coincidente, sino intrínseca. Tiene su raíz en la experiencia de la afinidad que existe entre una emoción o un pensamiento, por una parte, y una experiencia sensorial, por la otra. Puede ser llamado universal porque es
+      compartido por todos los hombres, en oposición no solamente al símbolo accidental, que es por su naturaleza
+      completamente personal, sino también al convencional, limitado al grupo de personas que participan del mismo
+      convenio. El símbolo universal tiene sus raíces en las propiedades de nuestro cuerpo, nuestros sentidos y nuestra
+      mente, que son comunes a todos los hombres, y por consiguiente no se limita a personas o grupos determinados. El
+      lenguaje del símbolo universal es, en verdad, la única lengua común que produjo la especie humana, lenguaje que
+      olvidó antes de que lograra elaborar un lenguaje convencional."
+      <em>Erich Fromm, El lenguaje olvidado, ed.cit., p. 22</em>
+    </p>
+    <ul>
+      <li><a
+          href="http://www.philosophica.info/voces/cassirer/Cassirer.html#:~:text=Cassirer%20define%20el%20s%C3%ADmbolo%20como,material%20que%20indica%20otra%20cosa.&text=Cada%20forma%20simb%C3%B3lica%20%E2%80%94la%20ciencia,s%C3%ADntesis%20de%20mundo%20y%20esp%C3%ADritu%E2%80%9D."
+          target="_blank">Ideas sobre el símbolo, de Cassirer</a></li>
+      <li><a href="https://www.uv.es/~japastor/mitos/b2-1.htm">Simbolismo</a></li>
+    </ul>
+    <p>
+      <a href="https://es.wikipedia.org/wiki/N%C3%BAmero_%C3%A1ureo#:~:text=El%20n%C3%BAmero%20%C3%A1ureo%20(tambi%C3%A9n%20llamado,honor%20al%20escultor%20griego%20Fidias."
+        target="_blank">Número áureo</a>
+    </p>
 
     <Tabs>
       <TabList>
-        <Tab>one</Tab>
-        <Tab>two</Tab>
-        <Tab>three</Tab>
+        <Tab>fuentes antiguas</Tab>
+        <Tab>libros</Tab>
+        <Tab>videos</Tab>
+        <Tab>varios</Tab>
       </TabList>
 
       <TabPanel>
-        <Prism language="css" code="{code_sample}" header="Sameple R Code"/>
+        <ul>
+          <li>Cosmogénesis babilónica</li>
+          <li>Cosmogénesis egipcia</li>
+          <li>Escuela Pitagórica</li>
+          <li>Hermetismo</li>
+          <li>Astrología Humanista</li>
+          <li>Filosofía presocrática</li>
+        </ul>
       </TabPanel>
 
       <TabPanel>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur numquam optio illum quidem sequi ipsam ipsa ex odit quos repellat?</p>
+        <ul>
+          <li><a href="https://es.wikipedia.org/wiki/Kybali%C3%B3n" target="_blank">Kybalión</a></li>
+          <li><a href="https://www.amazon.es/Inteligencia-Planetaria-Eugenio-Carutti/dp/1503231593" target="_blank">Inteligencia planetaria, Eugenio Carutti</a></li>
+          <li><a href="https://www.amazon.es/Divina-geometria-Jaime-Buhigas-Tallon/dp/8497347447/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=divina+geometria&qid=1591180234&s=books&sr=1-1" target="_blank">La divina geometría, Jaime Buhigas</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/La_tempestad_(teatro)" target="_blank">La tempestad, William Shakespeare</a></li>
+          <li><a href="https://www.amazon.es/Dimensiones-Real-Sergio-Trallero-Moreno/dp/8499495575" target="_blank">Dimensiones de lo real, Sergio Trallero</a></li>
+          <li><a href="https://www.amazon.es/Criterium-Naturae-Epitome-Chemicina-Espagiria/dp/8483529521/ref=asc_df_8483529521/?tag=googshopes-21&linkCode=df0&hvadid=65152623195&hvpos=&hvnetw=g&hvrand=5667847825217104711&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20270&hvtargid=pla-195165564795&psc=1" target="_blank">Criterium naturae, Abu Omar Yabir</a></li>
+          <li><a href="https://www.amazon.es/h%C3%A9roe-las-mil-caras-Psicoan%C3%A1lisis/dp/6071620139/ref=sr_1_1?adgrpid=61125144239&dchild=1&gclid=Cj0KCQjwlN32BRCCARIsADZ-J4tf-kAkEGRqOzMS6bmRlISZEP0jBVhLbJ4rzJcY4v2y5ONOSSuQwaQaArkoEALw_wcB&hvadid=311322587918&hvdev=c&hvlocphy=20270&hvnetw=g&hvqmt=e&hvrand=15590512515270863501&hvtargid=kwd-665270157485&hydadcr=22669_1816198&keywords=el+heroe+de+las+mil+caras+campbell&qid=1591180846&sr=8-1&tag=hydes-21" target="_blank">El héroe de las mil caras, Joseph Campbell</a></li>
+        </ul>
       </TabPanel>
 
       <TabPanel>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae sunt porro iste dignissimos nobis ab ipsa autem sequi eius eum mollitia ad eveniet dolor maxime recusandae, blanditiis placeat minima.</p>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=kIWu5KxEGVs" target="_blank">La creatividad es un proceso universal: Jaime Buhigas at TEDxRetiro</a></li>
+        </ul>
+      </TabPanel>
+      <TabPanel>
+        <ul>
+          <li><a href="http://www.wikilogica.org.es/wikilogica/index.php/L%C3%B3gica_Global_Convergente" target="_blank">Lógica global convergente</a></li>
+        </ul>
       </TabPanel>
     </Tabs>
+    <!-- <Prism language="css" code="{code_sample}" header="Sameple R Code" />  -->
   </div>
-
 </div>
