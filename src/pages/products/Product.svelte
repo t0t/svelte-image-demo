@@ -24,10 +24,6 @@
     &Title {
       /* grid-column: 3/3; */
     }
-    &Button {
-      align-self: stretch;
-      /* paddingw: 30px; */
-    }
     &Caption {
       /* align-self: stretch; */
       padding: 0 $h2;

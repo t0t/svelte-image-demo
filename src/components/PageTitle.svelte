@@ -12,9 +12,6 @@
     color: $black_light;
     align-items: center;
     flex-direction: column;
-    /* border-bottom-width: 1px;
-    border-bottom-style: dashed;
-    border-bottom-color: $alpha_grey; */
     background-color: $color_3;
     /* background-color: $alpha_grey; */
 
@@ -23,7 +20,6 @@
 
     @include media(s1) {
       margin-top: $h4;
-      /* @include padding-top(2); */
       @include padding-bottom(2);
     }
   }

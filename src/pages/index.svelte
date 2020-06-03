@@ -1,5 +1,15 @@
 <script>
     import PageTitle from "../components/PageTitle.svelte";
+    //   let code_sample = `
+//   @include media(s1) {
+//     display: grid;
+//     grid-auto-rows: auto;
+//     grid-auto-flow: row dense;
+//     gap: $h3 $h2;
+//     grid-template-columns: repeat(auto-fill, minmax($h5, 1fr));
+//     /* background-color: $secondary; */
+//   }
+// `;
 </script>
 
 <style lang="scss">

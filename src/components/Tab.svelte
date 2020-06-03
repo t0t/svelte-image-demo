@@ -10,16 +10,7 @@
 
 <style lang="scss">
 	@import "../styles/main.scss";
-	button {
-		background: none;
-		padding: $h0 $h1;
-		border: none;
-		border-bottom: 2px solid $site_background;
-		border-radius: 0;
-		color: $grey;
-		margin-bottom: 0;
-		height: $h3;
-	}
+
 	
 	.selected {
 		color: $primary;

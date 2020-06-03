@@ -29,7 +29,7 @@ article {
 	  outline: none;
 }
 a {
-  // color: $secondary;
+  color: $blue;
   text-decoration: none;
   transition: all .2s linear;
   
@@ -39,7 +39,7 @@ a {
 
 }
 
-p, button {
+p {
   @include margin-bottom(1);
   @include media(s0) {
     @include type-setting(0);
@@ -63,10 +63,6 @@ strong {
 }
 button:hover {
   cursor: pointer;
-}
-
-img {
-  // @include margin-bottom(1);
 }
 
 h1 {
@@ -103,7 +99,7 @@ h2 {
   @include media(s5) {
     @include type-setting(4);
   }
-  color: $quaternary; // revisar colocacion
+  color: $grey; // revisar colocacion
 }
 
 h3 {
@@ -116,7 +112,6 @@ h3 {
   }
   @include media(s2) {
     @include type-setting(1);
-    // background-color: red;
   }
   @include media(s3) {
     @include type-setting(2);
@@ -170,7 +165,7 @@ pre {
   background-color: $light_grey;
   @include margin-bottom(1);
   em {
-    color: green;
+    color: $secondary;
   }
   strong {
     color: $secondary;
@@ -184,13 +179,10 @@ pre > code {
 
 .title {
   @include margin-top(1);
-  // @include margin-bottom(1);
-
   @include media(s2) {
     @include margin-top(2);
     @include margin-bottom(1);
     text-align: center;
-    // background-color: red;
   }
   @include media(s3) {
     @include margin-top(4);
@@ -206,59 +198,23 @@ label {
 input, button, select, textarea {
 	font-family: inherit;
 	font-size: inherit;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
+	padding: $h0 $h1;
+	margin-bottom: $h0;
+	margin-right: 1px;
+	margin-left: 1px;
 	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+	border: 1px solid $grey;
+	// border-radius: 2px;
 }
 
 input:disabled {
-	color: #ccc;
+	color: $grey;
 }
 
 input[type="range"] {
 	height: 0;
 }
 
-button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
-}
-
-button:disabled {
-	color: #999;
-}
-
-button:not(:disabled):active {
-	background-color: #ddd;
-}
-
 button:focus {
-	border-color: #666;
+	border-color: $secondary;
 }
-
-
-// header hgroup h2 {
-//   color:red;
-// }
-// ****************************************
-// LAYOUT | MARGINS... SPACES
-// ****************************************
-
-
-// .golden-box {
-//   height: 100px;
-//   width: 100px * $phi;
-//   // background-color: red;
-// }
-
-
-// ****************************************
-// EXTRAS - DEBUGING
-// ****************************************
-
-// body * {
-//   border: 1px solid grey;
-// }

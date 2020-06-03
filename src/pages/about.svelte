@@ -9,21 +9,26 @@
   import PageTitle from "../components/PageTitle.svelte";
   // import Prism from "../components/PrismJS.svelte";
 
-  let code_sample = `
-  @include media(s1) {
-    display: grid;
-    grid-auto-rows: auto;
-    grid-auto-flow: row dense;
-    gap: $h3 $h2;
-    grid-template-columns: repeat(auto-fill, minmax($h5, 1fr));
-    /* background-color: $secondary; */
-  }
-`;
+  let cualidades = {
+    "uno": ["mónada", "punto", "pensar", "ser", "fuego", "orden", "discernir", "nigredo"],
+    "dos": ["díada", "línea", "sentir", "dualidad", "agua", "incubación", "empatizar", "albedo"],
+    "tres": ["tríada", "superficie", "decir", "símbolo", "aire", "conexión", "testear", "citrinitas"],
+    "cuatro": ["tétrada", "objeto", "hacer", "manifestación", "tierra", "forma", "prototipar", "rubedo"],
+  };
+
+  let count = 0;
+
+  const incrementCount = () => {
+    if (count < cualidades.uno.length - 1) {
+      count++
+      console.log(count);
+    }
+  };
+
 </script>
 
 <style lang="scss">
-  @import "../styles/main.scss";
-
+  @import "../styles/main";
   .Cover {
     display: flex;
     flex-direction: column;
@@ -70,7 +75,9 @@
       display: grid;
       align-items: center;
     }
-
+    .cualidades_btn {
+      grid-column: -1 / 1;
+    }
     .PageContent {
       grid-column: -1 / 1;
       display: grid;
@@ -162,13 +169,20 @@
   <div>
     <h3>0</h3>
   </div>
-
+  <div class="full-row">
+    <h3>La Unidad y sus dimensiones</h3>
+  </div>
   <div>
     <h3>1</h3>
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 168 168">
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
     </svg>
+    <h4 on:click={incrementCount}>
+      {#if count < cualidades.uno.length}
+       {cualidades.uno[count]}
+      {/if}
+    </h4>
   </div>
   <div>
     <h3>2</h3>
@@ -179,6 +193,7 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
+    <h4 on:click={incrementCount}>{cualidades.dos[count]}</h4>
   </div>
   <div>
     <h3>3</h3>
@@ -193,6 +208,7 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke" stroke-width="13.08"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
+    <h4 on:click={incrementCount}>{cualidades.tres[count]}</h4>
   </div>
   <div>
     <h3>4</h3>
@@ -210,62 +226,12 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
+    <h4 >{cualidades.cuatro[count]}</h4>
   </div>
-
-  <div class="full-row">
-    <h3>La Unidad y sus dimensiones</h3>
+  
+  <div class="cualidades_btn">
+    <button on:click={incrementCount}>No importa el contenido, importa el contenedor</button>
   </div>
-
-  <div>mónada</div>
-  <div>díada</div>
-  <div>tríada</div>
-  <div>tétrada</div>
-
-  <div>punto</div>
-  <div>línea</div>
-  <div>superficie</div>
-  <div>objeto</div>
-
-  <div>pensar</div>
-  <div><strong>sentir</strong></div>
-  <div>decir</div>
-  <div>hacer</div>
-
-  <div>ser</div>
-  <div>dualidad</div>
-  <div>símbolo</div>
-  <div>manifestación</div>
-
-  <div>fuego</div>
-  <div>agua</div>
-  <div>aire</div>
-  <div>tierra</div>
-
-  <div><strong>orden</strong></div>
-  <div>incubación</div>
-  <div><strong>conexión</strong></div>
-  <div><strong>forma</strong></div>
-
-  <div>infancia</div>
-  <div>adolescencia</div>
-  <div>madurez</div>
-  <div>vejez</div>
-
-  <div>idear/definir</div>
-  <div>empatizar</div>
-  <div>testear</div>
-  <div>prototipar</div>
-
-  <div>nigredo</div>
-  <div>albedo</div>
-  <div>citrinitas</div>
-  <div>rubedo</div>
-
-  <div>...</div>
-  <div>...</div>
-  <div>...</div>
-  <div>...</div>
-
   <div>
     <strong>La Tetractys Pitagórica</strong> <br>
     Década. Unidad.
@@ -319,7 +285,10 @@
       Es mirar hasta que ves, nada más. Es una escucha atenta. Todo lo que hay es agua, fuego, tierra, aire y un quinto
       elemento... No són sólo elementos naturales, son principios abstractos, hechos de una sustancia que se encuentra
       en nuestras ideas, nuestras formas de ser, hay fuego en las ideas, agua en las emociones, tierra en los hechos, y
-      aire en nuestros discursos. <strong>Antes es la espiral que el caracol. El caracol es la expresión de un principio anterior.</strong> Conforme vas cayendo en lo que la esencia de las cosas es, te van importando cada vez menos las formas y más las relaciones. Mi ánimo es el de transmitir esta vivencia profunda y no tanto perseguir una base teórica
+      aire en nuestros discursos. <strong>Antes es la espiral que el caracol. El caracol es la expresión de un principio
+        anterior.</strong> Conforme vas cayendo en lo que la esencia de las cosas es, te van importando cada vez menos
+      las formas y más las relaciones. Mi ánimo es el de transmitir esta vivencia profunda y no tanto perseguir una base
+      teórica
       intelectual. Mucho se ha escrito ya por gente de talla muy superior a la mía, de modo que me parecería absurdo
       tratar de llenar más páginas al respecto.</p>
 
@@ -339,10 +308,13 @@
       <a href="https://www.lifeder.com/pensamiento-abstracto/" target="_blank">Pensamiento abstracto</a>
     </p>
     <p><strong>La analogía, la metáfora</strong><br>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, corporis non, qui porro consequatur dolorem quibusdam doloremque odit, quaerat at ratione a magnam adipisci explicabo facere eveniet eligendi. Officia, tempora.</p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, corporis non, qui porro consequatur dolorem
+      quibusdam doloremque odit, quaerat at ratione a magnam adipisci explicabo facere eveniet eligendi. Officia,
+      tempora.</p>
     <p><strong>El símbolo universal</strong> <br>
       "es el único en el que la relación entre el símbolo y lo que representa no
-      es coincidente, sino intrínseca. Tiene su raíz en la experiencia de la afinidad que existe entre una emoción o un pensamiento, por una parte, y una experiencia sensorial, por la otra. Puede ser llamado universal porque es
+      es coincidente, sino intrínseca. Tiene su raíz en la experiencia de la afinidad que existe entre una emoción o un
+      pensamiento, por una parte, y una experiencia sensorial, por la otra. Puede ser llamado universal porque es
       compartido por todos los hombres, en oposición no solamente al símbolo accidental, que es por su naturaleza
       completamente personal, sino también al convencional, limitado al grupo de personas que participan del mismo
       convenio. El símbolo universal tiene sus raíces en las propiedades de nuestro cuerpo, nuestros sentidos y nuestra
@@ -384,23 +356,34 @@
       <TabPanel>
         <ul>
           <li><a href="https://es.wikipedia.org/wiki/Kybali%C3%B3n" target="_blank">Kybalión</a></li>
-          <li><a href="https://www.amazon.es/Inteligencia-Planetaria-Eugenio-Carutti/dp/1503231593" target="_blank">Inteligencia planetaria, Eugenio Carutti</a></li>
-          <li><a href="https://www.amazon.es/Divina-geometria-Jaime-Buhigas-Tallon/dp/8497347447/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=divina+geometria&qid=1591180234&s=books&sr=1-1" target="_blank">La divina geometría, Jaime Buhigas</a></li>
-          <li><a href="https://es.wikipedia.org/wiki/La_tempestad_(teatro)" target="_blank">La tempestad, William Shakespeare</a></li>
-          <li><a href="https://www.amazon.es/Dimensiones-Real-Sergio-Trallero-Moreno/dp/8499495575" target="_blank">Dimensiones de lo real, Sergio Trallero</a></li>
-          <li><a href="https://www.amazon.es/Criterium-Naturae-Epitome-Chemicina-Espagiria/dp/8483529521/ref=asc_df_8483529521/?tag=googshopes-21&linkCode=df0&hvadid=65152623195&hvpos=&hvnetw=g&hvrand=5667847825217104711&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20270&hvtargid=pla-195165564795&psc=1" target="_blank">Criterium naturae, Abu Omar Yabir</a></li>
-          <li><a href="https://www.amazon.es/h%C3%A9roe-las-mil-caras-Psicoan%C3%A1lisis/dp/6071620139/ref=sr_1_1?adgrpid=61125144239&dchild=1&gclid=Cj0KCQjwlN32BRCCARIsADZ-J4tf-kAkEGRqOzMS6bmRlISZEP0jBVhLbJ4rzJcY4v2y5ONOSSuQwaQaArkoEALw_wcB&hvadid=311322587918&hvdev=c&hvlocphy=20270&hvnetw=g&hvqmt=e&hvrand=15590512515270863501&hvtargid=kwd-665270157485&hydadcr=22669_1816198&keywords=el+heroe+de+las+mil+caras+campbell&qid=1591180846&sr=8-1&tag=hydes-21" target="_blank">El héroe de las mil caras, Joseph Campbell</a></li>
+          <li><a href="https://www.amazon.es/Inteligencia-Planetaria-Eugenio-Carutti/dp/1503231593"
+              target="_blank">Inteligencia planetaria, Eugenio Carutti</a></li>
+          <li><a
+              href="https://www.amazon.es/Divina-geometria-Jaime-Buhigas-Tallon/dp/8497347447/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=divina+geometria&qid=1591180234&s=books&sr=1-1"
+              target="_blank">La divina geometría, Jaime Buhigas</a></li>
+          <li><a href="https://es.wikipedia.org/wiki/La_tempestad_(teatro)" target="_blank">La tempestad, William
+              Shakespeare</a></li>
+          <li><a href="https://www.amazon.es/Dimensiones-Real-Sergio-Trallero-Moreno/dp/8499495575"
+              target="_blank">Dimensiones de lo real, Sergio Trallero</a></li>
+          <li><a
+              href="https://www.amazon.es/Criterium-Naturae-Epitome-Chemicina-Espagiria/dp/8483529521/ref=asc_df_8483529521/?tag=googshopes-21&linkCode=df0&hvadid=65152623195&hvpos=&hvnetw=g&hvrand=5667847825217104711&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=20270&hvtargid=pla-195165564795&psc=1"
+              target="_blank">Criterium naturae, Abu Omar Yabir</a></li>
+          <li><a
+              href="https://www.amazon.es/h%C3%A9roe-las-mil-caras-Psicoan%C3%A1lisis/dp/6071620139/ref=sr_1_1?adgrpid=61125144239&dchild=1&gclid=Cj0KCQjwlN32BRCCARIsADZ-J4tf-kAkEGRqOzMS6bmRlISZEP0jBVhLbJ4rzJcY4v2y5ONOSSuQwaQaArkoEALw_wcB&hvadid=311322587918&hvdev=c&hvlocphy=20270&hvnetw=g&hvqmt=e&hvrand=15590512515270863501&hvtargid=kwd-665270157485&hydadcr=22669_1816198&keywords=el+heroe+de+las+mil+caras+campbell&qid=1591180846&sr=8-1&tag=hydes-21"
+              target="_blank">El héroe de las mil caras, Joseph Campbell</a></li>
         </ul>
       </TabPanel>
 
       <TabPanel>
         <ul>
-          <li><a href="https://www.youtube.com/watch?v=kIWu5KxEGVs" target="_blank">La creatividad es un proceso universal: Jaime Buhigas at TEDxRetiro</a></li>
+          <li><a href="https://www.youtube.com/watch?v=kIWu5KxEGVs" target="_blank">La creatividad es un proceso
+              universal: Jaime Buhigas at TEDxRetiro</a></li>
         </ul>
       </TabPanel>
       <TabPanel>
         <ul>
-          <li><a href="http://www.wikilogica.org.es/wikilogica/index.php/L%C3%B3gica_Global_Convergente" target="_blank">Lógica global convergente</a></li>
+          <li><a href="http://www.wikilogica.org.es/wikilogica/index.php/L%C3%B3gica_Global_Convergente"
+              target="_blank">Lógica global convergente</a></li>
         </ul>
       </TabPanel>
     </Tabs>

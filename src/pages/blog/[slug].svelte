@@ -15,7 +15,6 @@
 
     .Post {
         padding: $h2;
-        /* background-color: $tertiary; */
         padding-top: $h5;
         
         @include media(s2) {
@@ -24,6 +23,8 @@
         }
         &Article h3 {
             text-align: center;
+            color: $grey;
+            font-weight: normal;
         }
 
         &Content {
@@ -42,9 +43,13 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: $h5;
-                max-width: 65%;
+                max-width: 90%;
                 /* border: 1px solid $alpha_grey; */
                 padding: $h3;
+                /* background-color: $tertiary; */
+            }
+            @include media(s3) {
+                max-width: 68%;
             }
         }
 
