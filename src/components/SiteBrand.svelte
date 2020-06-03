@@ -42,7 +42,7 @@
 </style>
 
 <div class="SiteBrand">
-    <a href="./" alt="Main navigation">
+    <a href="." alt="Main navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 39">
             <title>Brand Logo</title>
             <g fill-rule="evenodd" stroke-linejoin="round" stroke-linecap="round">
