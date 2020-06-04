@@ -49,11 +49,14 @@ p {
   }
   @include media(s2) {
     @include type-setting(0);
+    max-width: $s2;
   }
   @include media(s3) {
+    max-width: $h9;
     @include type-setting(1);
   }
   @include media(s4) {
+    max-width: $h10;
     @include type-setting(2);
   }
 }

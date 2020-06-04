@@ -8,7 +8,9 @@
   } from '../components/tabs.js';
   import PageTitle from "../components/PageTitle.svelte";
   // import Prism from "../components/PrismJS.svelte";
-  import { fade } from 'svelte/transition';
+  import {
+    fade
+  } from 'svelte/transition';
   let visible = true;
   let cualidades = {
     "uno": ["mónada", "punto", "pensar", "ser", "fuego", "orden", "discernir", "nigredo"],
@@ -43,123 +45,38 @@
       console.log(count);
     }
   };
-
 </script>
 
 <style lang="scss">
   @import "../styles/main";
-  .Cover {
-    display: flex;
-    flex-direction: column;
+
+  .black-banner {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-    grid-template-columns: 1fr;
+    height: auto;
+    background-color: $black;
+    gap: $h3;
+    color: $white;
 
-    @include media(s1) {
-      display: grid;
-      grid-auto-rows: auto;
-      grid-auto-flow: row dense;
-      gap: $h3 $h2;
-      grid-template-columns: repeat(auto-fill, minmax($h5, 1fr));
-      /* background-color: $secondary; */
+    small {
+      padding-bottom: 0;
     }
 
-    @include media(s2) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    @include media(s3) {
-      /* padding: $h3; */
-    }
-
-    &:nth-child(1):nth-child(2) {
-      grid-column: span 2;
-      background-color: #fff;
+    p {
+      margin-bottom: 0;
     }
 
     svg {
       fill: $alpha_black;
+      object-fit: cover;
 
       circle,
       path {
-        stroke: $alpha_black;
+        stroke: $white;
         stroke-width: .5;
-      }
-    }
-
-    .full-row {
-      grid-column: -1/1;
-      padding: 0 $h4;
-      text-align: center;
-      display: grid;
-      align-items: center;
-    }
-    .cualidades_btn {
-      grid-column: -1 / 1;
-    }
-    .PageContent {
-      grid-column: -1 / 1;
-      display: grid;
-      gap: $h2;
-      justify-items: center;
-
-      /* padding: $h3; */
-      /* width: 100%; */
-      /* border: 1px solid $alpha_black; */
-      p,
-      article {
-        max-width: $h9;
-        margin: 0;
-        padding: 0 $h2;
-
-        @include media(s3) {
-          max-width: $h10;
-        }
-      }
-    }
-
-    .black-banner {
-      background-color: $alpha_black;
-      padding-top: $h3;
-      padding-bottom: $h4;
-      color: $white;
-      display: grid;
-      grid-auto-flow: column;
-      grid-template-columns: 1fr 1fr;
-      align-items: center;
-      height: auto;
-
-      svg {
-        width: 50%;
-        object-fit: cover;
-
-        path {
-          stroke: $white;
-        }
-      }
-    }
-
-    .half-column {
-      grid-column: 2 / span 2;
-    }
-
-    div {
-      text-align: center;
-      padding: 0 $h0;
-      background-color: $light_grey;
-      width: 100%;
-      /* justify-content: center; */
-      align-items: center;
-
-      figure {
-        width: 100%;
-
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-          /*Alternativa a usar background-image*/
-        }
       }
     }
   }
@@ -174,107 +91,109 @@
   <h2 slot="subtitle">Matriz/modelo/prototipo base de cualquier cosa.</h2>
 </PageTitle>
 
-<div class="Cover">
+<div class="Grid GridHome">
 
-  <div>
-    <strong>Espacio</strong> <br>
-    cosmogénesis: El mar de Nun. Campo de posibilidades. Incognoscible. Potencial que se actualiza...
-  </div>
-  <div class="half-column">
-    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 168 168">
-      <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
-    </svg>
-  </div>
-  <div>
-    <h3>0</h3>
-  </div>
-  <div class="full-row">
-    <h3>La Unidad y sus dimensiones</h3>
-  </div>
-  <div>
-    <h3>1</h3>
-    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 168 168">
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
-    </svg>
-    <h4 on:click={incrementUno} transition:fade>
+  <div class="Grid GridItem">
+    <p>
+      <strong>Espacio</strong> <br>
+      cosmogénesis: El mar de Nun. Campo de posibilidades. Incognoscible. Potencial que se actualiza...
+    </p>
+    <div class="half-column">
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 168 168">
+        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
+      </svg>
+    </div>
+    <div>
+      <h3>0</h3>
+    </div>
+    <div class="full-row">
+      <h3>La Unidad y sus dimensiones</h3>
+    </div>
+    <div>
+      <h3>1</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 168 168">
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
+      </svg>
+      <h4 on:click={incrementUno} transition:fade>
         {cualidades.uno[count]}
       </h4>
-  </div>
-  <div>
-    <h3>2</h3>
-    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-      clip-rule="evenodd" viewBox="0 0 169 169">
-      <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.03822 0 0 .03822 -452.1 -33.67)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.03822 0 0 .03822 -536 -33.67)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
-    </svg>
-    <h4 on:click={incrementDos}>{cualidades.dos[count]}</h4>
-  </div>
-  <div>
-    <h3>3</h3>
-    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-      clip-rule="evenodd" viewBox="0 0 169 169">
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.03822 0 0 .03822 -452.1 -33.668)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.03822 0 0 .03822 -536 -33.668)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.03822 0 0 .03822 -493.61 -33.668)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke" stroke-width="13.08"
-        transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
-    </svg>
-    <h4 on:click={incrementTres}>{cualidades.tres[count]}</h4>
-  </div>
-  <div>
-    <h3>4</h3>
-    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 169 169">
-      <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -225.8 25.37)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -141.88 25.37)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -267.75 25.37)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -183.76 25.37)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.03822 0 0 .03822 -493.93 -33.67)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.03822 0 0 .03822 -452.1 -33.67)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.03822 0 0 .03822 -536 -33.67)" />
-      <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
-    </svg>
-    <h4>{cualidades.cuatro[count]}</h4>
-  </div>
-  
-  <div class="cualidades_btn">
-    <button on:click={incrementCuatro}>Cambia el contenido, no el contenedor</button>
-  </div>
-  <div>
-    <strong>La Tetractys Pitagórica</strong> <br>
-    Década. Unidad.
-  </div>
-  <div class="half-column">
-    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 193 169">
-      <path fill="none"
-        d="M4.054 164.65l30.564-52.938 30.563 52.938H4.054zM65.763 164.65l30.563-52.938 30.562 52.938H65.763zM127.186 164.65l30.563-52.938 30.563 52.938h-61.126zM34.936 111.176L65.5 58.24l30.564 52.936H34.936zM96.442 111.176l30.563-52.936 30.564 52.936H96.442zM65.787 57.84L96.35 4.902l30.562 52.936H65.787z"
-        vector-effect="non-scaling-stroke" />
-      <circle cx="168.317" cy="18.147" r="6.044" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="214.102" cy="98.498" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="259.858" cy="178.241" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="305.727" cy="257.757" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="214.102" cy="257.757" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="123.237" cy="257.757" r="6.044" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="30.816" cy="257.757" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="76.892" cy="178.241" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="168.317" cy="178.241" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-      <circle cx="123.237" cy="98.498" r="6.044" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
-    </svg>
-  </div>
-  <div>
-    <h3>0 <br>+ 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1</h3>
+    </div>
+    <div>
+      <h3>2</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+        clip-rule="evenodd" viewBox="0 0 169 169">
+        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.03822 0 0 .03822 -452.1 -33.67)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.03822 0 0 .03822 -536 -33.67)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
+      </svg>
+      <h4 on:click={incrementDos}>{cualidades.dos[count]}</h4>
+    </div>
+    <div>
+      <h3>3</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
+        clip-rule="evenodd" viewBox="0 0 169 169">
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.03822 0 0 .03822 -452.1 -33.668)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.03822 0 0 .03822 -536 -33.668)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.03822 0 0 .03822 -493.61 -33.668)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          stroke-width="13.08" transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
+      </svg>
+      <h4 on:click={incrementTres}>{cualidades.tres[count]}</h4>
+    </div>
+    <div>
+      <h3>4</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 169 169">
+        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -225.8 25.37)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -141.88 25.37)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -267.75 25.37)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -183.76 25.37)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.03822 0 0 .03822 -493.93 -33.67)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.03822 0 0 .03822 -452.1 -33.67)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.03822 0 0 .03822 -536 -33.67)" />
+        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+          transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
+      </svg>
+      <h4>{cualidades.cuatro[count]}</h4>
+    </div>
+
+    <div class="cualidades_btn">
+      <button on:click={incrementCuatro}>Cambia el contenido, no el contenedor</button>
+    </div>
+    <div>
+      <strong>La Tetractys Pitagórica</strong> <br>
+      Década. Unidad.
+    </div>
+    <div class="half-column">
+      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 193 169">
+        <path fill="none"
+          d="M4.054 164.65l30.564-52.938 30.563 52.938H4.054zM65.763 164.65l30.563-52.938 30.562 52.938H65.763zM127.186 164.65l30.563-52.938 30.563 52.938h-61.126zM34.936 111.176L65.5 58.24l30.564 52.936H34.936zM96.442 111.176l30.563-52.936 30.564 52.936H96.442zM65.787 57.84L96.35 4.902l30.562 52.936H65.787z"
+          vector-effect="non-scaling-stroke" />
+        <circle cx="168.317" cy="18.147" r="6.044" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="214.102" cy="98.498" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="259.858" cy="178.241" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="305.727" cy="257.757" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="214.102" cy="257.757" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="123.237" cy="257.757" r="6.044" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="30.816" cy="257.757" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="76.892" cy="178.241" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="168.317" cy="178.241" r="6.045" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+        <circle cx="123.237" cy="98.498" r="6.044" transform="matrix(.67024 0 0 .67024 -16.6 -8.11)" />
+      </svg>
+    </div>
+    <div>
+      <h3>0 <br>+ 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1</h3>
+    </div>
   </div>
 
-  <div class="full-row black-banner">
+  <div class="GridItemFluid  black-banner">
     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" clip-rule="evenodd"
       viewBox="0 0 384 247">
       <path fill="none" stroke="#ff3b05" stroke-dasharray="8.3 8.3" stroke-dashoffset="1.87"
@@ -295,7 +214,7 @@
     </p>
   </div>
 
-  <div class="PageContent">
+  <div class="GridItem  PageContent">
     <h3>Una lógica de la observación</h3>
     <p>La base de lo que es TODH, para mí queda sobradamente explicada contemplando la Tetractys, la vesica Piscis o el
       número-idea Pitagórico. Es un contemplar dejándose penetrar por lo que se observa. Un rendirse ante la evidencia.
@@ -332,18 +251,20 @@
       "es el único en el que la relación entre el símbolo y lo que representa no
       es coincidente, sino intrínseca. Tiene su raíz en la experiencia de la afinidad que existe entre una emoción o un
       pensamiento, por una parte, y una experiencia sensorial, por la otra. Puede ser llamado universal porque es
-      compartido por todos los hombres, en oposición no solamente al símbolo accidental, que es por su naturaleza completamente personal, sino también al convencional, limitado al grupo de personas que participan del mismo
+      compartido por todos los hombres, en oposición no solamente al símbolo accidental, que es por su naturaleza
+      completamente personal, sino también al convencional, limitado al grupo de personas que participan del mismo
       convenio. El símbolo universal tiene sus raíces en las propiedades de nuestro cuerpo, nuestros sentidos y nuestra
       mente, que son comunes a todos los hombres, y por consiguiente no se limita a personas o grupos determinados. El
       lenguaje del símbolo universal es, en verdad, la única lengua común que produjo la especie humana, lenguaje que
       olvidó antes de que lograra elaborar un lenguaje convencional."
       <em>Erich Fromm, El lenguaje olvidado, ed.cit., p. 22</em>
     </p>
-      <p>
-        <strong>Arquetipo</strong>
-        Un arquetipo (del griego αρχή, arjé, ‘fuente’, ‘principio’ u ‘origen’, y τυπος, tipos, ‘impresión’ o ‘modelo’) es el patrón ejemplar del cual se derivan otros objetos, ideas o conceptos.
-        <a href="https://es.wikipedia.org/wiki/Arquetipo">Wiki</a>
-      </p>
+    <p>
+      <strong>Arquetipo</strong>
+      Un arquetipo (del griego αρχή, arjé, ‘fuente’, ‘principio’ u ‘origen’, y τυπος, tipos, ‘impresión’ o ‘modelo’) es
+      el patrón ejemplar del cual se derivan otros objetos, ideas o conceptos.
+      <a href="https://es.wikipedia.org/wiki/Arquetipo">Wiki</a>
+    </p>
     <ul>
       <li><a
           href="http://www.philosophica.info/voces/cassirer/Cassirer.html#:~:text=Cassirer%20define%20el%20s%C3%ADmbolo%20como,material%20que%20indica%20otra%20cosa.&text=Cada%20forma%20simb%C3%B3lica%20%E2%80%94la%20ciencia,s%C3%ADntesis%20de%20mundo%20y%20esp%C3%ADritu%E2%80%9D."

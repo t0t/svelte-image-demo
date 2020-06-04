@@ -1,16 +1,19 @@
 <style lang="scss">
 	@import "../styles/main.scss";
-	article {
-		background-color: white;
-		height: 100vh;
-	}
 </style>
 
-<article>
-	<h1>
-		Cero.
-	</h1>
-	<p>
-		Potencialidad absoluta. Cualquier cosa puede o no-puede suceder. Incognoscible. Aquí no sé.
-	</p>
+<article class="Grid GridSteps">
+	<div>
+		<h3>
+			Cero.
+		</h3>
+	</div>
+	<div>
+		<img src="img/grafico-2.svg" alt="">
+	</div>
+	<div>
+		<p>
+			Potencialidad absoluta. Cualquier cosa puede o no-puede suceder. Incognoscible. Aquí no sé.
+		</p>
+	</div>
 </article>

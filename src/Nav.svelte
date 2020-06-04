@@ -7,7 +7,7 @@
   const links = [
     ["./about", "TODH"],
     ["./blog", "Blog"],
-    ["./products", "Artwork"],
+    ["./products", "Artefactos"],
   ];
 </script>
 

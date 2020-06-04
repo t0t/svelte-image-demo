@@ -6,21 +6,32 @@
   @import "../styles/main.scss";
 
   .Footer {
-    background-color: silver;
     padding: $h2;
     margin-top: $h3;
     display: flex;
     flex-direction: column;
+    background-color: $silver;
+
+    svg {
+      fill: $alpha_black;
+
+      circle,
+      path {
+        stroke: none;
+      }
+    }
+
     @include media(s1) {
       display: grid;
       grid-template-columns: 0.6fr 1.4fr;
       grid-template-rows: .2fr 5%;
       gap: $h2 $h2;
       grid-template-areas:
-      "Avatar Bio"
-      "Player Player";
+        "Avatar Bio"
+        "Player Player";
       padding: $h3;
     }
+
     @include media(s2) {
       gap: $h3 $h3;
       padding: $h3;
@@ -40,9 +51,11 @@
       justify-self: end;
     }
   }
+
   .BioExcerpt {
     max-width: $h9;
   }
+
   .Bio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -93,7 +106,9 @@
     <div class="Excerpt">
       <small class="BioExcerpt">
         <strong>Sergio Forés</strong>
-        es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc, pero también plasmar ideas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina TODH.
+        es artista plástico y diseñador. Le encanta prototipar en el navegador usando Sass, CSS-Grid, SvelteJS, etc,
+        pero también plasmar ideas en cuadros 3D y re(li)garlo TODO desde una visión/percepción holística que denomina
+        TODH.
       </small>
     </div>
     <ul class="Links">
