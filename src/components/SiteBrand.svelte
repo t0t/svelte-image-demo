@@ -1,3 +1,15 @@
+<script>
+    // import {
+    //     url
+    // } from "@sveltech/routify";
+    // let home = "./"
+    // const links = [
+    //     ["./about", "TODH"],
+    //     ["./blog", "Blog"],
+    //     ["./products", "Artefactos"],
+    // ];
+</script>
+
 <style lang="scss">
     @import "../styles/main.scss";
 
@@ -5,12 +17,15 @@
         padding-left: $h0;
         display: grid;
         align-items: center;
+
         &:hover {
             /* transition: all 1s linear; */
             cursor: pointer;
+
             circle:nth-child(1) {
                 fill: $black;
             }
+
             circle:nth-child(2) {
                 fill: $white;
             }
@@ -20,29 +35,31 @@
             padding-left: $h2;
         }
     }
-    
+
     a {
         display: grid;
     }
-    
+
     svg {
         width: $h3;
+
         circle:nth-child(2) {
             fill: $white;
         }
+
         @include media(s2) {
             circle:nth-child(1) {
                 fill: $white;
             }
+
             circle:nth-child(2) {
                 fill: $black;
             }
         }
     }
 </style>
-
 <div class="SiteBrand">
-    <a href="." alt="Main navigation">
+    <a href="./" alt="Main navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 39">
             <title>Brand Logo</title>
             <g fill-rule="evenodd" stroke-linejoin="round" stroke-linecap="round">
