@@ -6,7 +6,7 @@
 	@import "../styles/main.scss";
 </style>
 
-<article class="Grid GridSteps">
+<article class="GridSteps">
 	<figure>
 		<IconCuatro />
 		<figcaption>El proceso de la Creación</figcaption>

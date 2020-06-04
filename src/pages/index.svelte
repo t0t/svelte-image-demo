@@ -38,6 +38,9 @@
 
 <style lang="scss">
   @import "../styles/main.scss";
+  .GridSteps {
+    
+  }
 </style>
 
 <svelte:head>

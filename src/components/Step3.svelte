@@ -6,7 +6,7 @@
 	
 </style>
 
-<article class="Grid GridSteps">
+<article class="GridSteps">
 	<figure>
 		<!-- <img src="img/tres.svg" alt=""> -->
 		<IconTres />

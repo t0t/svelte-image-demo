@@ -5,7 +5,7 @@
 	@import "../styles/main.scss";
 </style>
 
-<article class="Grid GridSteps">
+<article class="GridSteps">
 	<figure>
 		<!-- <img src="img/dos.svg" alt=""> -->
 		<IconDos />

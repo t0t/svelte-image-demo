@@ -12,9 +12,6 @@
         grid-template-columns: repeat(auto-fill, 1fr $h5);
         grid-auto-flow: row;
         height: $h4;
-        /* border-bottom-width: 1px;
-        border-bottom-style: dashed;
-        border-bottom-color: $alpha_grey; */
         background-color: $color_3;
 
         @include media(s1) {
