@@ -8,7 +8,8 @@
   } from '../components/tabs.js';
   import PageTitle from "../components/PageTitle.svelte";
   // import Prism from "../components/PrismJS.svelte";
-
+  import { fade } from 'svelte/transition';
+  let visible = true;
   let cualidades = {
     "uno": ["mónada", "punto", "pensar", "ser", "fuego", "orden", "discernir", "nigredo"],
     "dos": ["díada", "línea", "sentir", "dualidad", "agua", "incubación", "empatizar", "albedo"],
@@ -18,8 +19,26 @@
 
   let count = 0;
 
-  const incrementCount = () => {
+  const incrementUno = () => {
     if (count < cualidades.uno.length - 1) {
+      count++
+    }
+  };
+  const incrementDos = () => {
+    if (count < cualidades.dos.length - 1) {
+      count++
+      console.log(count);
+    }
+  };
+  const incrementTres = () => {
+    if (count < cualidades.tres.length - 1) {
+      count++
+      console.log(count);
+    }
+  };
+  const incrementCuatro = () => {
+    count === 0;
+    if (count < cualidades.cuatro.length - 1) {
       count++
       console.log(count);
     }
@@ -178,11 +197,9 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
     </svg>
-    <h4 on:click={incrementCount}>
-      {#if count < cualidades.uno.length}
-       {cualidades.uno[count]}
-      {/if}
-    </h4>
+    <h4 on:click={incrementUno} transition:fade>
+        {cualidades.uno[count]}
+      </h4>
   </div>
   <div>
     <h3>2</h3>
@@ -193,7 +210,7 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
-    <h4 on:click={incrementCount}>{cualidades.dos[count]}</h4>
+    <h4 on:click={incrementDos}>{cualidades.dos[count]}</h4>
   </div>
   <div>
     <h3>3</h3>
@@ -208,7 +225,7 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke" stroke-width="13.08"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
-    <h4 on:click={incrementCount}>{cualidades.tres[count]}</h4>
+    <h4 on:click={incrementTres}>{cualidades.tres[count]}</h4>
   </div>
   <div>
     <h3>4</h3>
@@ -226,11 +243,11 @@
       <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
     </svg>
-    <h4 >{cualidades.cuatro[count]}</h4>
+    <h4>{cualidades.cuatro[count]}</h4>
   </div>
   
   <div class="cualidades_btn">
-    <button on:click={incrementCount}>No importa el contenido, importa el contenedor</button>
+    <button on:click={incrementCuatro}>Cambia el contenido, no el contenedor</button>
   </div>
   <div>
     <strong>La Tetractys Pitagórica</strong> <br>
@@ -315,14 +332,18 @@
       "es el único en el que la relación entre el símbolo y lo que representa no
       es coincidente, sino intrínseca. Tiene su raíz en la experiencia de la afinidad que existe entre una emoción o un
       pensamiento, por una parte, y una experiencia sensorial, por la otra. Puede ser llamado universal porque es
-      compartido por todos los hombres, en oposición no solamente al símbolo accidental, que es por su naturaleza
-      completamente personal, sino también al convencional, limitado al grupo de personas que participan del mismo
+      compartido por todos los hombres, en oposición no solamente al símbolo accidental, que es por su naturaleza completamente personal, sino también al convencional, limitado al grupo de personas que participan del mismo
       convenio. El símbolo universal tiene sus raíces en las propiedades de nuestro cuerpo, nuestros sentidos y nuestra
       mente, que son comunes a todos los hombres, y por consiguiente no se limita a personas o grupos determinados. El
       lenguaje del símbolo universal es, en verdad, la única lengua común que produjo la especie humana, lenguaje que
       olvidó antes de que lograra elaborar un lenguaje convencional."
       <em>Erich Fromm, El lenguaje olvidado, ed.cit., p. 22</em>
     </p>
+      <p>
+        <strong>Arquetipo</strong>
+        Un arquetipo (del griego αρχή, arjé, ‘fuente’, ‘principio’ u ‘origen’, y τυπος, tipos, ‘impresión’ o ‘modelo’) es el patrón ejemplar del cual se derivan otros objetos, ideas o conceptos.
+        <a href="https://es.wikipedia.org/wiki/Arquetipo">Wiki</a>
+      </p>
     <ul>
       <li><a
           href="http://www.philosophica.info/voces/cassirer/Cassirer.html#:~:text=Cassirer%20define%20el%20s%C3%ADmbolo%20como,material%20que%20indica%20otra%20cosa.&text=Cada%20forma%20simb%C3%B3lica%20%E2%80%94la%20ciencia,s%C3%ADntesis%20de%20mundo%20y%20esp%C3%ADritu%E2%80%9D."
@@ -343,7 +364,7 @@
       </TabList>
 
       <TabPanel>
-        <ul>
+        <ul transition:fade>
           <li>Cosmogénesis babilónica</li>
           <li>Cosmogénesis egipcia</li>
           <li>Escuela Pitagórica</li>
@@ -354,7 +375,7 @@
       </TabPanel>
 
       <TabPanel>
-        <ul>
+        <ul transition:fade>
           <li><a href="https://es.wikipedia.org/wiki/Kybali%C3%B3n" target="_blank">Kybalión</a></li>
           <li><a href="https://www.amazon.es/Inteligencia-Planetaria-Eugenio-Carutti/dp/1503231593"
               target="_blank">Inteligencia planetaria, Eugenio Carutti</a></li>
@@ -375,13 +396,13 @@
       </TabPanel>
 
       <TabPanel>
-        <ul>
+        <ul transition:fade>
           <li><a href="https://www.youtube.com/watch?v=kIWu5KxEGVs" target="_blank">La creatividad es un proceso
               universal: Jaime Buhigas at TEDxRetiro</a></li>
         </ul>
       </TabPanel>
       <TabPanel>
-        <ul>
+        <ul transition:fade>
           <li><a href="http://www.wikilogica.org.es/wikilogica/index.php/L%C3%B3gica_Global_Convergente"
               target="_blank">Lógica global convergente</a></li>
         </ul>
