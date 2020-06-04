@@ -51,10 +51,10 @@
 
 
 <div class="GridStepsNav">
-  <button on:click="{prev}" disabled="{step < 1}">Prev</button>
-  <button on:click="{next}" disabled="{step > 3}">Next</button>
+  <button on:click="{prev}" disabled="{step < 1}">&lt;</button>
+  <button on:click="{next}" disabled="{step > 3}">&gt;</button>
 
-  Dimensión {step} de 0 + 4
+  <em>{ step } / 4</em>
 </div>
 
 <div class="Grid GridSteps">

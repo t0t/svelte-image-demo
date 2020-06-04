@@ -1,17 +1,18 @@
+<script>
+	import IconDos from "./icons/IconDos.svelte";
+</script>
 <style lang="scss">
 	@import "../styles/main.scss";
 </style>
 
 <article class="Grid GridSteps">
+	<figure>
+		<!-- <img src="img/dos.svg" alt=""> -->
+		<IconDos />
+		<figcaption>El proceso de la Creación</figcaption>
+	</figure>
 	<div>
-		<h3>
-			Dos
-		</h3>
-	</div>
-	<div>
-		<img src="img/grafico-2.svg" alt="">
-	</div>
-	<div>
+		<h3>Dos</h3>
 		<p>
 			Se produce la escucha de lo de afuera, y por lo tanto se toma consciencia de un "adentro". Se produce una división entre ambos. Una membrana delimita y al mismo tiempo pone en contacto dos cosas.
 		</p>

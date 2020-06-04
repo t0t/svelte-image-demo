@@ -3,15 +3,14 @@
 </style>
 
 <article class="Grid GridSteps">
+	<figure>
+		<img src="img/grafico-2.svg" alt="">
+		<figcaption>El proceso de la Creación</figcaption>
+	</figure>
 	<div>
 		<h3>
 			Cero.
 		</h3>
-	</div>
-	<div>
-		<img src="img/grafico-2.svg" alt="">
-	</div>
-	<div>
 		<p>
 			Potencialidad absoluta. Cualquier cosa puede o no-puede suceder. Incognoscible. Aquí no sé.
 		</p>

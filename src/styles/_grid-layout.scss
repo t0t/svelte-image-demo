@@ -106,18 +106,27 @@
     .GridItem:nth-child(1) {
       // background-color: red;
       grid-column: -1/1;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(auto-fill, minmax(h3, 1fr));
       align-items: center;
+      text-align: center;
     }
   }
-
+  p {
+    text-align: center;
+  }
   &Nav {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-bottom: $h3;
+    
     button {
+      margin-right: $h2;
       margin-bottom: 0;
+      border-radius: 50%;
+    }
+    button[disabled] {
+      display: none;
     }
   }
 }

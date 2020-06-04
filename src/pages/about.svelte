@@ -7,6 +7,10 @@
     Tab
   } from '../components/tabs.js';
   import PageTitle from "../components/PageTitle.svelte";
+  import IconUno from "../components/icons/IconUno.svelte";
+  import IconDos from "../components/icons/IconDos.svelte";
+  import IconTres from "../components/icons/IconTres.svelte";
+  import IconCuatro from "../components/icons/IconCuatro.svelte";
   // import Prism from "../components/PrismJS.svelte";
   import {
     fade
@@ -111,56 +115,24 @@
     </div>
     <div>
       <h3>1</h3>
-      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 168 168">
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.07646 0 0 .07646 -1073.328 -152.287)" />
-      </svg>
+      <IconUno />
       <h4 on:click={incrementUno} transition:fade>
         {cualidades.uno[count]}
       </h4>
     </div>
     <div>
       <h3>2</h3>
-      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-        clip-rule="evenodd" viewBox="0 0 169 169">
-        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.03822 0 0 .03822 -452.1 -33.67)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.03822 0 0 .03822 -536 -33.67)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
-      </svg>
+      <IconDos />
       <h4 on:click={incrementDos}>{cualidades.dos[count]}</h4>
     </div>
     <div>
       <h3>3</h3>
-      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-        clip-rule="evenodd" viewBox="0 0 169 169">
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.03822 0 0 .03822 -452.1 -33.668)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.03822 0 0 .03822 -536 -33.668)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.03822 0 0 .03822 -493.61 -33.668)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          stroke-width="13.08" transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
-      </svg>
+      <IconTres />
       <h4 on:click={incrementTres}>{cualidades.tres[count]}</h4>
     </div>
     <div>
       <h3>4</h3>
-      <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 169 169">
-        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -225.8 25.37)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -141.88 25.37)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -267.75 25.37)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -183.76 25.37)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.03822 0 0 .03822 -493.93 -33.67)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.03822 0 0 .03822 -452.1 -33.67)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.03822 0 0 .03822 -536 -33.67)" />
-        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-          transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
-      </svg>
+      <IconCuatro />
       <h4>{cualidades.cuatro[count]}</h4>
     </div>
 

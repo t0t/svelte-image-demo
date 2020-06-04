@@ -1,18 +1,18 @@
+<script>
+	import IconCuatro from "./icons/IconCuatro.svelte";
+</script>
+
 <style lang="scss">
 	@import "../styles/main.scss";
-	
 </style>
 
 <article class="Grid GridSteps">
+	<figure>
+		<IconCuatro />
+		<figcaption>El proceso de la Creación</figcaption>
+	</figure>
 	<div>
-		<h3>
-			Cuatro
-		</h3>
-	</div>
-	<div>
-		<img src="img/grafico-2.svg" alt="">
-	</div>
-	<div>
+		<h3>Cuatro</h3>
 		<p>
 			La materia. El hecho. Lo que ocurre.
 		</p>
