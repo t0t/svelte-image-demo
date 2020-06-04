@@ -10,8 +10,8 @@
   padding-right: $h0;
 
   @include media(s1) {
-    padding-left: $h2;
-    padding-right: $h2;
+    padding-left: $h1;
+    padding-right: $h1;
   }
 
   @include media(s2) {
@@ -28,6 +28,13 @@
     padding-left: $h5;
     padding-right: $h5;
   }
+
+  &FullRow {
+    grid-column: -1/1;
+  }
+  &HalfRow {
+    grid-column: 2 / span 2;
+  }
 }
 
 .GridItemFluid {
@@ -35,11 +42,28 @@
   padding: $h2;
 }
 
+.GridArticle {
+  padding-top: $h3;
+  padding-bottom: $h3;
+  &Title {
+    margin-bottom: $h2;
+  }
+    p {
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
 .GridHome {
   text-align: center;
   @include media(s1) {
     grid-auto-rows: auto;
     grid-auto-flow: row;
+  }
+  @include media(s1) {
+    .GridItem:nth-child(1) {
+      grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+    }
   }
   @include media(s2) {
     .GridItem:nth-child(1) {
@@ -49,38 +73,8 @@
     }
   }
 
-  .full-row {
-    grid-column: -1/1;
-    text-align: center;
-    display: grid;
-    align-items: center;
-  }
-
   .cualidades_btn {
     grid-column: -1 / 1;
-  }
-
-  .PageContent {
-    @include media(s1) {
-      grid-column: -1 / 1;
-      display: grid;
-      gap: $h2;
-      justify-items: center;
-    }
-
-    article {
-      max-width: $h9;
-      margin: 0;
-      padding: 0 $h2;
-
-      @include media(s3) {
-        max-width: $h10;
-      }
-    }
-  }
-
-  .half-column {
-    grid-column: 2 / span 2;
   }
 
   figure {
@@ -97,23 +91,8 @@
 
 // Paneles en Home
 .GridSteps {
-  // grid-column: 2;
+  gap: $h3;
   grid-template-columns: 1fr 1fr;
-  grid-auto-columns: auto;
-  align-items: center;
-  
-  @include media(s2) {
-    .GridItem:nth-child(1) {
-      // background-color: red;
-      grid-column: -1/1;
-      grid-template-columns: repeat(auto-fill, minmax(h3, 1fr));
-      align-items: center;
-      text-align: center;
-    }
-  }
-  p {
-    text-align: center;
-  }
   &Nav {
     display: flex;
     align-items: center;

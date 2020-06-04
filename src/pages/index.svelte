@@ -57,7 +57,7 @@
   <em>{ step } / 4</em>
 </div>
 
-<div class="Grid GridSteps">
+<div class="Grid">
   {#if step == 0}
 	<div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
 		<Step0/>

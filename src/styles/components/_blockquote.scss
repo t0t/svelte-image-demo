@@ -1,39 +1,70 @@
-//Blockquotes
 .BlockQuote {
-    // display: block;
+  @include margin-top(0);
+  @include margin-bottom(2);
+  color: $grey;
+  font-style: italic;
+  margin-bottom: $h-2;
+  // background: $alpha_white;
+  // border-left: 10px solid #ccc;
+  margin-bottom: 0;
+  text-align: left;
+
+  quotes: "\201C""\201D""\2018""\2019";
+
+&:before {
+  color: $grey;
+  content: open-quote;
+  @include type-setting(4);
+  line-height: 0.1em;
+  margin-right: $h-2;
+  vertical-align: -$h2;
+}
+small {
+  font-weight: bold;
+  // display: inline;
+}
+
+
+  // blockquote {
+  //   color: $grey;
+  //   font-style: italic;
+  //   margin-bottom: $h-2;
+  //   quotes: "«""»";
+
+  //   &::first-letter {
+  //     font-size: 40px;
+  //     font-weight: bold;
+  //     position: absolute;
+  //     top: -200px;
+  //   }
+
+  //   &::before {
+  //     color: red;
+  //     content: open-quote;
+  //   }
+
+  //   &::after {
+  //     content: close-quote;
+  //   }
+  // }
+
+  // small {
+  //   font-weight: bold;
+  //   padding-bottom: 0;
+  //   color: $primary;
+  //   text-transform: uppercase;
+  // }
+
+  // @include media(s0) {}
+
+  &Line {
     padding-left: $h2;
-    border-left-color: $secondary;
-    border-left-style: solid;
-    border-left-width: $border_width_base;
-    // width: 100%;
-    @include margin-top(0);
-    @include margin-bottom(2);
-  
-    p {
-      color: $grey;
-      font-style: italic;
-      margin-bottom: $h-2;
-      quotes: "«" "»";
-      &::first-letter {
-        font-size: 40px;
-        font-weight: bold;
-        position: absolute;
-        top: -200px;
-      }
-      &::before {
-        content: open-quote;
-      }
-      &::after {
-        content: close-quote;
-      }
-      // @include margin-bottom(1);
-    }
-    small {
-      font-weight: bold;
-      padding-bottom: 0;
-      color: $primary;
-      text-transform: uppercase;
-    }
-    @include media(s0) {
-    }
+    // border-left-color: $secondary;
+    // border-left-style: solid;
+    // border-left-width: 1px;
+    text-align: left;
+    max-width: $h9;
+    margin-top: $h4;
+    margin-bottom: $h1;
   }
+}
