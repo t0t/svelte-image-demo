@@ -1,5 +1,5 @@
 <script>
-    export let items = [];
+    export const items = [];
     import { fade } from 'svelte/transition';
 </script>
 
