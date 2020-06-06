@@ -52,6 +52,7 @@
             img {
                 min-width: $h5;
                 @include media(s2) {
+                    /* grid-column: inherit; */
                 }
             }
         }
@@ -111,7 +112,6 @@
             <main class="ProductContent">
                 <h3>{@html product.content.h1}</h3>
                 <p>{@html product.content.p}</p>
-                <img src="{product.content.img1}" alt="Detalle de {product.title}">
             </main>
         {/if}
     {/each}

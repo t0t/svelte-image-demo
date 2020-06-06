@@ -7,7 +7,6 @@
 
   .Footer {
     padding: $h2;
-    margin-top: $h3;
     display: flex;
     flex-direction: column;
     background-color: $silver;

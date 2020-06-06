@@ -1,0 +1,53 @@
+{
+  "conceptos": [
+    {
+      "title": "La mente abstracta",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio aperiam ratione!",
+      "link": "Pensamiento abstracto",
+      "href": "https://www.lifeder.com/pensamiento-abstracto/",
+      "target": "_blank"
+    },
+    {
+      "title": "La analogía, la metáfora",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, corporis non, qui porro consequatur dolorem quibusdam doloremque odit, quaerat at ratione a magnam adipisci explicabo facere eveniet eligendi. Officia, tempora.",
+      "link": "",
+      "href": "",
+      "target": "_blank"
+    },
+    {
+      "title": "",
+      "text": "",
+      "link": "La divina geometría, Jaime Buhigas",
+      "href": "https://www.amazon.es/articleina-geometria-Jaime-Buhigas-Tallon/dp/8497347447/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=divina+geometria&qid=1591180234&s=books&sr=1-1",
+      "target": "_blank"
+    },
+    {
+      "title": "El símbolo universal",
+      "text": "'es el único en el que la relación entre el símbolo y lo que representa no es coincidente, sino intrínseca. Tiene su raíz en la experiencia de la afinidad que existe entre una emoción o un pensamiento, por una parte, y una experiencia sensorial, por la otra. Puede ser llamado universal porque es compartido por todos los hombres, en oposición no solamente al símbolo accidental, que es por su naturaleza completamente personal, sino también al convencional, limitado al grupo de personas que participan del mismo convenio. El símbolo universal tiene sus raíces en las propiedades de nuestro cuerpo, nuestros sentidos y nuestra mente, que son comunes a todos los hombres, y por consiguiente no se limita a personas o grupos determinados. El lenguaje del símbolo universal es, en verdad, la única lengua común que produjo la especie humana, lenguaje que olvidó antes de que lograra elaborar un lenguaje convencional.' Erich Fromm, El lenguaje olvidado, ed.cit., p. 22",
+      "link": "",
+      "href": "",
+      "target": "_blank"
+    },
+    {
+      "title": "Arquetipo",
+      "text": "Un arquetipo (del griego αρχή, arjé, ‘fuente’, ‘principio’ u ‘origen’, y τυπος, tipos, ‘impresión’ o ‘modelo’) es el patrón ejemplar del cual se derivan otros objetos, ideas o conceptos.",
+      "link": "Wiki",
+      "href": "https://es.wikipedia.org/wiki/Arquetipo",
+      "target": "_blank"
+    },
+    {
+      "title": "Numero áureo, PHI",
+      "text": "",
+      "link": "Wiki",
+      "href": "https://es.wikipedia.org/wiki/N%C3%BAmero_%C3%A1ureo#:~:text=El%20n%C3%BAmero%20%C3%A1ureo%20(tambi%C3%A9n%20llamado,honor%20al%20escultor%20griego%20Fidias.",
+      "target": "_blank"
+    },
+    {
+      "title": "",
+      "text": "",
+      "link": "",
+      "href": "",
+      "target": "_blank"
+    }
+  ]
+}

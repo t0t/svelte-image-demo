@@ -18,9 +18,11 @@
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0",
     "svelte-image": "^0.2.3",
-    "svelte-preprocess": "^3.7.4"
+    "svelte-preprocess": "^3.7.4",
+    "svelte-typewriter": "^2.1.10"
   },
   "dependencies": {
-    "sirv-cli": "^0.4.4"
+    "sirv-cli": "^0.4.4",
+    "svelte-swipe": "^1.6.1"
   }
 }

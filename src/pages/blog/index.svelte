@@ -8,11 +8,21 @@
     url,
     isActive
   } from "@sveltech/routify";
+
+  import { Swipe, SwipeItem } from "svelte-swipe";
+  let autoplay = false;
+  let delay = 2000; //ms
+  let showIndicators = false;
+  let transitionDuration = 1000; //ms
+  let defaultIndex = 0; //start from 0
 </script>
 
 <style lang="scss">
   @import "../../styles/main.scss";
-
+  .swipe-holder{
+    height: 30vh;
+    width: 100%;
+  }
   .CardGroup {
     padding-left: $h0;
     padding-right: $h0;
@@ -72,6 +82,26 @@
   <h1 slot="pagetitle">Blog</h1>
   <h2 slot="subtitle">My crazy thoughts</h2>
 </PageTitle>
+
+<div class="swipe-holder">
+  <Swipe {showIndicators} {autoplay} {delay} {transitionDuration} {defaultIndex}>
+    <SwipeItem>
+      <img src="/img/img0.jpg" alt="">
+    </SwipeItem>
+
+    <SwipeItem>
+      <img src="/img/img2.jpg" alt="">
+    </SwipeItem>
+
+    <SwipeItem>
+      <img src="/img/img3.jpg" alt="">
+    </SwipeItem>
+
+    <SwipeItem>
+      <img src="/img/img4.jpg" alt="">
+    </SwipeItem>
+  </Swipe>
+</div>
 
 <div class="CardGroup">
   {#each posts as post}

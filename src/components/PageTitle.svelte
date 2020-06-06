@@ -1,5 +1,5 @@
 <script>
-  // let y = 0;
+  import Typewriter from 'svelte-typewriter';
 </script>
 
 <style lang="scss">
@@ -28,10 +28,12 @@
 <!-- <svelte:window bind:scrollY={y} /> -->
 
 <header class="PageTitleContainer">
-  <hgroup class="text-center">
-    <slot name="pagetitle"></slot>
-    <slot name="subtitle"></slot>
-    <slot name="extratitle"></slot>
-    <slot></slot>
-  </hgroup>
+  <Typewriter>
+    <hgroup class="text-center">
+      <slot name="pagetitle"></slot>
+      <slot name="subtitle"></slot>
+      <slot name="extratitle"></slot>
+      <slot></slot>
+    </hgroup>
+  </Typewriter>
 </header>

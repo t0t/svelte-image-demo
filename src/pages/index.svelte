@@ -10,6 +10,7 @@
   //     /* background-color: $secondary; */
   //   }
   // `;
+  
   import {
     fade
   } from 'svelte/transition';
@@ -38,19 +39,17 @@
 
 <style lang="scss">
   @import "../styles/main.scss";
-  .GridSteps {
-    
-  }
 </style>
 
 <svelte:head>
   <title>Index TODH</title>
 </svelte:head>
 
-<PageTitle>
-  <h1 slot="pagetitle">Sergio Forés</h1>
-  <h2 slot="subtitle">Visión holística y artefactos en torno a la Creación</h2>
-</PageTitle>
+
+  <PageTitle>
+    <h1 slot="pagetitle">Sergio Forés</h1>
+    <h2 slot="subtitle">Visión holística y artefactos en torno a la Creación 👋</h2>
+  </PageTitle>
 
 
 <div class="GridStepsNav">
