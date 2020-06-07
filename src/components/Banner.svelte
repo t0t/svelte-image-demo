@@ -1,12 +1,19 @@
 <script>
-    export let backgroundColor;
+    export let index = 0;
+    export let modificador = [
+        "BannerBlack",
+        "BannerDefault"
+    ]
 </script>
 
 <style lang="scss">
     @import "../styles/main.scss";
+    .BannerDefault {
+        background-color: $tertiary;
+    }
 </style>
 
-<div class="Banner BannerBlack" style="background-color: {backgroundColor}">
+<div class="Banner {modificador[index]}">
     <slot name="image"></slot>
     <slot></slot>
 </div>

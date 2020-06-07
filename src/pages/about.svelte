@@ -219,7 +219,7 @@
   <article class="GridItem GridArticle">
     <h3 class="GridArticleTitle">Documentación</h3>
     
-    <List {conceptos}>
+    <List>
       {#each conceptos as item}
       <li>
         <strong>{item.title}</strong><br>
@@ -251,7 +251,7 @@
     </TabPanel>
 
     <TabPanel>
-      <List {libros}>
+      <List>
         {#each libros as item}
         <li><a href="{item.href}" target="{item.target}">{item.link}</a></li>
         {/each}
@@ -278,7 +278,7 @@
     </TabPanel>
   </Tabs>
 
-  <Banner>
+  <Banner index={1}>
     <figure slot="image">
       <IconCuatro />
     </figure>
