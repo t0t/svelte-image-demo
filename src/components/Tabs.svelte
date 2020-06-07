@@ -45,6 +45,13 @@
 	});
 </script>
 
+<style lang="scss">
+	@import "../styles/main.scss";
+	.tabs {
+		min-height: $h7;
+	}
+</style>
+
 <div class="tabs">
 	<slot></slot>
 </div>

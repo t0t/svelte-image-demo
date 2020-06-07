@@ -6,9 +6,8 @@
 	@import "../styles/main.scss";
 	.tab-list {
 		@include media(s1) {
-			margin-left: $h0;
 			display: flex;
-			justify-content: start;
+			justify-content: center;
 			align-items: center;
 			margin-bottom: $h1;
 		}
