@@ -1,12 +1,25 @@
+<script>
+    import { draw } from 'svelte/transition';
+    let duration = 9000;
+    let delay = 100;
+    let active = false;
+</script>
+
 <style lang="scss">
     @import "../../styles/main.scss";
+    svg.active path {
+        stroke: $tertiary;
+        stroke-dasharray: 0;
+    }
 </style>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" clip-rule="evenodd"
+<svg 
+class:active="{active}"
+on:click="{() => active = !active}" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" clip-rule="evenodd"
     viewBox="0 0 384 247">
-    <path fill="none" stroke-dasharray="8.3 8.3" stroke-dashoffset="1.87" stroke-width=".9705592000000001"
+    <path transition:draw="{{duration, delay}}" fill="none" stroke-dasharray="8.3 8.3" stroke-dashoffset="1.87" stroke-width="1"
         d="M238.42 113.958L26.696 211.404M60.396 110.54l102.31 103.458" />
-    <path fill="none" vector-effect="non-scaling-stroke" d="M136.483 135.962c-9.786-3.27-20.483-1.824-28.77 3.88-8.317
+    <path transition:draw="{{duration, delay}}" fill="none" vector-effect="non-scaling-stroke" d="M136.483 135.962c-9.786-3.27-20.483-1.824-28.77 3.88-8.317
         5.694-13.197 14.975-13.172 24.92M94.541 164.762c.027 6.18 3.097 12.017
         8.23 15.753 5.141 3.706 11.77 4.84 17.805 3.056M120.576
         183.57c3.745-1.084 6.664-3.874 7.868-7.48
@@ -17,16 +30,16 @@
         165.38l-9.908 6.801M118.182 167.884l-1.436 4.297M136.483 135.962L26.696
         211.404M120.544 169.58l-6.156-4.428M114.388 165.152c-.88 1.17-1.1
         2.666-.661 4.067a4.828 4.828 0 003.02 2.962" />
-    <path fill="none" vector-effect="non-scaling-stroke" d="M126.654 165.38c-1.421-1.904-3.71-3.087-6.137-3.13-2.425-.044-4.706
+    <path transition:draw="{{duration, delay}}" fill="none" vector-effect="non-scaling-stroke" d="M126.654 165.38c-1.421-1.904-3.71-3.087-6.137-3.13-2.425-.044-4.706
         1.042-6.13 2.902M120.544 169.58a1.74 1.74 0
         00-.752-1.402c-.48-.335-1.066-.46-1.61-.294M118.182
         167.884c-.314.104-.606.355-.711.668a1.14 1.14 0 00.156.994" />
-    <path fill="none" vector-effect="non-scaling-stroke" d="M116.746 172.181c.878.293 1.861.168 2.594-.355.764-.51 1.214-1.336
+    <path transition:draw="{{duration, delay}}" fill="none" vector-effect="non-scaling-stroke" d="M116.746 172.181c.878.293 1.861.168 2.594-.355.764-.51 1.214-1.336
         1.204-2.247M382.745
         218.24c-.183-68.324-34.122-133.18-91.218-174.43C234.409 2.519
         161.002-10.153 94.096 9.678M94.096 9.677C52.73 21.935 20.356 52.78 7.016
         92.706c-13.329 39.894-6.009 84.037 19.68 118.698M26.696 211.404c15.859
         21.406 41.186 34.4 68.102 34.921 26.884.51 52.135-11.519 67.908-32.327" />
-    <path fill="none" vector-effect="non-scaling-stroke" d="M162.706 213.998c9.734-12.855 12.401-29.605
+    <path transition:draw="{{duration, delay}}" fill="none" vector-effect="non-scaling-stroke" d="M162.706 213.998c9.734-12.855 12.401-29.605
         7.236-45.032-5.197-15.438-17.621-27.712-33.459-33.004" />
 </svg>

@@ -2,9 +2,10 @@
   // import Image from "svelte-image";
   // import Prism from "../components/PrismJS.svelte";
   import { fade } from 'svelte/transition';
+  // import { flip } from 'svelte/animate';
   import data from "../data/libros.json";
-  import listaConceptos from "../data/conceptos.json";
   const libros = data.libros;
+  import listaConceptos from "../data/conceptos.json";
   let conceptos = listaConceptos.conceptos;
   import {
     Tabs,
@@ -24,7 +25,7 @@
   import IconEspiral from '../components/icons/IconEspiral.svelte'
   import IconTetractys from '../components/icons/IconTetractys.svelte'
 
-  let visible = true
+  let visible = true;
   let cualidades = {
     uno: [
       'mónada',
@@ -70,28 +71,11 @@
 
   let count = 0;
 
-  const incrementUno = () => {
+  let increment = () => {
     if (count < cualidades.uno.length - 1) {
       count++
-    }
-  };
-  const incrementDos = () => {
-    if (count < cualidades.dos.length - 1) {
-      count++
-      console.log(count)
-    }
-  };
-  const incrementTres = () => {
-    if (count < cualidades.tres.length - 1) {
-      count++
-      console.log(count)
-    }
-  };
-  const incrementCuatro = () => {
-    count === 0
-    if (count < cualidades.cuatro.length - 1) {
-      count++
-      console.log(count)
+    } else {
+      count = 0;
     }
   };
 </script>
@@ -130,17 +114,17 @@
     <div>
       <h3>1</h3>
       <IconUno />
-      <h4 on:click={incrementUno} transition:fade>{cualidades.uno[count]}</h4>
+      <h4>{cualidades.uno[count]}</h4>
     </div>
     <div>
       <h3>2</h3>
       <IconDos />
-      <h4 on:click={incrementDos}>{cualidades.dos[count]}</h4>
+      <h4>{cualidades.dos[count]}</h4>
     </div>
     <div>
       <h3>3</h3>
       <IconTres />
-      <h4 on:click={incrementTres}>{cualidades.tres[count]}</h4>
+      <h4>{cualidades.tres[count]}</h4>
     </div>
     <div>
       <h3>4</h3>
@@ -149,7 +133,7 @@
     </div>
 
     <div class="cualidades_btn">
-      <button on:click={incrementCuatro}>
+      <button on:click={increment}>
         Cambia el contenido, no el contenedor
       </button>
     </div>
@@ -183,27 +167,18 @@
     <p>
       La base de lo que es TODH, para mí queda sobradamente explicada
       contemplando la Tetractys, la vesica Piscis o el número-idea Pitagórico.
-      Es un contemplar dejándose penetrar por lo que se observa. Un rendirse
-      ante la evidencia. Es mirar hasta que ves, nada más. Es una escucha
-      atenta. Todo lo que hay es agua, fuego, tierra, aire y un quinto
-      elemento... No són sólo elementos naturales, son principios abstractos,
+      Es un contemplar dejándose penetrar por lo que se observa. Un rendirse ante la evidencia. Es mirar hasta que ves, nada más. Es una escucha atenta. Todo lo que hay es agua, fuego, tierra, aire y un quinto elemento... No són sólo elementos naturales, son principios abstractos,
       hechos de una sustancia que se encuentra en nuestras ideas, nuestras
-      formas de ser, hay fuego en las ideas, agua en las emociones, tierra en
-      los hechos, y aire en nuestros discursos.
+      formas de ser, hay fuego en las ideas, agua en las emociones, tierra en los hechos, y aire en nuestros discursos.
       <strong>
         Antes es la espiral que el caracol. El caracol es la expresión de un principio anterior.
       </strong>
       Conforme vas cayendo en lo que la esencia de las cosas es, te van
-      importando cada vez menos las formas y más las relaciones. Mi ánimo es el
-      de transmitir esta vivencia profunda y no tanto perseguir una base teórica
-      intelectual. Mucho se ha escrito ya por gente de talla muy superior a la
-      mía, de modo que me parecería absurdo tratar de llenar más páginas al
-      respecto.
+      importando cada vez menos las formas y más las relaciones. Mi ánimo es el de transmitir esta vivencia profunda y no tanto perseguir una base teórica intelectual. Mucho se ha escrito ya por gente de talla muy superior a la mía, de modo que me parecería absurdo tratar de llenar más páginas al respecto.
     </p>
     <BlockQuote quote={"Un viaje que es de regreso a la Unidad."} author={"TODH"} />
     <p>
-      Recalcar la naturaleza sintética de este proyecto que apunta siempre al
-      origen, a lo original, a lo obvio. Un viaje que es de regreso a la Unidad.
+      Recalcar la naturaleza sintética de este proyecto que apunta siempre al origen, a lo original, a lo obvio. Un viaje que es de regreso a la Unidad.
       Una incursión. El símbolo tiene ese poder, condensa un vasto campo de significados y los disuelve quedándose con lo esencial.
     </p>
     <p>
