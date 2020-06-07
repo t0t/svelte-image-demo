@@ -7,6 +7,6 @@
 </style>
 
 <blockquote class="BlockQuote BlockQuoteLine">
-    {quote}"<br>
+    {quote}<br>
     <small>{author}</small>
 </blockquote>
