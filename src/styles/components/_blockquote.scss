@@ -1,20 +1,17 @@
 .BlockQuote {
-  @include margin-top(0);
-  @include margin-bottom(2);
   color: $grey;
   font-style: italic;
   margin-bottom: $h-2;
   margin-bottom: 0;
   text-align: left;
-  quotes: "\201C""\201D""\2018""\2019";
 
   &:before {
     color: $grey;
-    content: open-quote;
+    // content: open-quote;
     @include type-setting(4);
     line-height: 0.1em;
     margin-right: $h-2;
-    vertical-align: -$h2;
+    vertical-align: $h2;
   }
 
   small {

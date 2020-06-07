@@ -4,9 +4,9 @@
     let delay = 200;
 </script>
 
-<style lang="scss">
+<!-- <style lang="scss">
     @import "../../styles/main.scss";
-</style>
+</style> -->
 
 <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 169 169">
     <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -225.8 25.37)" />

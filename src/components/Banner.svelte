@@ -3,13 +3,15 @@
     export let modificador = [
         "BannerBlack",
         "BannerDefault"
-    ]
+    ];
 </script>
 
 <style lang="scss">
     @import "../styles/main.scss";
     .BannerDefault {
-        background-color: $tertiary;
+        background-color: $primary;
+        stroke: $tertiary;
+        fill: $tertiary;
     }
 </style>
 

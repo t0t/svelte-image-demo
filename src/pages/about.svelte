@@ -1,7 +1,9 @@
 <script>
   // import Image from "svelte-image";
   // import Prism from "../components/PrismJS.svelte";
-  import { fade } from 'svelte/transition';
+  import {
+    fade
+  } from 'svelte/transition';
   // import { flip } from 'svelte/animate';
   import data from "../data/libros.json";
   const libros = data.libros;
@@ -94,7 +96,7 @@
 </PageTitle>
 
 <div class="Grid GridHome">
-  
+
   <div class="Grid GridItem GridArticle">
     <p>
       <strong>Espacio</strong>
@@ -167,19 +169,25 @@
     <p>
       La base de lo que es TODH, para mí queda sobradamente explicada
       contemplando la Tetractys, la vesica Piscis o el número-idea Pitagórico.
-      Es un contemplar dejándose penetrar por lo que se observa. Un rendirse ante la evidencia. Es mirar hasta que ves, nada más. Es una escucha atenta. Todo lo que hay es agua, fuego, tierra, aire y un quinto elemento... No són sólo elementos naturales, son principios abstractos,
+      Es un contemplar dejándose penetrar por lo que se observa. Un rendirse ante la evidencia. Es mirar hasta que ves,
+      nada más. Es una escucha atenta. Todo lo que hay es agua, fuego, tierra, aire y un quinto elemento... No són sólo
+      elementos naturales, son principios abstractos,
       hechos de una sustancia que se encuentra en nuestras ideas, nuestras
       formas de ser, hay fuego en las ideas, agua en las emociones, tierra en los hechos, y aire en nuestros discursos.
       <strong>
         Antes es la espiral que el caracol. El caracol es la expresión de un principio anterior.
       </strong>
       Conforme vas cayendo en lo que la esencia de las cosas es, te van
-      importando cada vez menos las formas y más las relaciones. Mi ánimo es el de transmitir esta vivencia profunda y no tanto perseguir una base teórica intelectual. Mucho se ha escrito ya por gente de talla muy superior a la mía, de modo que me parecería absurdo tratar de llenar más páginas al respecto.
+      importando cada vez menos las formas y más las relaciones. Mi ánimo es el de transmitir esta vivencia profunda y
+      no tanto perseguir una base teórica intelectual. Mucho se ha escrito ya por gente de talla muy superior a la mía,
+      de modo que me parecería absurdo tratar de llenar más páginas al respecto.
     </p>
     <BlockQuote quote={"Un viaje que es de regreso a la Unidad."} author={"TODH"} />
     <p>
-      Recalcar la naturaleza sintética de este proyecto que apunta siempre al origen, a lo original, a lo obvio. Un viaje que es de regreso a la Unidad.
-      Una incursión. El símbolo tiene ese poder, condensa un vasto campo de significados y los disuelve quedándose con lo esencial.
+      Recalcar la naturaleza sintética de este proyecto que apunta siempre al origen, a lo original, a lo obvio. Un
+      viaje que es de regreso a la Unidad.
+      Una incursión. El símbolo tiene ese poder, condensa un vasto campo de significados y los disuelve quedándose con
+      lo esencial.
     </p>
     <p>
       Me gusta comparar TODH con el juego del Tetris cuyo objetivo es
@@ -192,26 +200,28 @@
   </article>
 
   <article class="GridItem GridArticle">
-    <h3 class="GridArticleTitle">Documentación</h3>
+    <h3 class="GridArticleTitle">Términos clave</h3>
     
     <List>
       {#each conceptos as item}
       <li>
         <p><strong>{item.title} </strong>{@html item.text}
-        <a href="{item.href}" target="{item.target}"><small>{item.link}</small></a></p>
-      </li>
-      {/each}
-    </List>
+          <a href="{item.href}" target="{item.target}"><small>{item.link}</small></a></p>
+        </li>
+        {/each}
+      </List>
+      
+    </article>
     
-  </article>
-
-  <Tabs>
-    <TabList>
-      <Tab>fuentes antiguas</Tab>
-      <Tab>libros</Tab>
-      <Tab>videos</Tab>
-      <Tab>varios</Tab>
-    </TabList>
+<article class="GridItem GridArticle">
+  <h3 class="GridArticleTitle">Documentación</h3>
+    <Tabs>
+      <TabList>
+        <Tab>fuentes antiguas</Tab>
+        <Tab>libros</Tab>
+        <Tab>videos</Tab>
+        <Tab>varios</Tab>
+      </TabList>
 
     <TabPanel>
       <ul>
@@ -251,6 +261,7 @@
       </ul>
     </TabPanel>
   </Tabs>
+</article>
 
   <Banner index={1}>
     <figure slot="image">

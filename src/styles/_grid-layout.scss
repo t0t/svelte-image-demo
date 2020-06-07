@@ -1,7 +1,7 @@
 .Grid {
   @include media(s1) {
     display: grid;
-    gap: $h2 $h0;
+    gap: $h4;
   }
 }
 
@@ -43,8 +43,6 @@
 }
 
 .GridArticle {
-  padding-top: $h3;
-  // padding-bottom: $h3;
   &Title {
     margin-bottom: $h2;
   }

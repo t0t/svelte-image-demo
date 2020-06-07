@@ -4,9 +4,13 @@
 
 <style lang="scss">
     @import "../styles/main.scss";
+    .Quote {
+        color: $tertiary;
+        font-style: italic;
+    }
 </style>
 
-<blockquote class="BlockQuote BlockQuoteLine">
-    {quote}<br>
+<blockquote class="Quote QuoteLine">
+    <strong>"{quote}"</strong><br>
     <small>{author}</small>
 </blockquote>

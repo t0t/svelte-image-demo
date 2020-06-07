@@ -1,5 +1,7 @@
 <script>
-    import { url } from "@sveltech/routify";
+    import {
+        url
+    } from "@sveltech/routify";
     let home = "/";
 </script>
 
