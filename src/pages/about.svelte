@@ -197,9 +197,8 @@
     <List>
       {#each conceptos as item}
       <li>
-        <strong>{item.title}</strong><br>
-        <p>{item.text}</p>
-        <a href="{item.href}" target="{item.target}">{item.link}</a>
+        <p><strong>{item.title} </strong>{@html item.text}
+        <a href="{item.href}" target="{item.target}"><small>{item.link}</small></a></p>
       </li>
       {/each}
     </List>

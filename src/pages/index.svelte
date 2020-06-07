@@ -1,16 +1,6 @@
 <script>
   import PageTitle from "../components/PageTitle.svelte";
-  //   let code_sample = `
-  //   @include media(s1) {
-  //     display: grid;
-  //     grid-auto-rows: auto;
-  //     grid-auto-flow: row dense;
-  //     gap: $h3 $h2;
-  //     grid-template-columns: repeat(auto-fill, minmax($h5, 1fr));
-  //     /* background-color: $secondary; */
-  //   }
-  // `;
-  
+
   import {
     fade
   } from 'svelte/transition';
@@ -45,11 +35,10 @@
   <title>Index TODH</title>
 </svelte:head>
 
-
-  <PageTitle>
-    <h1 slot="pagetitle">Sergio Forés</h1>
-    <h2 slot="subtitle">Visión holística y artefactos en torno a la Creación 👋</h2>
-  </PageTitle>
+<PageTitle>
+  <h1 slot="pagetitle">Sergio Forés</h1>
+  <h2 slot="subtitle">Visión holística y artefactos en torno a la Creación 👋</h2>
+</PageTitle>
 
 
 <div class="GridStepsNav">

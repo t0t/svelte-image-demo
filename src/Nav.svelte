@@ -21,8 +21,6 @@
     grid-auto-flow: row;
     grid-auto-rows: 1fr;
     padding-right: $h0;
-    @include media(s2) {
-    }
   }
 
   .MainNav li {

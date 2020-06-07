@@ -97,7 +97,7 @@
   }
 </style>
 
-<div class="Footer">
+<footer class="Footer">
   <div class="Avatar">
     <img src="/img/avatar.jpg" alt="Sergio Forés avatar" class="BioAvatar" />
   </div>
@@ -185,4 +185,4 @@
       title="Requiem in D minor, K. 626 - III. Sequence - Lacrymosa" composer="Wolfgang Amadeus Mozart"
       performer="Markus Staab" />
   </div>
-</div>
+</footer>

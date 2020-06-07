@@ -26,10 +26,12 @@
 </style>
 
 <main>
-    <header class="SiteNavBar">
+    <nav class="SiteNavBar">
         <SiteBrand />
         <Nav />
-    </header>
-    <slot></slot>
+    </nav>
+    <section>
+        <slot></slot>
+    </section>
     <SiteFooter />
 </main>
