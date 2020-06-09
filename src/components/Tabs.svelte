@@ -49,6 +49,7 @@
 	@import "../styles/main.scss";
 	.tabs {
 		min-height: $h7;
+		overflow: hidden;
 	}
 </style>
 

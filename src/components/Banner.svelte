@@ -9,7 +9,7 @@
 <style lang="scss">
     @import "../styles/main.scss";
     .BannerDefault {
-        background-color: $primary;
+        background-color: $tertiary;
         stroke: $tertiary;
         fill: $tertiary;
     }

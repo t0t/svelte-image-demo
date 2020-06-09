@@ -66,6 +66,7 @@
           background-color: $alpha_black;
         }
       }
+
       /* overflow: hidden; */
       &Caption {
         height: $h4;
@@ -118,10 +119,10 @@
   <title>Products TODH</title>
 </svelte:head>
 
-<PageTitle>
-  <h1 slot="pagetitle">Coagulando la vibración</h1>
-  <h2 slot="subtitle">Sergio Forés</h2>
-</PageTitle>
+<PageTitle 
+    pageTitle="Coagulando la vibración"
+    pageSubTitle="Sergio Forés"
+/>
 
 <section class="Cards">
   {#each products as product}

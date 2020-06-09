@@ -35,11 +35,10 @@
   <title>Index TODH</title>
 </svelte:head>
 
-<PageTitle>
-  <h1 slot="pagetitle">Sergio Forés</h1>
-  <h2 slot="subtitle">Visión holística y artefactos en torno a la Creación 👋</h2>
-</PageTitle>
-
+<PageTitle 
+    pageTitle="Sergio Forés"
+    pageSubTitle="Visión holística y artefactos en torno a la Creación 👋"
+/>
 
 <div class="GridStepsNav">
   <button on:click="{prev}" disabled="{step < 1}">&lt;</button>

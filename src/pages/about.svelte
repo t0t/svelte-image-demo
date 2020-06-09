@@ -90,10 +90,10 @@
   <title>TODH | Playground</title>
 </svelte:head>
 
-<PageTitle>
-  <h1 slot="pagetitle">El proceso de la Creación</h1>
-  <h2 slot="subtitle">Matriz/modelo/prototipo base de cualquier cosa.</h2>
-</PageTitle>
+<PageTitle 
+    pageTitle="El proceso de la Creación"
+    pageSubTitle="Matriz/modelo/prototipo base de cualquier cosa."
+/>
 
 <div class="Grid GridHome">
 

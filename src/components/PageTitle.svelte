@@ -1,5 +1,8 @@
 <script>
-  import Typewriter from 'svelte-typewriter';
+  // import Typewriter from 'svelte-typewriter';
+  import typeWriter from "../actions/typeWriter.js";
+  export let pageTitle;
+  export let pageSubTitle;
 </script>
 
 <style lang="scss">
@@ -28,12 +31,8 @@
 <!-- <svelte:window bind:scrollY={y} /> -->
 
 <header class="PageTitleContainer">
-  <Typewriter>
-    <hgroup class="text-center">
-      <slot name="pagetitle"></slot>
-      <slot name="subtitle"></slot>
-      <slot name="extratitle"></slot>
-      <slot></slot>
+    <hgroup class="text-center" >
+      <h1 use:typeWriter>{pageTitle}</h1>
+      <h2 use:typeWriter>{pageSubTitle}</h2>
     </hgroup>
-  </Typewriter>
 </header>

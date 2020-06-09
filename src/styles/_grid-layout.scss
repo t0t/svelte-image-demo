@@ -1,7 +1,7 @@
 .Grid {
   @include media(s1) {
     display: grid;
-    gap: $h4;
+    gap: $h5;
   }
 }
 
@@ -15,14 +15,14 @@
   }
   
   @include media(s2) {
-    padding-left: $h3;
-    padding-right: $h3;
-  }
-
-  @include media(s3) {
     padding-left: $h4;
     padding-right: $h4;
   }
+
+  // @include media(s3) {
+  //   padding-left: $h4;
+  //   padding-right: $h4;
+  // }
 
   @include media(s4) {
     padding-left: $h5;

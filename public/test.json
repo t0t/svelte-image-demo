@@ -1,0 +1,20 @@
+{
+    "demo": [
+        {
+            "img": "img/img0.jpg",
+            "alt": "It could be a caption text"
+        },
+        {
+            "img": "img/img1.jpg",
+            "alt": "descripton"
+        },
+        {
+            "img": "img/img2.jpg",
+            "alt": "descripton"
+        },
+        {
+            "img": "img/img3.jpg",
+            "alt": "descripton"
+        }
+    ]
+}

@@ -78,10 +78,10 @@
   <title>Blog TODH</title>
 </svelte:head>
 
-<PageTitle>
-  <h1 slot="pagetitle">Blog</h1>
-  <h2 slot="subtitle">My crazy thoughts</h2>
-</PageTitle>
+<PageTitle 
+    pageTitle="Blog"
+    pageSubTitle="My crazy thoughts"
+/>
 
 <div class="swipe-holder">
   <Swipe {showIndicators} {autoplay} {delay} {transitionDuration} {defaultIndex}>
