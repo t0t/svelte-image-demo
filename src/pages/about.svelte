@@ -14,18 +14,18 @@
     TabList,
     TabPanel,
     Tab
-  } from '../components/tabs.js'
-  import PageTitle from '../components/PageTitle.svelte'
-  import BlockQuote from '../components/BlockQuote.svelte'
-  import Banner from '../components/Banner.svelte'
-  import List from '../components/List.svelte'
-  import IconCero from '../components/icons/IconCero.svelte'
-  import IconUno from '../components/icons/IconUno.svelte'
-  import IconDos from '../components/icons/IconDos.svelte'
-  import IconTres from '../components/icons/IconTres.svelte'
-  import IconCuatro from '../components/icons/IconCuatro.svelte'
-  import IconEspiral from '../components/icons/IconEspiral.svelte'
-  import IconTetractys from '../components/icons/IconTetractys.svelte'
+  } from '../components/tabs.js';
+  import PageTitle from '../components/PageTitle.svelte';
+  import BlockQuote from '../components/BlockQuote.svelte';
+  import Banner from '../components/Banner.svelte';
+  import List from '../components/List.svelte';
+  import IconCero from '../components/icons/IconCero.svelte';
+  import IconUno from '../components/icons/IconUno.svelte';
+  import IconDos from '../components/icons/IconDos.svelte';
+  import IconTres from '../components/icons/IconTres.svelte';
+  import IconCuatro from '../components/icons/IconCuatro.svelte';
+  import IconEspiral from '../components/icons/IconEspiral.svelte';
+  import IconTetractys from '../components/icons/IconTetractys.svelte';
 
   let visible = true;
   let cualidades = {

@@ -1,15 +1,15 @@
 <style lang="scss">
     @import "../styles/main.scss";
-    .Container {
+    .Area {
         /* background-color: yellow; */
         margin-left: $h4;
         margin-right: $h4;
         margin-bottom: $h4;
     }
-    .Banner ~ .Container{
+    .Banner ~ .Area{
         margin-top: $h4;
     }
 </style>
-<div class="Container">
+<div class="Area">
     <slot></slot>
 </div>

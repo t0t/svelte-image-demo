@@ -1,4 +1,5 @@
 <script>
+    export let size;
     import { draw } from 'svelte/transition';
     let duration = 9000;
     let delay = 100;
@@ -14,6 +15,7 @@
 </style>
 
 <svg 
+style="width: {size}px;"
 class:active="{active}"
 on:click="{() => active = !active}" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round" clip-rule="evenodd"
     viewBox="0 0 384 247">
