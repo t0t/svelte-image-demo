@@ -1,5 +1,5 @@
 <script>
-    export let title = "Default area title";
+    export let title;
 </script>
 
 <style lang="scss">
@@ -33,6 +33,7 @@
 <article class="Area">
     {#if title}
         <h3>{title}</h3>
+    {:else}
     {/if}
     <slot></slot>
 </article>
