@@ -15,12 +15,12 @@
   @import "styles/main.scss";
 
   .MainNav {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: $h4;
     grid-auto-flow: row;
     grid-auto-rows: 1fr;
-    padding-right: $h0;
+    padding-right: $h0; */
   }
 
   .MainNav li {

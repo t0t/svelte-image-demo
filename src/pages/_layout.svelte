@@ -7,7 +7,7 @@
 <style lang="scss">
     @import "../styles/main.scss";
 
-    .SiteNavBar {
+    /* .SiteNavBar {
         display: grid;
         grid-template-columns: repeat(auto-fill, 1fr $h5);
         grid-auto-flow: row;
@@ -16,22 +16,18 @@
 
         @include media(s1) {
             grid-auto-flow: column;
-            position: fixed;
-            top: 0;
-            right: 0;
-            left: 0;
+            
             z-index: 10;
         }
-    }
+    } */
 </style>
 
-<main>
-    <nav class="SiteNavBar">
-        <SiteBrand />
+<main class="Main">
+    <SiteBrand />
+    <nav class="Main__nav">
         <Nav />
     </nav>
-    <section>
-        <slot></slot>
-    </section>
+    <slot></slot>
+    <div class="Main__totop"></div>
     <SiteFooter />
 </main>

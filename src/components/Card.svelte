@@ -1,12 +1,12 @@
 
 <script>
     export let title = "Default title";
-    export let content = "Default content";
-    export let caption = "Default caption";
+    export let description = "Default content";
+    export const caption = "Default caption";
+    export const alt = "Default alt";
     export let image = "img/img0.jpg";
-    export let hasFigure = true;
+    export let hasImage = true;
     export let hasInlineSvg = false;
-    import Figure from "./Figure.svelte";
 </script>
 
 <style lang="scss">
@@ -27,17 +27,15 @@
 </style>
 
 <div class="Card">
-    {#if hasFigure}
-    <Figure {caption}>
-        <img src="{image}" alt="">
-    </Figure>
+    {#if hasImage}
+        <img src="{image}" alt="{alt}">
     {/if}
     {#if hasInlineSvg}
         <slot name="hasSvg">Put here inline-svg</slot>
     {/if}
     <div class="CardMain">
         <h4 class="CardTitle">{title}</h4>
-        <p class="CardContent">{content}</p>
+        <p class="CardContent">{description}</p>
         <slot></slot>
     </div>
 </div>

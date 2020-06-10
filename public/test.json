@@ -1,36 +1,52 @@
 {
     "demo": [
         {
+            "title": "The card title",
             "img": "img/img0.jpg",
-            "alt": "It could be a caption text"
+            "alt": "It could be a caption text",
+            "description": "This is the description 1"
         },
         {
+            "title": "The card title",
             "img": "img/grafico-1.svg",
-            "alt": "descripton"
+            "alt": "descripton",
+            "description": "This is the description 2"
         },
         {
+            "title": "The card title",
             "img": "img/img2.jpg",
-            "alt": "descripton"
+            "alt": "descripton",
+            "description": "This is the description 3"
         },
         {
+            "title": "The card title",
             "img": "img/img3.jpg",
-            "alt": "descripton"
+            "alt": "descripton",
+            "description": "This is the description 4"
         },
         {
+            "title": "The card title",
             "img": "img/img4.jpg",
-            "alt": "It could be a caption text"
+            "alt": "It could be a caption text",
+            "description": "This is the description 5"
         },
         {
+            "title": "The card title",
             "img": "img/img5.jpg",
-            "alt": "descripton"
+            "alt": "descripton",
+            "description": "This is the description 6"
         },
         {
+            "title": "The card title",
             "img": "img/img6.jpg",
-            "alt": "descripton"
+            "alt": "descripton",
+            "description": "This is the description 7"
         },
         {
+            "title": "The card title",
             "img": "img/img7.jpg",
-            "alt": "descripton"
+            "alt": "descripton",
+            "description": "This is the description 8"
         }
     ]
 }

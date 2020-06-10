@@ -97,7 +97,7 @@
   }
 </style>
 
-<footer class="Footer">
+<footer class="Main__footer">
   <div class="Avatar">
     <img src="/img/avatar.jpg" alt="Sergio Forés avatar" class="BioAvatar" />
   </div>

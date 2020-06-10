@@ -8,7 +8,7 @@
 <style lang="scss">
   @import "../styles/main.scss";
 
-  .PageTitleContainer {
+  /* .PageTitleContainer {
     width: 100%;
     display: grid;
     grid-auto-flow: row;
@@ -16,7 +16,6 @@
     align-items: center;
     flex-direction: column;
     background-color: $color_3;
-    /* background-color: $alpha_grey; */
 
     @include padding-top(1);
     @include padding-bottom(0);
@@ -25,13 +24,13 @@
       margin-top: $h4;
       @include padding-bottom(2);
     }
-  }
+  } */
 </style>
 
 <!-- <svelte:window bind:scrollY={y} /> -->
 
-<header class="PageTitleContainer">
-    <hgroup class="text-center" >
+<header class="Main__header">
+    <hgroup class="text-center">
       <h1 use:typeWriter>{pageTitle}</h1>
       <h2 use:typeWriter>{pageSubTitle}</h2>
     </hgroup>

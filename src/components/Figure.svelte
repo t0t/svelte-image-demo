@@ -8,7 +8,7 @@
         padding-right: $h1;
         text-align: right;
         color: $silver;
-        @include type-setting(-1);
+        @include type-setting(1);
     }
 </style>
 <figure>

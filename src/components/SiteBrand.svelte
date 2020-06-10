@@ -54,7 +54,7 @@
     }
 </style>
 
-<div class="SiteBrand">
+<div class="Main__brand">
     <a href="{$url(home)}" alt="Main navigation">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 39">
             <title>Brand Logo</title>

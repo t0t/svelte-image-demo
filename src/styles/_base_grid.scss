@@ -1,0 +1,83 @@
+.Main {
+    @include media(s2) {
+        display: grid;
+        grid-template-columns: repeat(12, minmax($h3, 1fr));
+        grid-auto-rows: auto;
+        grid-auto-flow: row;
+        gap: $h0;
+        padding-top: $h1;
+        grid-template-areas:
+            "b b . . . . . . . n n n"
+            "h h h h h h h h h h h h"
+            "c c c c c c c c c c c c"
+            "c c c c c c c c c c c c"
+            "c c c c c c c c c c c c"
+            "c c c c c c c c c c c c"
+            ". f f f f f f f f f t t"
+        ;
+    }
+
+    &__brand {
+        grid-area: b;
+    }
+
+    &__header {
+        grid-area: h;
+    }
+
+    &__content {
+        grid-area: c;
+    }
+
+    &__nav {
+        grid-area: n;
+    }
+
+    &__footer {
+        grid-area: f;
+    }
+
+    &__sidebar {
+        grid-area: s;
+    }
+
+    &__totop {
+        grid-area: t;
+    }
+}
+
+.Content {
+    @include media(s2) {
+        display: grid;
+        // width: 100%;
+        // min-height: 100%;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: auto;
+        grid-auto-flow: row;
+        gap: $h0;
+        grid-template-areas:
+            ". h h h h h h n n f f ."
+            "ca ca ca ca ca ca ca ca ca ca ca ca"
+            "ca ca ca ca ca ca ca ca ca ca ca ca"
+        ;
+    }
+
+    &__header {
+        grid-area: h;
+    }
+
+    &__area {
+        grid-area: ca;
+        display: grid;
+        gap: $h-2;
+    }
+
+    &__nav {
+        grid-area: n;
+
+    }
+
+    &__footer {
+        grid-area: f;
+    }
+}

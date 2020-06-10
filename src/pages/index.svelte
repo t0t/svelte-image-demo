@@ -39,35 +39,36 @@
     pageTitle="Sergio Forés"
     pageSubTitle="Visión holística y artefactos en torno a la Creación 👋"
 />
+<div class="Main__content">
+  <div class="">
+    <button on:click="{prev}" disabled="{step < 1}">&lt;</button>
+    <button on:click="{next}" disabled="{step > 3}">&gt;</button>
 
-<div class="GridStepsNav">
-  <button on:click="{prev}" disabled="{step < 1}">&lt;</button>
-  <button on:click="{next}" disabled="{step > 3}">&gt;</button>
+    <em>{ step } / 4</em>
+  </div>
 
-  <em>{ step } / 4</em>
-</div>
+  <div class="">
+    {#if step == 0}
+    <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+      <Step0/>
+    </div>
+    {:else if step == 1}
+    <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+      <Step1/>
+    </div>
+    {:else if step == 2}
+    <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+      <Step2/>
+    </div>
+    {:else if step == 3}
+    <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+      <Step3/>
+    </div>
+    {:else if step == 4}
+    <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+      <Step4/>
+    </div>
+    {/if}
 
-<div class="Grid">
-  {#if step == 0}
-	<div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-		<Step0/>
-	</div>
-	{:else if step == 1}
-	<div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-		<Step1/>
-	</div>
-	{:else if step == 2}
-	<div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-		<Step2/>
-	</div>
-	{:else if step == 3}
-	<div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-		<Step3/>
-	</div>
-	{:else if step == 4}
-	<div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-		<Step4/>
-	</div>
-  {/if}
-
+  </div>
 </div>
