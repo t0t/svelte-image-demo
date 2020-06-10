@@ -31,42 +31,165 @@
 <style lang="scss">
     @import "../styles/main.scss";
 
+
+    .Main {
+        display: grid;
+        grid-template-columns: repeat(12, minmax($h3, 1fr));
+        grid-auto-rows: auto;
+        grid-auto-flow: row;
+        gap: $h0;
+        padding: $h1;
+        grid-template-areas: 
+        "b b . . . . . . . n n n"
+        ". h h h h h h h h h s s"
+        ". c c c c c c c c c s s"
+        ". c c c c c c c c c s s"
+        ". c c c c c c c c c . ."
+        ". c c c c c c c c c . ."
+        ". f f f f f f f f f t t"
+        ;
+        border: 2px solid green;
+        position: relative;
+        &:before {
+            color: green;
+            content: ".Main";
+            position: absolute;
+            top: $h-2;
+            left: $h-2;
+            font-size: $h0;
+            font-weight: bold;
+        }
+        > div {
+            padding: $h2;
+            position: relative;
+            border: 1px solid green;
+            &:before {
+                color: green;
+            }
+        }
+        div {
+            position: relative;
+            min-height: $h3;
+            &:before {
+                position: absolute;
+                font-size: $h0;
+                top: $h-2;
+                left: $h-2;
+            } 
+        }
+
+        &__brand {
+            grid-area: b;
+            &:before {
+                content: ".Main__brand";
+            }
+        }
+        &__header {
+            grid-area: h;
+            &:before {
+                content: ".Main__header";
+            }
+        }
+        &__content {
+            grid-area: c;
+            &:before {
+                content: ".Main__content";
+            }
+        }
+        &__nav {
+            grid-area: n;
+            &:before {
+                content: ".Main__nav";
+            }
+        }
+        &__footer {
+            grid-area: f;
+            &:before {
+                content: ".Main__footer";
+            }
+        }
+        &__sidebar{
+            grid-area: s;
+            &:before {
+                content: ".Main__sidebar";
+            }
+        }
+        &__totop{
+            grid-area: t;
+            &:before {
+                content: ".Main__totop";
+            }
+        }
+    }
     .Content {
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(4, 1fr);
-        gap: $h4;
-        align-content: space-between;
-        justify-content: space-around;
-    }
-    .cssGrid {
-        border: 1px solid $silver;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax($h6, 1fr));
+        min-height: 100%;
+        grid-template-columns: repeat(12, 1fr);
         grid-auto-rows: auto;
         grid-auto-flow: row;
         gap: $h0;
         padding: $h0;
         grid-template-areas: 
-        "a a a"
-        "b b b"
-        "c c c"
+            ". . . h h h h h h . . ."
+            ". ca ca ca ca ca ca ca ca ca ca ."
+            ". ca ca ca ca ca ca ca ca ca ca ."
+            ". . . n n n n n n . . ."
+            ". f f f f f f f f f f ."
         ;
-        &Item {
-            border: 1px solid $primary;
-            padding: $h0;
-            &:nth-child(1) {
-                grid-area: a;
-                border: 1px solid $blue;
+        border: 1px solid blue;
+        &:before {
+            content: ".Content";
+            color: blue;
+            font-weight: bold;
+        }
+        div {
+            border: 1px solid $blue;
+            &:before {
+                color: blue;
             }
-            &:nth-child(2) {
-                grid-area: b;
-                border: 1px solid green;
+        }
+        &__header {
+            grid-area: h;
+            &:before {
+                content: ".Content__header"
             }
-            &:nth-child(3) {
-                grid-area: c;
-                border: 1px solid red;
+        }
+        &__area {
+            grid-area: ca;
+            border: 1px solid $silver;
+            padding: $h2;
+            display: grid;
+            gap: $h-2;
+            &:before {
+                content: ".Content__area"
             }
+        }
+        &__nav {
+            grid-area: n;
+            &:before {
+                content: ".Content__nav"
+            }
+        }
+        &__footer {
+            grid-area: f;
+            &:before {
+                content: ".Content__footer";
+            }
+        }
+    }
+    .Area {
+        border: 1px dotted red;
+        position: relative;
+        min-height: $h2;
+        &:before {
+            content: ".Area";
+            color: red;
+            position: absolute;
+            top: $h-1;
+            left: $h-1;
+            font-weight: bold;
+            font-size: $h0;
         }
     }
     .Colors {
@@ -280,42 +403,28 @@
 />
 
 <Area>
-    <h3>CSS-Grid layout</h3>
-    <div class="cssGrid">
-        <div class="cssGridItem">
-            This could be a Header 
-            <code>
-                grid-area: header
-            </code>
+    <Section title="CSS-Grid layout">
+        <div class="Main">
+            <div class="Main__brand"></div>
+            <div class="Main__nav"></div>
+            <div class="Main__header"></div>
+            <div class="Main__content">
+                <div class="Content">
+                    <div class="Content__header"></div>
+                    <div class="Content__nav"></div>
+                    <div class="Content__area">
+                        <article class="Area"></article>
+                        <article class="Area"></article>
+                        <article class="Area"></article>
+                    </div>
+                    <div class="Content__footer"></div>
+                </div>
+            </div>
+            <div class="Main__sidebar"></div>
+            <div class="Main__footer"></div>
+            <div class="Main__totop"></div>
         </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-        <div class="cssGridItem">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, nulla!
-        </div>
-    </div>
+    </Section>
 </Area>
 
 <Area>
