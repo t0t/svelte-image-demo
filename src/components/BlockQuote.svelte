@@ -1,5 +1,5 @@
 <script>
-    export let quote, author;
+    export let quote, author, invert;
 </script>
 
 <style lang="scss">
@@ -8,9 +8,18 @@
         color: $tertiary;
         font-style: italic;
     }
+    .txt-invert {
+        color: $primary;
+    }
 </style>
-
-<blockquote class="Quote QuoteLine">
+{#if invert}
+<blockquote class="Quote QuoteLine txt-invert">
     <strong>"{quote}"</strong><br>
     <small>{author}</small>
 </blockquote>
+    {:else}
+    <blockquote class="Quote QuoteLine">
+        <strong>"{quote}"</strong><br>
+    <small>{author}</small>
+</blockquote>
+    {/if}

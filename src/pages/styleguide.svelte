@@ -38,9 +38,6 @@
 <PageTitle pageTitle="Design System" pageSubTitle="Living styleguide 👋" />
 
 <Content>
-    <div class="Content__header">
-        <h3>Content title</h3>
-    </div>
     <div class="Content__nav">
         <p>Content navigation</p>
     </div>

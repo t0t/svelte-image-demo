@@ -7,7 +7,7 @@
         gap: $h0;
         padding-top: $h1;
         grid-template-areas:
-            "b b . . . . . . . n n n"
+            ". . . . . . b . . . . n"
             "h h h h h h h h h h h h"
             "c c c c c c c c c c c c"
             "c c c c c c c c c c c c"
@@ -56,14 +56,11 @@
         grid-auto-flow: row;
         gap: $h0;
         grid-template-areas:
-            ". h h h h h h n n f f ."
+            "h h h h h h h h h h h h"
+            ". . . . n n n n . . . ."
             "ca ca ca ca ca ca ca ca ca ca ca ca"
             "ca ca ca ca ca ca ca ca ca ca ca ca"
         ;
-    }
-
-    &__header {
-        grid-area: h;
     }
 
     &__area {
@@ -74,10 +71,5 @@
 
     &__nav {
         grid-area: n;
-
-    }
-
-    &__footer {
-        grid-area: f;
     }
 }

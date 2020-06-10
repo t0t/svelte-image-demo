@@ -1,8 +1,24 @@
+<script>
+  export let size = "100%";
+  import { draw } from 'svelte/transition';
+  let duration = 9000;
+  let delay = 100;
+  let active = false;
+</script>
+
 <style lang="scss">
     @import "../../styles/main.scss";
+    svg.active path {
+        stroke: $tertiary;
+        stroke-dasharray: 0;
+    }
 </style>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 193 169">
+<svg 
+style="width: {size};"
+class:active="{active}"
+on:click="{() => active = !active}" 
+xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 193 169">
     <path fill="none" d="M4.054 164.65l30.564-52.938 30.563 52.938H4.054zM65.763
       164.65l30.563-52.938 30.562 52.938H65.763zM127.186
       164.65l30.563-52.938 30.563 52.938h-61.126zM34.936 111.176L65.5

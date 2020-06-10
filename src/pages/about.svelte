@@ -1,10 +1,7 @@
 <script>
-  // import Image from "svelte-image";
-  // import Prism from "../components/PrismJS.svelte";
   import {
     fade
   } from 'svelte/transition';
-  // import { flip } from 'svelte/animate';
   import data from "../data/libros.json";
   const libros = data.libros;
   import listaConceptos from "../data/conceptos.json";
@@ -17,8 +14,14 @@
   } from '../components/tabs.js';
   import PageTitle from '../components/PageTitle.svelte';
   import BlockQuote from '../components/BlockQuote.svelte';
+  import Content from '../components/Content.svelte';
+  import ContentArea from '../components/ContentArea.svelte';
+  import Area from '../components/Area.svelte';
   import Banner from '../components/Banner.svelte';
   import List from '../components/List.svelte';
+  import Cards from '../components/Cards.svelte';
+  import Card from '../components/Card.svelte';
+  import Figure from '../components/Figure.svelte';
   import IconCero from '../components/icons/IconCero.svelte';
   import IconUno from '../components/icons/IconUno.svelte';
   import IconDos from '../components/icons/IconDos.svelte';
@@ -29,6 +32,16 @@
 
   let visible = true;
   let cualidades = {
+    cero: [
+      'asd',
+      'sdf',
+      'fdh',
+      'dh',
+      'sfdf',
+      'dfhf',
+      'sd',
+      't54',
+    ],
     uno: [
       'mónada',
       'punto',
@@ -90,82 +103,65 @@
   <title>TODH | Playground</title>
 </svelte:head>
 
-<PageTitle 
-    pageTitle="El proceso de la Creación"
-    pageSubTitle="Matriz/modelo/prototipo base de cualquier cosa."
-/>
+<PageTitle pageTitle="El proceso de la Creación" pageSubTitle="Matriz/modelo/prototipo base de cualquier cosa." />
 
-<div class="Grid GridHome">
+<Content>
+  <ContentArea>
+    <Area title="La Unidad y sus dimensiones">
+      <Cards>
 
-  <div class="Grid GridItem GridArticle">
-    <p>
-      <strong>Espacio</strong>
-      <br />
-      cosmogénesis: El mar de Nun. Campo de posibilidades. Incognoscible.
-      Potencial que se actualiza...
-    </p>
-    <div class="GridItemHalfRow">
-      <IconCero />
-    </div>
-    <div>
-      <h3>0</h3>
-    </div>
-    <div class="GridItemFullRow">
-      <h3>La Unidad y sus dimensiones</h3>
-    </div>
-    <div>
-      <h3>1</h3>
-      <IconUno />
-      <h4>{cualidades.uno[count]}</h4>
-    </div>
-    <div>
-      <h3>2</h3>
-      <IconDos />
-      <h4>{cualidades.dos[count]}</h4>
-    </div>
-    <div>
-      <h3>3</h3>
-      <IconTres />
-      <h4>{cualidades.tres[count]}</h4>
-    </div>
-    <div>
-      <h3>4</h3>
-      <IconCuatro />
-      <h4>{cualidades.cuatro[count]}</h4>
-    </div>
+        <Card title="0" description={cualidades.cero[count]} 
+        image="img/grafico-cero.svg">
+        <button on:click={increment}>
+          +
+        </button>
+        </Card>
 
-    <div class="cualidades_btn">
-      <button on:click={increment}>
-        Cambia el contenido, no el contenedor
-      </button>
-    </div>
-    <div>
-      <strong>La Tetractys Pitagórica</strong>
-      <br />
-      Década. Unidad.
-    </div>
-    <div class="GridItemHalfRow">
-      <IconTetractys />
-    </div>
-    <div>
-      <h3>
-        0
-        <br />
-        + 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1
-      </h3>
-    </div>
-  </div>
+        <Card title="1" description={cualidades.uno[count]} 
+        image="img/grafico-uno.svg">
+        <button on:click={increment}>
+          +
+        </button>
+        </Card>
 
-  <Banner>
-    <figure slot="image">
-      <IconEspiral />
-    </figure>
-    <BlockQuote quote={"La raíz profunda de la Creación es el orden y sentirlo nos reconecta con todo lo que existe."}
-      author={"TODH"} />
-  </Banner>
+        <Card title="2" description={cualidades.dos[count]} 
+        image="img/dos.svg">
+        <button on:click={increment}>
+          +
+        </button>
+        </Card>
 
-  <article class="GridItem GridArticle">
-    <h3 class="GridArticleTitle">Una lógica de la observación</h3>
+        <Card title="3" description={cualidades.tres[count]} 
+        image="img/tres.svg">
+        <button on:click={increment}>
+          +
+        </button>
+        </Card>
+
+        <Card title="4" description={cualidades.cuatro[count]} 
+        image="img/cuatro.svg">
+        <button on:click={increment}>
+          +
+        </button>
+        </Card>
+    </Cards>
+    </Area>
+
+    <Banner>
+      <figure slot="image">
+        <IconEspiral />
+      </figure>
+      <BlockQuote quote={"La raíz profunda de la Creación es el orden y sentirlo nos reconecta con todo lo que existe."}
+        author={"TODH"} />
+    </Banner>
+
+    <Area title="La Tetractys Pitagórica">
+      <h4>Década. Unidad. <br>
+        0 + 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1 </h4>
+      <IconTetractys size="50%"/>
+    </Area>
+
+    <Area title="Una lógica de la observación">
     <p>
       La base de lo que es TODH, para mí queda sobradamente explicada
       contemplando la Tetractys, la vesica Piscis o el número-idea Pitagórico.
@@ -197,77 +193,73 @@
       por sí mismos, tú no los creas, sólo los ves y reconoces cual es su sitio.
       No inventas nada, no añades nada. TODH es simplemente orden "elemental".
     </p>
-  </article>
+    </Area>
 
-  <article class="GridItem GridArticle">
-    <h3 class="GridArticleTitle">Términos clave</h3>
-    
-    <List>
+    <Area title="Términos clave">
+      <List>
       {#each conceptos as item}
-      <li>
-        <p><strong>{item.title} </strong>{@html item.text}
+        <li>
+          <p><strong>{item.title} </strong>{@html item.text}
           <a href="{item.href}" target="{item.target}"><small>{item.link}</small></a></p>
         </li>
-        {/each}
+      {/each}
       </List>
-      
-    </article>
-    
-<article class="GridItem GridArticle">
-  <h3 class="GridArticleTitle">Documentación</h3>
-    <Tabs>
-      <TabList>
-        <Tab>fuentes antiguas</Tab>
-        <Tab>libros</Tab>
-        <Tab>videos</Tab>
-        <Tab>varios</Tab>
-      </TabList>
-
-    <TabPanel>
-      <ul>
-        <li>Cosmogénesis babilónica</li>
-        <li>Cosmogénesis egipcia</li>
-        <li>Escuela Pitagórica</li>
-        <li>Hermetismo</li>
-        <li>Astrología Humanista</li>
-        <li>Filosofía presocrática</li>
-      </ul>
-    </TabPanel>
-
-    <TabPanel>
-      <List>
-        {#each libros as item}
-        <li><a href="{item.href}" target="{item.target}">{item.link}</a></li>
-        {/each}
-      </List>
-    </TabPanel>
-
-    <TabPanel>
-      <ul transition:fade>
-        <li>
-          <a href="https://www.youtube.com/watch?v=kIWu5KxEGVs" target="_blank">
-            La creatividad es un proceso universal: Jaime Buhigas at TEDxRetiro
-          </a>
-        </li>
-      </ul>
-    </TabPanel>
-    <TabPanel>
-      <ul transition:fade>
-        <li>
-          <a href="http://www.wikilogica.org.es/wikilogica/index.php/L%C3%B3gica_Global_Convergente" target="_blank">
-            Lógica global convergente
-          </a>
-        </li>
-      </ul>
-    </TabPanel>
-  </Tabs>
-</article>
+    </Area>
+    <Area title="Documentación">
+      <Tabs>
+        <TabList>
+          <Tab>fuentes antiguas</Tab>
+          <Tab>libros</Tab>
+          <Tab>videos</Tab>
+          <Tab>varios</Tab>
+        </TabList>
+  
+      <TabPanel>
+        <ul>
+          <li>Cosmogénesis babilónica</li>
+          <li>Cosmogénesis egipcia</li>
+          <li>Escuela Pitagórica</li>
+          <li>Hermetismo</li>
+          <li>Astrología Humanista</li>
+          <li>Filosofía presocrática</li>
+        </ul>
+      </TabPanel>
+  
+      <TabPanel>
+        <List>
+          {#each libros as item}
+          <li><a href="{item.href}" target="{item.target}">{item.link}</a></li>
+          {/each}
+        </List>
+      </TabPanel>
+  
+      <TabPanel>
+        <ul transition:fade>
+          <li>
+            <a href="https://www.youtube.com/watch?v=kIWu5KxEGVs" target="_blank">
+              La creatividad es un proceso universal: Jaime Buhigas at TEDxRetiro
+            </a>
+          </li>
+        </ul>
+      </TabPanel>
+      <TabPanel>
+        <ul transition:fade>
+          <li>
+            <a href="http://www.wikilogica.org.es/wikilogica/index.php/L%C3%B3gica_Global_Convergente" target="_blank">
+              Lógica global convergente
+            </a>
+          </li>
+        </ul>
+      </TabPanel>
+    </Tabs>
+  </Area>
 
   <Banner index={1}>
-    <figure slot="image">
-      <IconCuatro />
-    </figure>
-    <BlockQuote quote={"La creatividad es un proceso universal"} author={"Jaime Buhigas"} />
+    <img src="img/dos.svg" alt="Alt text">
+    <!-- <figure slot="image">
+    </figure> -->
+    <BlockQuote invert quote="La creatividad es un proceso universal" author="Jaime Buhigas" />
   </Banner>
 
-</div>
+  </ContentArea>
+</Content>
