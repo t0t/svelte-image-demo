@@ -107,7 +107,7 @@
 
 <Content>
   <ContentArea>
-    <Area title="La Unidad y sus dimensiones">
+    <Area>
       <Cards>
 
         <Card title="0" description={cualidades.cero[count]} 
@@ -155,10 +155,12 @@
         author={"TODH"} />
     </Banner>
 
-    <Area title="La Tetractys Pitagórica">
-      <h4>Década. Unidad. <br>
-        0 + 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1 </h4>
-      <IconTetractys size="50%"/>
+    <Area title="Tetractys">
+      <div class="center">
+        <Figure caption="0 + 1 + 2 + 3 + 4 = 10 = 1 + 0 = 1">
+          <IconTetractys />
+        </Figure>
+      </div>
     </Area>
 
     <Area title="Una lógica de la observación">

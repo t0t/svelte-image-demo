@@ -6,7 +6,6 @@
     @import "../styles/main.scss";
 
     .Area {
-        text-align: center;
         @include media(s1) {
             margin-bottom: $h1;
             padding: $h1;

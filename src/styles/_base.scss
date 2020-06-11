@@ -231,3 +231,10 @@ input[type="range"] {
 button:focus {
 	border-color: $secondary;
 }
+
+.center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -9,7 +9,7 @@
 <style lang="scss">
     @import "../../styles/main.scss";
     svg.active path {
-        stroke: $tertiary;
+        stroke: none;
         stroke-dasharray: 0;
     }
 </style>

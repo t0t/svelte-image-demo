@@ -11,7 +11,11 @@
 <style lang="scss">
 @import "../styles/main.scss";
 .Card {
-    border: 1px solid $silver;
+    background-color: $white;
+    /* border: 1px solid $silver; */
+    border-bottom-right-radius: $h2;
+    border-bottom-left-radius: $h2;
+    
     &Title {
         padding-top: $h2;
     }
