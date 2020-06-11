@@ -1,6 +1,7 @@
 <script>
-    // import Image from "svelte-image";
-    // import { onMount } from 'svelte';
+    import Content from "../../components/Content.svelte";
+    import ContentArea from "../../components/ContentArea.svelte";
+    import Area from "../../components/Area.svelte";
     import {
         url
     } from "@sveltech/routify";
@@ -16,11 +17,12 @@
     .Post {
         padding: $h2;
         padding-top: $h5;
-        
+
         @include media(s2) {
             padding: $h3;
             padding-top: $h5;
         }
+
         &Article h3 {
             text-align: center;
             color: $grey;
@@ -48,6 +50,7 @@
                 padding: $h3;
                 /* background-color: $tertiary; */
             }
+
             @include media(s3) {
                 max-width: 68%;
             }
@@ -64,8 +67,12 @@
     }
 </style>
 
-<section class="Post">
-    {#each posts as post}
+
+<Content>
+    <ContentArea>
+        <Area>
+        <div class="Post">
+        {#each posts as post}
         {#if (post.slug === slug)}
             <article class="PostArticle">
                 <h1 class="PostHeader">
@@ -98,5 +105,8 @@
                 </div>
             </article>
         {/if}
-    {/each}
-</section>
+        {/each}
+        </div>
+        </Area>
+    </ContentArea>
+</Content>

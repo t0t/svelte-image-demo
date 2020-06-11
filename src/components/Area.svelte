@@ -1,9 +1,10 @@
 <script>
-    export let title;
+    export let title = "";
 </script>
 
 <style lang="scss">
     @import "../styles/main.scss";
+
     .Area {
         text-align: center;
         @include media(s1) {
@@ -23,7 +24,8 @@
         margin-top: $h4;
     } */
     h3,
-    h5 {text-align: center;
+    h5 {
+        text-align: center;
         padding-bottom: $h1;
         color: $alpha_grey;
     }

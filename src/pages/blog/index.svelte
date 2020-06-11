@@ -2,14 +2,18 @@
   // import Image from "svelte-image";
   import PageTitle from "../../components/PageTitle.svelte";
   import data from "./blog.json";
-  const posts = data.posts;
-
   import {
     url,
     isActive
   } from "@sveltech/routify";
-
   import { Swipe, SwipeItem } from "svelte-swipe";
+  import Content from "../../components/Content.svelte";
+  import ContentArea from "../../components/ContentArea.svelte";
+  import Area from "../../components/Area.svelte";
+  import Cards from "../../components/Cards.svelte";
+  import Card from "../../components/Card.svelte";
+  
+  const posts = data.posts;
   let autoplay = false;
   let delay = 2000; //ms
   let showIndicators = false;
@@ -83,39 +87,47 @@
     pageSubTitle="My crazy thoughts"
 />
 
-<div class="swipe-holder">
-  <Swipe {showIndicators} {autoplay} {delay} {transitionDuration} {defaultIndex}>
-    <SwipeItem>
-      <img src="/img/img0.jpg" alt="">
-    </SwipeItem>
+<Content>
+  <ContentArea>
 
-    <SwipeItem>
-      <img src="/img/img2.jpg" alt="">
-    </SwipeItem>
+    <div class="swipe-holder">
+      <Swipe {showIndicators} {autoplay} {delay} {transitionDuration} {defaultIndex}>
+        <SwipeItem>
+          <img src="/img/img0.jpg" alt="">
+        </SwipeItem>
+    
+        <SwipeItem>
+          <img src="/img/img2.jpg" alt="">
+        </SwipeItem>
+    
+        <SwipeItem>
+          <img src="/img/img3.jpg" alt="">
+        </SwipeItem>
+    
+        <SwipeItem>
+          <img src="/img/img4.jpg" alt="">
+        </SwipeItem>
+      </Swipe>
+    </div>
 
-    <SwipeItem>
-      <img src="/img/img3.jpg" alt="">
-    </SwipeItem>
+    <Area>
+      <Cards>
+        {#each posts as post}
+          <Card 
+          title={post.title}
+          description={post.excerpt}
+          image={post.imagen}
+          >
+            <a href="/blog/{$url(post.slug)}">
+            Read >
+            </a>
+          </Card>
+        {/each}
+      </Cards>
+    </Area>
 
-    <SwipeItem>
-      <img src="/img/img4.jpg" alt="">
-    </SwipeItem>
-  </Swipe>
-</div>
-
-<div class="CardGroup">
-  {#each posts as post}
-  <a class="CardItem" href="blog/{$url(post.slug)}">
-    <figure>
-      <img src="{post.imagen}" alt="Poster for {post.title}" />
-      <figcaption>
-        <h3>{post.title}</h3>
-        <p>{@html post.excerpt}</p>
-      </figcaption>
-    </figure>
-  </a>
-  {/each}
-</div>
+  </ContentArea>
+</Content>
 
   
   

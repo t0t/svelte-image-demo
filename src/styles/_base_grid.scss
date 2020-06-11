@@ -13,7 +13,7 @@
             "c c c c c c c c c c c c"
             "c c c c c c c c c c c c"
             "c c c c c c c c c c c c"
-            ". f f f f f f f f f t t"
+            ". f f f f f f f f f f ."
         ;
     }
 
@@ -35,14 +35,11 @@
 
     &__footer {
         grid-area: f;
+        padding: $h0;
     }
 
     &__sidebar {
         grid-area: s;
-    }
-
-    &__totop {
-        grid-area: t;
     }
 }
 

@@ -18,26 +18,32 @@
 </script>
 
 <style lang="scss">
-@import "../styles/main.scss";
+  @import "../styles/main.scss";
+
+  .playing {
+    color: $primary;
+  }
+
+  div {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    audio {
+      padding-bottom: $h1;
+    }
+  }
+
   small {
     padding-bottom: 0;
     color: $alpha_grey;
   }
-.playing {
-  color: $secondary;
-  display: flex;
-}
-div {
-  display: flex;
-  justify-content: center;
-}
+
 </style>
 
 <div class:playing={!paused}>
-  <small>{title} <br>
-    <strong>{composer}</strong>
-    / performed by {performer}
+  <audio bind:this={audio} bind:paused on:play={stopOthers} controls {src} />
+  <small>
+    {title} {composer} / performed by {performer}
   </small>
 
-  <audio bind:this={audio} bind:paused on:play={stopOthers} controls {src} />
 </div>

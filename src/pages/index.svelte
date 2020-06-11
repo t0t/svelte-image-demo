@@ -8,7 +8,6 @@
     return await response.json();
   })();
   import PageTitle from "../components/PageTitle.svelte";
-  import typeWriter from "../actions/typeWriter.js";
   import Content from "../components/Content.svelte";
   import ContentArea from "../components/ContentArea.svelte";
   import Area from "../components/Area.svelte";
@@ -18,8 +17,6 @@
   import Button from "../components/Button.svelte";
   import Cards from "../components/Cards.svelte";
   import Card from "../components/Card.svelte";
-  import List from "../components/List.svelte";
-  import Figure from "../components/Figure.svelte";
   import IconEspiral from "../components/icons/IconEspiral.svelte";
   import IconCuatro from '../components/icons/IconCuatro.svelte';
   import Step0 from '../components/Step0.svelte';
@@ -67,26 +64,26 @@
 
     <Area>
     {#if step == 0}
-        <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step0/>
-        </div>
-        {:else if step == 1}
-        <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step1/>
-        </div>
-        {:else if step == 2}
-        <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step2/>
-        </div>
-        {:else if step == 3}
-        <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step3/>
-        </div>
-        {:else if step == 4}
-        <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
-          <Step4/>
-        </div>
-        {/if}
+      <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+        <Step0/>
+      </div>
+      {:else if step == 1}
+      <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+        <Step1/>
+      </div>
+      {:else if step == 2}
+      <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+        <Step2/>
+      </div>
+      {:else if step == 3}
+      <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+        <Step3/>
+      </div>
+      {:else if step == 4}
+      <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
+        <Step4/>
+      </div>
+      {/if}
     </Area>
 
     <Banner index={0}>
@@ -99,25 +96,25 @@
 
     <Area title="Fetching Json data from service">
     {#await fetchImage}
-          <Loading/>
+      <Loading/>
       {:then data}
-          <Cards>                
-              {#each data.demo as demo}
-              <Card 
-                  title={demo.title} 
-                  description={demo.description}
-                  image={demo.img}
-              />
-              {/each}
-          </Cards>
+      <Cards>                
+        {#each data.demo as demo}
+        <Card 
+          title={demo.title} 
+          description={demo.description}
+          image={demo.img}
+        />
+        {/each}
+      </Cards>
       {:catch error}
-          <p>An error occurred!</p>
+        <p>An error occurred!</p>
       {/await}
       </Area>
 
       <Banner index={0}>
-          <BlockQuote quote="This is a blockquote" author="Author" />
-          <IconEspiral />
+        <BlockQuote quote="This is a blockquote" author="Author" />
+        <IconEspiral />
       </Banner>
 
   </ContentArea>

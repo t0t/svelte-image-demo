@@ -1,4 +1,3 @@
-
 <script>
     export let title = "Default title";
     export let description = "Default content";

@@ -4,7 +4,6 @@
         const response = await fetch(url);
         return await response.json();
     })();
-    import typeWriter from "../actions/typeWriter.js";
 
     import PageTitle from "../components/PageTitle.svelte";
     import Content from "../components/Content.svelte";
@@ -38,27 +37,20 @@
 <PageTitle pageTitle="Design System" pageSubTitle="Living styleguide 👋" />
 
 <Content>
-    <div class="Content__nav">
-        <p>Content navigation</p>
-    </div>
+<ContentArea>
 
-    <ContentArea>
-
-        <Area>
+    <Area>
         <h3>Typography</h3>
         <h1>h1 Main title</h1>
         <h2>h2 Subtitle</h2>
         <h3>h3 Header</h3>
         <h4>h4 Header</h4>
         <h5>h5 Header</h5>
-        <p>Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Est ullam <strong>tempora</strong>
-            accusamus porro doloremque. Mollitia praesentium neque aut! Quibusdam id in <a
-                href="./about">repellendus</a> sint? Quam iste dignissimos amet nisi, eveniet ullam. <small>Small
-                text</small></p>
+        <p>Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Est ullam <strong>tempora</strong> accusamus porro doloremque. Mollitia praesentium neque aut! Quibusdam id in <a href="./about">repellendus</a> sint? Quam iste dignissimos amet nisi, eveniet ullam. <small>Small text</small></p>
         <BlockQuote quote="This is a blockquote" author="Author" />
-        </Area>
+    </Area>
 
-        <Area title="Icons and graphics">
+    <Area title="Icons and graphics">
         <div>
             <IconEspiral />
             Full size
@@ -71,28 +63,28 @@
             <IconEspiral size="24px" />
             Icon size
         </div>
-        </Area>
+    </Area>
 
-        <Area title="Figure">
+    <Area title="Figure">
         <Figure caption="The caption">
             <img src="img/img0.jpg" alt="Alt text">
         </Figure>
-        </Area>
+    </Area>
 
-        <Area title="Toggle Menu">
+    <Area title="Toggle Menu">
         <ToggleMenu />
-        </Area>
+    </Area>
 
-        <Area title="Buttons">
+    <Area title="Buttons">
         <Button text="Button" />
         <Button text="Another button" />
-        </Area>
+    </Area>
 
-        <Area title="Brand">
+    <Area title="Brand">
         <SiteBrand />
-        </Area>
+    </Area>
 
-        <Area title="Colors">
+    <Area title="Colors">
         <div class="Colors">
             <div></div>
             <div></div>
@@ -115,9 +107,9 @@
             <div></div>
             <div></div>
         </div>
-        </Area>
+    </Area>
 
-        <Area title="Grid Layout">
+    <Area title="Grid Layout">
         <div class="StyleGuide Main">
             <div class="StyleGuide Main__brand"></div>
             <div class="StyleGuide  Main__nav"></div>
@@ -137,22 +129,22 @@
             <div class="StyleGuide  Main__footer"></div>
             <div class="StyleGuide  Main__totop"></div>
         </div>
-        </Area>
+    </Area>
 
-        <Area title="Full Simple Card">
+    <Area title="Full Simple Card">
         <Card />
-        </Area>
+    </Area>
 
-        <Area title="Group Cards">
+    <Area title="Group Cards">
         <Cards>
             <Card title="Title" description="Lorem ipsum dolor sit amet consectetur adipisicing.">
                 <Button text="Button" />
             </Card>
- 
+
             <Card title="Title 2"
-                content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima." />
+                description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima." />
             <Card title="With inlne svg instead image"
-                content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima."
+                description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima."
                 hasImage={false} hasInlineSvg={true}>
                 <span slot="hasSvg">
                     <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round"
@@ -169,21 +161,21 @@
                 </span>
             </Card>
             <Card title="Éste card no lleva imagen" hasImage={false}
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum?" />
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum?" />
             <Card title="Éste tampoco..." hasImage={false}
-                content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum?" />
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum?" />
         </Cards>
-        </Area>
+    </Area>
 
-        <Area title="Images">
+    <Area title="Images">
         <img src="img/img0.jpg" alt="">
-        </Area>
+    </Area>
 
-        <Banner index={0}>
-            Banner (inverted variant) with simple text inside
-        </Banner>
+    <Banner index={0}>
+        Banner (inverted variant) with simple text inside
+    </Banner>
 
-        <Area title="Tabs">
+    <Area title="Tabs">
         <Tabs>
             <TabList>
                 <Tab>Tab 1</Tab>
@@ -208,23 +200,23 @@
                 Tab panel 4
             </TabPanel>
         </Tabs>
-        </Area>
+    </Area>
 
-        <Banner index={1}>
-            Banner with simple text inside
-        </Banner>
+    <Banner index={1}>
+        Banner with simple text inside
+    </Banner>
 
-        <Area title="Main Nav Component">
+    <Area title="Main Nav Component">
         <code>import Nav from "../Nav.svelte";</code>
         <Nav />
-        </Area>
+    </Area>
 
-        <Area title="Component Header">
+    <Area title="Component Header">
         <code>import PageTitle from "../PageTitle.svelte";</code>
         <PageTitle pageTitle="Page title" pageSubTitle="Page Subtitle" />
-        </Area>
+    </Area>
 
-        <Area title="Fetching Json data from service">
+    <Area title="Fetching Json data from service">
         {#await fetchImage}
             <Loading/>
         {:then data}
@@ -240,16 +232,12 @@
         {:catch error}
             <p>An error occurred!</p>
         {/await}
-        </Area>
+    </Area>
 
-        <Banner index={0}>
-            <BlockQuote quote="This is a blockquote" author="Author" />
-            <IconEspiral />
-        </Banner>
+    <Banner index={0}>
+        <BlockQuote quote="This is a blockquote" author="Author" />
+        <IconEspiral />
+    </Banner>
 
-    </ContentArea>
-
-    <div class="Content__footer">
-        <p>content footer</p>
-    </div>
+</ContentArea>
 </Content>
