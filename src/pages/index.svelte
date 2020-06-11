@@ -50,19 +50,17 @@
   <title>Index TODH</title>
 </svelte:head>
 
-<PageTitle pageTitle="Sergio Forés" pageSubTitle="Visión holística y artefactos en torno a la Creación 👋" />
+<PageTitle pageTitle="T O D H" pageSubTitle="Visión holística y artefactos en torno a la Creación 👋" />
 
 <Content>
-
-  <div class="Content__nav">
-    <button on:click="{prev}" disabled="{step < 1}">&lt;</button>
-    <button on:click="{next}" disabled="{step > 3}">&gt;</button>
-    <em>{ step } / 4</em>
-  </div>
-
   <ContentArea>
-
+    
     <Area>
+      <div class="Content__nav">
+        <button on:click="{prev}" disabled="{step < 1}">&lt;</button>
+        <button on:click="{next}" disabled="{step > 3}">&gt;</button>
+        <em>{ step } / 4</em>
+      </div>
     {#if step == 0}
       <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
         <Step0/>
@@ -83,7 +81,7 @@
       <div class="GridItem" in:fade="{{x: inX}}" out:fade="{{x: outX}}">
         <Step4/>
       </div>
-      {/if}
+    {/if}
     </Area>
 
     <Banner index={0}>

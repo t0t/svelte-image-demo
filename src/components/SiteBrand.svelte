@@ -1,7 +1,5 @@
 <script>
-    import {
-        url
-    } from "@sveltech/routify";
+    import { url } from "@sveltech/routify";
     let home = "/";
 </script>
 
@@ -9,7 +7,9 @@
     @import "../styles/main.scss";
 
     .SiteBrand {
-        padding-left: $h0;
+        display: flex;
+        justify-content: center;
+        padding: $h0;
         display: grid;
         align-items: center;
 
@@ -25,14 +25,6 @@
                 fill: $white;
             }
         }
-
-        @include media(s2) {
-            padding-left: $h2;
-        }
-    }
-
-    a {
-        display: grid;
     }
 
     svg {
@@ -55,7 +47,7 @@
 </style>
 
 <div class="Main__brand">
-    <a href="{$url(home)}" alt="Main navigation">
+    <a href="{$url(home)}" class="SiteBrand" alt="Brand Logo">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 39">
             <title>Brand Logo</title>
             <g fill-rule="evenodd" stroke-linejoin="round" stroke-linecap="round">

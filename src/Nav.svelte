@@ -4,11 +4,11 @@
     isActive
   } from "@sveltech/routify";
   let y;
-  const links = [
-    ["./styleguide", "Styleguide"],
-    ["./about", "TODH"],
+  const _links = [
+    ["./about", "About TODH"],
+    ["./products", "Artifacts"],
     ["./blog", "Blog"],
-    ["./products", "Artefactos"],
+    ["./styleguide", "Styleguide"],
   ];
   let showControls = false;
   const toggleControls = () => (showControls = !showControls);
@@ -53,7 +53,6 @@
     border-radius: 50%;
     top: $h1;
     right: $h4;
-
   }
 </style>
 
@@ -71,7 +70,8 @@
     
   {#if showControls}
     <ul class="MainNav">
-      {#each links as [path, name]}
+      <a class="backlink" href={$url('/')}>&#8656; BACK TO APP</a>
+      {#each _links as [path, name]}
       <li>
         <a href="{$url(path)}" class:selected="{$isActive(path)}">{name}</a>
       </li>
@@ -79,22 +79,5 @@
     </ul>
   {/if}
 </div>
-{:else}
-<button class="toggle-button" on:click={toggleControls}>
-  {#if showControls}
-    -
-    {:else}
-    +
-  {/if}
-</button>
-  
-{#if showControls}
-  <ul class="MainNav">
-    {#each links as [path, name]}
-    <li>
-      <a href="{$url(path)}" class:selected="{$isActive(path)}">{name}</a>
-    </li>
-    {/each}
-  </ul>
-{/if}
+
 {/if}

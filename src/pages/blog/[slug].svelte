@@ -16,12 +16,6 @@
 
     .Post {
         padding: $h2;
-        padding-top: $h5;
-
-        @include media(s2) {
-            padding: $h3;
-            padding-top: $h5;
-        }
 
         &Article h3 {
             text-align: center;
@@ -30,8 +24,6 @@
         }
 
         &Content {
-            gap: $h3;
-
             h3 {
                 text-align: inherit;
                 margin-bottom: $h3;
