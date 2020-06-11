@@ -1,21 +1,26 @@
 <script>
-    export let index = 0;
+    export let variante = 0;
     export let modificador = [
         "BannerBlack",
-        "BannerDefault"
+        "BannerDefault",
+        "BgColorAlert"
     ];
 </script>
 
 <style lang="scss">
     @import "../styles/main.scss";
     .BannerDefault {
-        background-color: $tertiary;
+        background-color: $alpha_white;
         stroke: $tertiary;
         fill: $tertiary;
     }
+    .BannerBlack {
+        color: $white;
+        background-color: $primary;
+    }
 </style>
 
-<div class="Banner {modificador[index]}">
+<div class="Banner {modificador[variante]}">
     <slot name="image"></slot>
     <slot></slot>
 </div>

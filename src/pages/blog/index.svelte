@@ -117,6 +117,7 @@
           title={post.title}
           description={post.excerpt}
           image={post.imagen}
+          variante={4}
           >
             <a href="/blog/{$url(post.slug)}">
             Read >

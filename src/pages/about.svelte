@@ -110,36 +110,46 @@
     <Area>
       <Cards>
 
-        <Card title="0" description={cualidades.cero[count]} 
+        <Card title="0" 
+        variante={0}
+        description={cualidades.cero[count]} 
         image="img/grafico-cero.svg">
         <button on:click={increment}>
           +
         </button>
         </Card>
-
-        <Card title="1" description={cualidades.uno[count]} 
+      
+        <Card title="1" 
+        variante={1}
+        description={cualidades.uno[count]} 
         image="img/grafico-uno.svg">
         <button on:click={increment}>
           +
         </button>
         </Card>
 
-        <Card title="2" description={cualidades.dos[count]} 
+        <Card title="2" 
+        variante={2}
+        description={cualidades.dos[count]} 
         image="img/dos.svg">
         <button on:click={increment}>
           +
         </button>
         </Card>
 
-        <Card title="3" description={cualidades.tres[count]} 
+        <Card title="3" 
+        variante={3}
+        description={cualidades.tres[count]} 
         image="img/tres.svg">
         <button on:click={increment}>
           +
         </button>
         </Card>
 
-        <Card title="4" description={cualidades.cuatro[count]} 
-        image="img/cuatro.svg">
+        <Card title="4" 
+        description={cualidades.cuatro[count]} 
+        image="img/cuatro.svg"
+        variante={4}>
         <button on:click={increment}>
           +
         </button>
@@ -151,8 +161,9 @@
       <figure slot="image">
         <IconEspiral />
       </figure>
-      <BlockQuote quote={"La raíz profunda de la Creación es el orden y sentirlo nos reconecta con todo lo que existe."}
-        author={"TODH"} />
+      <BlockQuote quote="La raíz profunda de la Creación es el orden y sentirlo nos reconecta con todo lo que existe."
+      author="TODH" 
+      variante={1} />
     </Banner>
 
     <Area title="Tetractys">
@@ -177,22 +188,20 @@
       </strong>
       Conforme vas cayendo en lo que la esencia de las cosas es, te van
       importando cada vez menos las formas y más las relaciones. Mi ánimo es el de transmitir esta vivencia profunda y
-      no tanto perseguir una base teórica intelectual. Mucho se ha escrito ya por gente de talla muy superior a la mía,
-      de modo que me parecería absurdo tratar de llenar más páginas al respecto.
+      no tanto perseguir una base teórica intelectual. Mucho se ha escrito ya por gente de talla muy superior a la mía, de modo que me parecería absurdo tratar de llenar más páginas al respecto.
     </p>
-    <BlockQuote quote={"Un viaje que es de regreso a la Unidad."} author={"TODH"} />
+    <BlockQuote 
+    quote="Un viaje que es de regreso a la Unidad." 
+    author="TODH" 
+    variante={1} />
     <p>
       Recalcar la naturaleza sintética de este proyecto que apunta siempre al origen, a lo original, a lo obvio. Un
       viaje que es de regreso a la Unidad.
-      Una incursión. El símbolo tiene ese poder, condensa un vasto campo de significados y los disuelve quedándose con
-      lo esencial.
+      Una incursión. El símbolo tiene ese poder, condensa un vasto campo de significados y los disuelve quedándose con lo esencial.
     </p>
     <p>
       Me gusta comparar TODH con el juego del Tetris cuyo objetivo es
-      desintegrar los objetos que van cayendo. El jugador no añade más cosas al
-      escenario, simplemente reconoce unas formas que aparecen sobre un fondo y
-      comprende cual es su orden. Nada más. Los objetos aparecen y desaparecen
-      por sí mismos, tú no los creas, sólo los ves y reconoces cual es su sitio.
+      desintegrar los objetos que van cayendo. El jugador no añade más cosas al escenario, simplemente reconoce unas formas que aparecen sobre un fondo y comprende cual es su orden. Nada más. Los objetos aparecen y desaparecen por sí mismos, tú no los creas, sólo los ves y reconoces cual es su sitio.
       No inventas nada, no añades nada. TODH es simplemente orden "elemental".
     </p>
     </Area>
@@ -256,11 +265,9 @@
     </Tabs>
   </Area>
 
-  <Banner index={1}>
+  <Banner variante={1}>
     <img src="img/dos.svg" alt="Alt text">
-    <!-- <figure slot="image">
-    </figure> -->
-    <BlockQuote invert quote="La creatividad es un proceso universal" author="Jaime Buhigas" />
+    <BlockQuote variante={2} quote="La creatividad es un proceso universal" author="Jaime Buhigas" />
   </Banner>
 
   </ContentArea>

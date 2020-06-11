@@ -47,7 +47,10 @@
         <h4>h4 Header</h4>
         <h5>h5 Header</h5>
         <p>Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Est ullam <strong>tempora</strong> accusamus porro doloremque. Mollitia praesentium neque aut! Quibusdam id in <a href="./about">repellendus</a> sint? Quam iste dignissimos amet nisi, eveniet ullam. <small>Small text</small></p>
-        <BlockQuote quote="This is a blockquote" author="Author" />
+        
+        <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
+        <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
+        <BlockQuote variante={2} quote="This is a blockquote" author="Author" />
     </Area>
 
     <Area title="Icons and graphics">
@@ -76,8 +79,8 @@
     </Area>
 
     <Area title="Buttons">
-        <Button text="Button" />
-        <Button text="Another button" />
+        <Button variante={0} text="Button" />
+        <Button variante={1} text="Variante 1 de Button" />
     </Area>
 
     <Area title="Brand">
@@ -132,22 +135,34 @@
     </Area>
 
     <Area title="Full Simple Card">
-        <Card />
+        <Card 
+        title="Title" description="Lorem ipsum dolor sit amet consectetur adipisicing."
+        variante={2}
+        />
     </Area>
 
     <Area title="Group Cards">
         <Cards>
-            <Card title="Title" description="Lorem ipsum dolor sit amet consectetur adipisicing.">
-                <Button text="Button" />
+            <Card 
+            title="Title" description="Lorem ipsum dolor sit amet consectetur adipisicing."
+            variante={1}
+            >
+                <Button variante={1} text="Button" />
             </Card>
-
-            <Card title="Title 2"
-                description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima." />
-            <Card title="With inlne svg instead image"
-                description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima."
-                hasImage={false} hasInlineSvg={true}>
+        
+            <Card 
+            title="Variante 3"
+            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima."
+            image="img/img1.jpg" 
+            />
+        
+            <Card 
+            title="With inlne svg instead image"
+            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, perspiciatis dicta molestiae facilis minima."
+            variante={4}
+            hasImage={false} hasInlineSvg={true}>
                 <span slot="hasSvg">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round"
+                <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round"
                         stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 169 169">
                         <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
                             transform="matrix(.03822 0 0 .03822 -452.1 -33.668)" />
@@ -160,10 +175,16 @@
                     </svg>
                 </span>
             </Card>
-            <Card title="Éste card no lleva imagen" hasImage={false}
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum?" />
-            <Card title="Éste tampoco..." hasImage={false}
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum?" />
+
+            <Card 
+            title="Éste card no lleva imagen"
+            hasImage={false}
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum"
+            variante={3}
+            />
+
+            <Card title="Éste tampoco..." hasImage={false} description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, distinctio libero quasi non voluptatibus nisi aut adipisci hic reprehenderit ipsum?"
+            variante={0}/>
         </Cards>
     </Area>
 
@@ -171,8 +192,16 @@
         <img src="img/img0.jpg" alt="">
     </Area>
 
-    <Banner index={0}>
+    <Banner variante={0}>
         Banner (inverted variant) with simple text inside
+    </Banner>
+
+    <Banner variante={1}>
+        Banner with simple text inside
+    </Banner>
+    
+    <Banner variante={2}>
+        Banner with simple text inside
     </Banner>
 
     <Area title="Tabs">
@@ -202,17 +231,7 @@
         </Tabs>
     </Area>
 
-    <Banner index={1}>
-        Banner with simple text inside
-    </Banner>
-
-    <Area title="Main Nav Component">
-        <code>import Nav from "../Nav.svelte";</code>
-        <Nav />
-    </Area>
-
     <Area title="Component Header">
-        <code>import PageTitle from "../PageTitle.svelte";</code>
         <PageTitle pageTitle="Page title" pageSubTitle="Page Subtitle" />
     </Area>
 
@@ -234,8 +253,16 @@
         {/await}
     </Area>
 
-    <Banner index={0}>
-        <BlockQuote quote="This is a blockquote" author="Author" />
+    <Banner variante={0}>
+        <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
+        <IconEspiral />
+    </Banner>
+    <Banner variante={1}>
+        <BlockQuote variante={2} quote="This is a blockquote" author="Author" />
+        <IconEspiral />
+    </Banner>
+    <Banner variante={2}>
+        <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
         <IconEspiral />
     </Banner>
 

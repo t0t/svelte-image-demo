@@ -5,7 +5,7 @@
         gap: $h0;
         @include media(s2) {
             grid-template-columns: repeat(auto-fill, minmax($h6, 1fr));
-            grid-auto-rows: 1fr;
+            grid-auto-rows: auto;
             grid-auto-flow: row;
             gap: $h2;
         }

@@ -1,30 +1,34 @@
 <script>
     export let quote;
     export let author;
-    export let invert = false;
+    export let variante = 0;
+    export let modificador = [
+        "Default",
+        "Grey",
+        "Invert"
+    ];
 </script>
 
 <style lang="scss">
     @import "../styles/main.scss";
 
     .Quote {
-        color: $tertiary;
+        color: $primary;
         font-style: italic;
     }
 
-    .txt-invert {
+    .Default {
+        color: $white;
+    }
+    .Invert {
         color: $primary;
+    }
+    .Grey {
+        color: $grey;
     }
 </style>
 
-{#if invert}
-    <blockquote class="Quote QuoteLine txt-invert">
-        <strong>"{quote}"</strong><br>
-        <small>{author}</small>
-    </blockquote>
-{:else}
-    <blockquote class="Quote QuoteLine">
-        <strong>"{quote}"</strong><br>
-        <small>{author}</small>
-    </blockquote>
-{/if}
+<blockquote class="Quote QuoteLine {modificador[variante]}">
+    <strong>"{quote}"</strong><br>
+    <small>{author}</small>
+</blockquote>

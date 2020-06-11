@@ -19,6 +19,7 @@
   import Card from "../components/Card.svelte";
   import IconEspiral from "../components/icons/IconEspiral.svelte";
   import IconCuatro from '../components/icons/IconCuatro.svelte';
+  import IconTres from '../components/icons/IconTres.svelte';
   import Step0 from '../components/Step0.svelte';
   import Step1 from '../components/Step1.svelte';
   import Step2 from '../components/Step2.svelte';
@@ -47,7 +48,7 @@
 </style>
 
 <svelte:head>
-  <title>Index TODH</title>
+  <title>color TODH</title>
 </svelte:head>
 
 <PageTitle pageTitle="T O D H" pageSubTitle="Visión holística y artefactos en torno a la Creación 👋" />
@@ -84,12 +85,13 @@
     {/if}
     </Area>
 
-    <Banner index={0}>
+    <Banner variante={0}>
       Banner (inverted variant) with simple text inside
     </Banner>
 
-    <Banner index={1}>
-      Banner with simple text inside
+    <Banner variante={1}>
+      <IconTres />
+      <BlockQuote variante={2} quote="This is a Blockquote component into a Banner" author="Author" />
     </Banner>
 
     <Area title="Fetching Json data from service">
@@ -102,6 +104,7 @@
           title={demo.title} 
           description={demo.description}
           image={demo.img}
+          variante={3}
         />
         {/each}
       </Cards>
@@ -110,7 +113,7 @@
       {/await}
       </Area>
 
-      <Banner index={0}>
+      <Banner>
         <BlockQuote quote="This is a blockquote" author="Author" />
         <IconEspiral />
       </Banner>
