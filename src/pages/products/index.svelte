@@ -32,15 +32,14 @@
     <Area>
       <Cards>
         {#each products as product}
+        <a href="/products/{$url(product.slug)}">
           <Card 
           title={product.title}
           description={product.description}
           image={product.imagen}
-          >
-            <a href="/products/{$url(product.slug)}">
-            Details >
-            </a>
-          </Card>
+          variante={3}
+          />
+        </a>
         {/each}
       </Cards>
     </Area>
