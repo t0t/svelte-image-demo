@@ -1,24 +1,17 @@
-<script>
-    import { draw } from 'svelte/transition';
-    let duration = 25000;
-    let delay = 200;
-</script>
-
-<!-- <style lang="scss">
+<style lang="scss">
     @import "../../styles/main.scss";
-</style> -->
+</style>
 
 <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 169 169">
     <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -225.8 25.37)" />
     <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -141.88 25.37)" />
     <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -267.75 25.37)" />
     <circle cx="15135.5" cy="3089.34" r="1097.64" transform="matrix(.0191 0 0 .0191 -183.76 25.37)" />
+    <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke" transform="matrix(.03822 0 0 .03822 -493.93 -33.67)" />
     <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-        transform="matrix(.03822 0 0 .03822 -493.93 -33.67)" />
-    <circle transition:draw="{{duration, delay}}" cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.03822 0 0 .03822 -452.1 -33.67)" />
-    <circle transition:draw="{{duration, delay}}" cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+    <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.03822 0 0 .03822 -536 -33.67)" />
-    <circle transition:draw="{{duration, delay}}" cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+    <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
         transform="matrix(.07644 0 0 .07644 -1072.51 -151.74)" />
 </svg>

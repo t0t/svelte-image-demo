@@ -1,7 +1,7 @@
 <script>
-  import {
-    fade
-  } from 'svelte/transition';
+  // import {
+  //   fade
+  // } from 'svelte/transition';
   import data from "../data/libros.json";
   const libros = data.libros;
   import listaConceptos from "../data/conceptos.json";
@@ -111,7 +111,7 @@
       <Cards>
 
         <Card title="0" 
-        variante={0}
+        variante={4}
         description={cualidades.cero[count]} 
         image="img/grafico-cero.svg">
         <button on:click={increment}>
@@ -149,7 +149,7 @@
         <Card title="4" 
         description={cualidades.cuatro[count]} 
         image="img/cuatro.svg"
-        variante={4}>
+        variante={0}>
         <button on:click={increment}>
           +
         </button>
@@ -245,7 +245,7 @@
       </TabPanel>
   
       <TabPanel>
-        <ul transition:fade>
+        <ul>
           <li>
             <a href="https://www.youtube.com/watch?v=kIWu5KxEGVs" target="_blank">
               La creatividad es un proceso universal: Jaime Buhigas at TEDxRetiro
@@ -254,7 +254,7 @@
         </ul>
       </TabPanel>
       <TabPanel>
-        <ul transition:fade>
+        <ul>
           <li>
             <a href="http://www.wikilogica.org.es/wikilogica/index.php/L%C3%B3gica_Global_Convergente" target="_blank">
               Lógica global convergente

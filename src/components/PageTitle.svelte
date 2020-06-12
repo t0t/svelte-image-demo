@@ -1,6 +1,4 @@
 <script>
-  // import Typewriter from 'svelte-typewriter';
-  // import typeWriter from "../actions/typeWriter.js";
   export let pageTitle;
   export let pageSubTitle;
 </script>

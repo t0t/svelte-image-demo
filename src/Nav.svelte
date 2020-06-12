@@ -4,11 +4,12 @@
     isActive
   } from "@sveltech/routify";
   let y;
+  let home = "/";
   const _links = [
     ["./about", "About TODH"],
     ["./products", "Artifacts"],
     ["./blog", "Blog"],
-    ["./styleguide", "Styleguide"],
+    ["./styleguide", "Styleguide"]
   ];
   let showControls = false;
   const toggleControls = () => (showControls = !showControls);
@@ -70,7 +71,7 @@
     
   {#if showControls}
     <ul class="MainNav">
-      <a class="backlink" href={$url('/')}>&#8656; BACK TO APP</a>
+      <a class="backlink" href={$url(home)}>&#8656; BACK TO APP</a>
       {#each _links as [path, name]}
       <li>
         <a href="{$url(path)}" class:selected="{$isActive(path)}">{name}</a>
