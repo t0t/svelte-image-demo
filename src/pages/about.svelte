@@ -1,17 +1,30 @@
 <script>
-  // import {
-  //   fade
-  // } from 'svelte/transition';
-  import data from "../data/libros.json";
-  const libros = data.libros;
-  import listaConceptos from "../data/conceptos.json";
-  let conceptos = listaConceptos.conceptos;
+  import { onMount } from 'svelte';
+
+  let productos = [];
+  let libros = [];
+  let conceptos = [];
+
+  onMount(async () => {
+    const res = await fetch("/data/products.json");
+    productos = [...await res.json()];
+  });
+  onMount(async () => {
+    const res2 = await fetch("/data/libros.json");
+    libros = [...await res2.json()];
+  });
+  onMount(async () => {
+    const res3 = await fetch("/data/conceptos.json");
+    conceptos = [...await res3.json()];
+  });
+
   import {
     Tabs,
     TabList,
     TabPanel,
     Tab
   } from '../components/tabs.js';
+
   import PageTitle from '../components/PageTitle.svelte';
   import BlockQuote from '../components/BlockQuote.svelte';
   import Content from '../components/Content.svelte';
@@ -29,6 +42,7 @@
   import IconCuatro from '../components/icons/IconCuatro.svelte';
   import IconEspiral from '../components/icons/IconEspiral.svelte';
   import IconTetractys from '../components/icons/IconTetractys.svelte';
+  import Loading from '../components/Loading.svelte';
 
   let visible = true;
   let cualidades = {
@@ -103,13 +117,29 @@
   <title>TODH | Playground</title>
 </svelte:head>
 
-<PageTitle pageTitle="El proceso de la Creación" pageSubTitle="Matriz/modelo/prototipo base de cualquier cosa." />
+<PageTitle pageTitle="El proceso de la Creación" pageSubTitle="Matriz-modelo-prototipo base de cualquier cosa." />
+
 
 <Content>
   <ContentArea>
+
+    <Area>
+    <Cards>
+      {#each productos as producto}
+      <Card 
+        title={producto.title} 
+        description={producto.excerpt} 
+        image={producto.thumbnailUrl}
+        variante={3}>
+      </Card>
+      {:else}
+		  <Loading/>
+      {/each}
+      </Cards>
+    </Area>
+    
     <Area>
       <Cards>
-
         <Card title="0" 
         variante={4}
         description={cualidades.cero[count]} 
@@ -195,28 +225,40 @@
     author="TODH" 
     variante={1} />
     <p>
-      Recalcar la naturaleza sintética de este proyecto que apunta siempre al origen, a lo original, a lo obvio. Un
-      viaje que es de regreso a la Unidad.
+      Recalcar la naturaleza sintética de este proyecto que apunta siempre al origen, a lo original, a lo obvio. Un viaje que es de regreso a la Unidad.
       Una incursión. El símbolo tiene ese poder, condensa un vasto campo de significados y los disuelve quedándose con lo esencial.
     </p>
     <p>
-      Me gusta comparar TODH con el juego del Tetris cuyo objetivo es
-      desintegrar los objetos que van cayendo. El jugador no añade más cosas al escenario, simplemente reconoce unas formas que aparecen sobre un fondo y comprende cual es su orden. Nada más. Los objetos aparecen y desaparecen por sí mismos, tú no los creas, sólo los ves y reconoces cual es su sitio.
+      Me gusta comparar TODH con el juego del Tetris cuyo objetivo es desintegrar los objetos que van cayendo. El jugador no añade más cosas al escenario, simplemente reconoce unas formas que aparecen sobre un fondo y comprende cual es su orden. Nada más. Los objetos aparecen y desaparecen por sí mismos, tú no los creas, sólo los ves y reconoces cual es su sitio.
       No inventas nada, no añades nada. TODH es simplemente orden "elemental".
     </p>
     </Area>
 
     <Area title="Términos clave">
-      <List>
-      {#each conceptos as item}
-        <li>
-          <p><strong>{item.title} </strong>{@html item.text}
-          <a href="{item.href}" target="{item.target}"><small>{item.link}</small></a></p>
-        </li>
-      {/each}
+      <List> 
+          {#each conceptos as concepto}
+          <li>
+            <p><strong>{concepto.title} </strong>{@html concepto.text}
+            <a href="{concepto.href}" target="{concepto.target}"><small>{concepto.link}</small></a></p>
+          </li>
+          {:else}
+		      <Loading/>
+          {/each}
       </List>
     </Area>
-    <Area title="Documentación">
+
+    <Area title="Libros">
+      <ul>
+        {#each libros as item}
+      <li><a href="{item.href}" target="{item.target}">{item.link}</a></li>
+      {:else}
+		  <Loading/>
+      {/each}
+      </ul>
+    </Area>
+
+    <!-- <Area title="Documentación">
+Cuando meto fetch aqui dentro peta
       <Tabs>
         <TabList>
           <Tab>fuentes antiguas</Tab>
@@ -238,9 +280,7 @@
   
       <TabPanel>
         <List>
-          {#each libros as item}
-          <li><a href="{item.href}" target="{item.target}">{item.link}</a></li>
-          {/each}
+          libros...
         </List>
       </TabPanel>
   
@@ -263,7 +303,7 @@
         </ul>
       </TabPanel>
     </Tabs>
-  </Area>
+  </Area> -->
 
   <Banner variante={1}>
     <img src="img/dos.svg" alt="Alt text">

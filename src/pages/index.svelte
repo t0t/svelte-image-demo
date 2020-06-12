@@ -20,27 +20,27 @@
   import IconEspiral from "../components/icons/IconEspiral.svelte";
   import IconCuatro from '../components/icons/IconCuatro.svelte';
   import IconTres from '../components/icons/IconTres.svelte';
-  import Step0 from '../components/Step0.svelte';
-  import Step1 from '../components/Step1.svelte';
-  import Step2 from '../components/Step2.svelte';
-  import Step3 from '../components/Step3.svelte';
-  import Step4 from '../components/Step4.svelte';
+  // import Step0 from '../components/Step0.svelte';
+  // import Step1 from '../components/Step1.svelte';
+  // import Step2 from '../components/Step2.svelte';
+  // import Step3 from '../components/Step3.svelte';
+  // import Step4 from '../components/Step4.svelte';
 
-  let step = 0;
-  let inX = 1000;
-  let outX = -1000;
+  // let step = 0;
+  // let inX = 1000;
+  // let outX = -1000;
 
-  function prev() {
-    inX = -1000;
-    outX = 1000;
-    step = step - 1;
-  }
+  // function prev() {
+  //   inX = -1000;
+  //   outX = 1000;
+  //   step = step - 1;
+  // }
 
-  function next() {
-    inX = 1000;
-    outX = -1000;
-    step = step + 1;
-  }
+  // function next() {
+  //   inX = 1000;
+  //   outX = -1000;
+  //   step = step + 1;
+  // }
 </script>
 
 <style lang="scss">
@@ -48,7 +48,7 @@
 </style>
 
 <svelte:head>
-  <title>color TODH</title>
+  <title>TODH</title>
 </svelte:head>
 
 <PageTitle pageTitle="T O D H" pageSubTitle="Visión holística y artefactos en torno a la Creación 👋" />
@@ -56,7 +56,7 @@
 <Content>
   <ContentArea>
     
-    <Area>
+    <!-- <Area>
       <div class="Content__nav">
         <button on:click="{prev}" disabled="{step < 1}">&lt;</button>
         <button on:click="{next}" disabled="{step > 3}">&gt;</button>
@@ -83,7 +83,7 @@
         <Step4/>
       </div>
     {/if}
-    </Area>
+    </Area> -->
 
     <Banner variante={0}>
       Banner (inverted variant) with simple text inside

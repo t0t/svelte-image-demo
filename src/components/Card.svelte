@@ -19,7 +19,7 @@
 <style lang="scss">
 @import "../styles/main.scss";
 .Default {
-    background-color: $secondary;
+    background-color: $tertiary;
 }
 .Inverse {
     color: $light_grey;

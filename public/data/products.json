@@ -1,0 +1,37 @@
+[
+  {
+    "id": 4477,
+    "title": "Producto 1",
+    "excerpt": "ut velit quia rerum sint modi aut nostrum sit",
+    "url": "https://via.placeholder.com/600/c7019e",
+    "thumbnailUrl": "img/th-img1.jpg"
+  },
+  {
+    "id": 4478,
+    "title": "Articulo 2",
+    "excerpt": "ut alias veniam nostrum",
+    "url": "https://via.placeholder.com/600/14ea1a",
+    "thumbnailUrl": "img/img2.jpg"
+  },
+  {
+    "id": 4479,
+    "title": "Articulo 3",
+    "excerpt": "quidem a ut sint",
+    "url": "https://via.placeholder.com/600/313494",
+    "thumbnailUrl": "img/img3.jpg"
+  },
+  {
+    "id": 4480,
+    "title": "id velit nostrum exercitationem veniam nihil voluptate",
+    "excerpt": "id velit nostrum exercitationem veniam nihil voluptate",
+    "url": "https://via.placeholder.com/600/534a32",
+    "thumbnailUrl": "https://via.placeholder.com/150/534a32"
+  },
+  {
+    "id": 4481,
+    "title": "maiores sint impedit eligendi ab sed aperiam",
+    "excerpt": "maiores sint impedit eligendi ab sed aperiam",
+    "url": "https://via.placeholder.com/600/493272",
+    "thumbnailUrl": "https://via.placeholder.com/150/493272"
+  }
+]

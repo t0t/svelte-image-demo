@@ -1,8 +1,7 @@
-{
-  "conceptos": [
+[
     {
       "title": "La mente abstracta",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore optio aperiam ratione!",
+      "text": "Mente que fija su atención en las relaciones antes que en los objetos",
       "link": "Pensamiento abstracto",
       "href": "https://www.lifeder.com/pensamiento-abstracto/",
       "target": "_blank"
@@ -36,4 +35,3 @@
       "target": "_blank"
     }
   ]
-}

@@ -1,5 +1,5 @@
 <script>
-    const fetchImage = (async () => {
+    const loadedJson = (async () => {
         const url = "/test.json";
         const response = await fetch(url);
         return await response.json();
@@ -28,6 +28,8 @@
         TabPanel,
         Tab
     } from '../components/tabs.js';
+    // let seconds = 0;
+    // setInterval(() => seconds += 1, 10000);
 </script>
 
 <style lang="scss">
@@ -39,8 +41,7 @@
 <Content>
 <ContentArea>
 
-    <Area>
-        <h3>Typography</h3>
+    <Area title="Typography">
         <h1>h1 Main title</h1>
         <h2>h2 Subtitle</h2>
         <h3>h3 Header</h3>
@@ -49,7 +50,9 @@
         <p>Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit. Est ullam <strong>tempora</strong> accusamus porro doloremque. Mollitia praesentium neque aut! Quibusdam id in <a href="./about">repellendus</a> sint? Quam iste dignissimos amet nisi, eveniet ullam. <small>Small text</small></p>
         
         <BlockQuote variante={0} quote="This is a blockquote" author="Author" />
+    
         <BlockQuote variante={1} quote="This is a blockquote" author="Author" />
+
         <BlockQuote variante={2} quote="This is a blockquote" author="Author" />
     </Area>
 
@@ -112,7 +115,7 @@
         </div>
     </Area>
 
-    <Area title="Grid Layout">
+    <!-- <Area title="Grid Layout">
         <div class="StyleGuide Main">
             <div class="StyleGuide Main__brand"></div>
             <div class="StyleGuide  Main__nav"></div>
@@ -132,7 +135,7 @@
             <div class="StyleGuide  Main__footer"></div>
             <div class="StyleGuide  Main__totop"></div>
         </div>
-    </Area>
+    </Area> -->
 
     <Area title="Full Simple Card">
         <Card 
@@ -163,11 +166,11 @@
             hasImage={false} hasInlineSvg={true}>
                 <span slot="hasSvg">
                 <svg xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" stroke-linejoin="round"
-                        stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 169 169">
-                        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-                            transform="matrix(.03822 0 0 .03822 -452.1 -33.668)" />
-                        <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
-                            transform="matrix(.03822 0 0 .03822 -536 -33.668)" />
+                stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 169 169">
+                <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+                transform="matrix(.03822 0 0 .03822 -452.1 -33.668)" />
+                <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
+                transform="matrix(.03822 0 0 .03822 -536 -33.668)" />
                         <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
                             transform="matrix(.03822 0 0 .03822 -493.61 -33.668)" />
                         <circle cx="15135.5" cy="3089.34" r="1097.64" fill="none" vector-effect="non-scaling-stroke"
@@ -234,9 +237,9 @@
     <Area title="Component Header">
         <PageTitle pageTitle="Page title" pageSubTitle="Page Subtitle" />
     </Area>
-
+    
     <Area title="Fetching Json data from service">
-        {#await fetchImage}
+        {#await loadedJson}
             <Loading/>
         {:then data}
             <Cards>                

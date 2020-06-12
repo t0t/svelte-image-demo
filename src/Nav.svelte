@@ -6,10 +6,10 @@
   let y;
   let home = "/";
   const _links = [
-    ["./about", "About TODH"],
-    ["./products", "Artifacts"],
-    ["./blog", "Blog"],
-    ["./styleguide", "Styleguide"]
+    ["/about", "About TODH"],
+    ["/products", "Artifacts"],
+    ["/blog", "Blog"],
+    ["/styleguide", "Styleguide"]
   ];
   let showControls = false;
   const toggleControls = () => (showControls = !showControls);
